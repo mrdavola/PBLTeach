@@ -1,6 +1,6 @@
 "use client";
 
-import { Loader2, Check } from "lucide-react";
+import { Loader2, Check, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +12,7 @@ interface MaterialCardProps {
   isSelected: boolean;
   onGenerate: () => void;
   onSelect: () => void;
+  onDownload?: () => void;
 }
 
 export function MaterialCard({
@@ -22,6 +23,7 @@ export function MaterialCard({
   isSelected,
   onGenerate,
   onSelect,
+  onDownload,
 }: MaterialCardProps) {
   return (
     <div
@@ -79,6 +81,19 @@ export function MaterialCard({
               >
                 View
               </Button>
+              {onDownload && (
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    onDownload();
+                  }}
+                  title="Download PDF"
+                >
+                  <Download className="size-4" />
+                </Button>
+              )}
             </div>
           )}
         </div>

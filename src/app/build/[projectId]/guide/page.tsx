@@ -139,6 +139,44 @@ export default function GuidePage({
     null
   );
 
+  const handleDownload = useCallback(
+    async (materialId: string) => {
+      const material = materials[materialId];
+      if (!material?.data) return;
+
+      const projectTitle = project.current.title ?? "Untitled Project";
+      const drivingQuestion =
+        project.current.drivingQuestion?.selected ?? "";
+
+      try {
+        const response = await fetch("/api/pdf", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            type: materialId,
+            data: material.data,
+            project: { title: projectTitle, drivingQuestion },
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error("PDF generation failed");
+        }
+
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `${materialId}-${projectTitle.replace(/\s+/g, "-")}.pdf`;
+        a.click();
+        URL.revokeObjectURL(url);
+      } catch (error) {
+        console.error("PDF download error:", error);
+      }
+    },
+    [materials]
+  );
+
   const handleGenerate = useCallback(
     async (materialId: string) => {
       const mt = materialTypes.find((m) => m.id === materialId);
@@ -274,6 +312,11 @@ export default function GuidePage({
       isSelected={selectedMaterialId === mt.id}
       onGenerate={() => handleGenerate(mt.id)}
       onSelect={() => setSelectedMaterialId(mt.id)}
+      onDownload={
+        materials[mt.id].status === "ready"
+          ? () => handleDownload(mt.id)
+          : undefined
+      }
     />
   ));
 
