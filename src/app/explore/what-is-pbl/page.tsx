@@ -1,43 +1,30 @@
 "use client";
 
-import Link from "next/link";
 import { Cake, UtensilsCrossed } from "lucide-react";
 
 import { dessertVsMainCourse } from "@/lib/data/frameworks";
 import { ScrollReveal } from "@/components/ui/motion";
 import { Card, CardContent } from "@/components/ui/card";
-import { buttonVariants } from "@/components/ui/button";
 
+import { ModuleLayout } from "@/components/explore/module-layout";
 import { FlipCard } from "@/components/explore/flip-card";
 import { ScenarioHook } from "@/components/explore/scenario-hook";
 
 export default function WhatIsPblPage() {
   return (
-    <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6 lg:px-8">
-      {/* Page header */}
-      <div className="mb-4 text-center">
-        <span className="inline-block rounded-full bg-brand-coral-light px-3 py-1 text-xs font-medium text-brand-coral">
-          5-7 min
-        </span>
-        <h1 className="mt-3 font-display text-3xl font-bold text-neutral-900 sm:text-4xl">
-          What IS PBL?
-        </h1>
-        <p className="mt-2 text-sm text-neutral-500">
-          Distinguish PBL from &ldquo;doing a project&rdquo;
-        </p>
-      </div>
-
-      {/* ================================================================== */}
-      {/* Section 1: Scenario Hook                                           */}
-      {/* ================================================================== */}
-      <section className="py-16">
+    <ModuleLayout
+      title="What IS PBL?"
+      duration="5-7 min"
+      learningGoal='Distinguish PBL from "doing a project"'
+      progressColor="bg-brand-coral"
+    >
+      {/* Section 1: Scenario Hook */}
+      <section>
         <ScenarioHook />
       </section>
 
-      {/* ================================================================== */}
-      {/* Section 2: Dessert vs Main Course                                  */}
-      {/* ================================================================== */}
-      <section className="py-16">
+      {/* Section 2: Dessert vs Main Course */}
+      <section>
         <ScrollReveal>
           <h2 className="text-center font-display text-2xl font-bold text-neutral-900">
             The Dessert vs. Main Course
@@ -95,10 +82,8 @@ export default function WhatIsPblPage() {
         </div>
       </section>
 
-      {/* ================================================================== */}
-      {/* Section 3: Real Example (Case Study)                               */}
-      {/* ================================================================== */}
-      <section className="py-16">
+      {/* Section 3: Real Example (Case Study) */}
+      <section>
         <ScrollReveal>
           <h2 className="text-center font-display text-2xl font-bold text-neutral-900">
             See it in action
@@ -136,24 +121,6 @@ export default function WhatIsPblPage() {
           </ScrollReveal>
         </div>
       </section>
-
-      {/* ================================================================== */}
-      {/* Section 4: Try It CTA                                              */}
-      {/* ================================================================== */}
-      <section className="py-16">
-        <ScrollReveal>
-          <Card className="border-brand-teal/20 bg-brand-teal-light/50 text-center">
-            <CardContent className="flex flex-col items-center gap-4 py-4">
-              <p className="font-display text-lg font-bold text-neutral-900">
-                Ready to see how your next unit could become PBL?
-              </p>
-              <Link href="/build/new" className={buttonVariants()}>
-                Start building
-              </Link>
-            </CardContent>
-          </Card>
-        </ScrollReveal>
-      </section>
-    </div>
+    </ModuleLayout>
   );
 }
