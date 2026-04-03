@@ -51,7 +51,7 @@ function LoadingSkeleton() {
           </span>
           <div className="flex min-h-[40px] min-w-[100px] items-center justify-center rounded-lg border-2 border-dashed border-neutral-200 bg-neutral-50 px-3 py-2">
             <motion.div
-              className="h-3 w-16 rounded bg-neutral-200"
+              className="h-3 w-16 rounded bg-neutral-100"
               animate={{ opacity: [0.4, 0.7, 0.4] }}
               transition={{ duration: 1.5, repeat: Infinity }}
             />

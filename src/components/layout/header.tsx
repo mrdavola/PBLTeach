@@ -110,7 +110,7 @@ export function Header() {
 
           {/* Mobile hamburger */}
           <button
-            className="md:hidden text-neutral-700"
+            className="md:hidden flex items-center justify-center h-11 w-11 text-neutral-700"
             onClick={() => setMobileOpen(true)}
             aria-label="Open menu"
           >
@@ -132,7 +132,7 @@ export function Header() {
               <button
                 onClick={() => setMobileOpen(false)}
                 aria-label="Close menu"
-                className="text-neutral-700"
+                className="flex items-center justify-center h-11 w-11 text-neutral-700"
               >
                 <X size={24} />
               </button>
