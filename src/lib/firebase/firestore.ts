@@ -10,8 +10,26 @@ import {
   query,
   orderBy,
   serverTimestamp,
+  Timestamp,
 } from "firebase/firestore";
 import type { User, Project } from "@/lib/types";
+
+function normalizeFirestoreDates<
+  T extends Record<string, unknown> & {
+    createdAt?: unknown;
+    updatedAt?: unknown;
+  },
+>(data: T) {
+  return {
+    ...data,
+    ...(data.createdAt instanceof Timestamp
+      ? { createdAt: data.createdAt.toDate() }
+      : {}),
+    ...(data.updatedAt instanceof Timestamp
+      ? { updatedAt: data.updatedAt.toDate() }
+      : {}),
+  };
+}
 
 // User operations
 export async function createUserProfile(
@@ -78,7 +96,7 @@ export async function getProject(
     doc(db, "users", userId, "projects", projectId)
   );
   return snap.exists()
-    ? ({ id: snap.id, ...snap.data() } as Project)
+    ? (normalizeFirestoreDates({ id: snap.id, ...snap.data() }) as Project)
     : null;
 }
 
@@ -91,7 +109,9 @@ export async function getUserProjects(
     orderBy("updatedAt", "desc")
   );
   const snap = await getDocs(q);
-  return snap.docs.map((d) => ({ id: d.id, ...d.data() }) as Project);
+  return snap.docs.map(
+    (d) => normalizeFirestoreDates({ id: d.id, ...d.data() }) as Project
+  );
 }
 
 export async function deleteProject(userId: string, projectId: string) {

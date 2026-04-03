@@ -31,13 +31,12 @@ interface LearningNarrativeViewProps {
 export function LearningNarrativeView({
   project,
   isStreaming,
-  streamText,
   phaseContents,
   onRegeneratePhase,
   projectId,
 }: LearningNarrativeViewProps) {
   const [expandedPhase, setExpandedPhase] = useState<number>(1);
-  const [editableTitle, setEditableTitle] = useState(project.title ?? "");
+  const [titleOverride, setTitleOverride] = useState<string | null>(null);
   const [showAssessment, setShowAssessment] = useState(false);
   const [showCrossCurricular, setShowCrossCurricular] = useState(false);
 
@@ -57,6 +56,7 @@ export function LearningNarrativeView({
   }, [isStreaming, completedPhases, expandedPhase]);
 
   const goldStandardElements = project.goldStandard?.elementsIncluded ?? [];
+  const editableTitle = titleOverride ?? project.title ?? "";
 
   return (
     <div className="flex flex-col gap-6 lg:flex-row">
@@ -86,7 +86,7 @@ export function LearningNarrativeView({
           <input
             type="text"
             value={editableTitle}
-            onChange={(e) => setEditableTitle(e.target.value)}
+            onChange={(e) => setTitleOverride(e.target.value)}
             placeholder="Project Title"
             className="w-full border-none bg-transparent font-display text-2xl font-bold text-neutral-900 outline-none placeholder:text-neutral-400 focus:outline-none"
           />
