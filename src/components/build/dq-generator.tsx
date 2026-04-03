@@ -150,8 +150,7 @@ export function DQGenerator({
               </p>
             ) : (
               <p className="text-sm text-neutral-700">
-                Something went wrong generating driving questions. Please try
-                again.
+                {error}
               </p>
             )}
             <Button

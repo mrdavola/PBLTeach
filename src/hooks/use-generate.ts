@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { parseGeminiJSON } from "@/lib/gemini/parse";
+import { getErrorMessageFromResponse } from "@/lib/http/error-response";
 import type {
   DQGenerationResponse,
   QuickCreateResult,
@@ -27,7 +28,9 @@ export function useGenerate<T>() {
       });
 
       if (!response.ok) {
-        throw new Error(`Generation failed: ${response.statusText}`);
+        throw new Error(
+          await getErrorMessageFromResponse(response, "Generation failed")
+        );
       }
 
       const reader = response.body?.getReader();

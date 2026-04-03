@@ -1,12 +1,26 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
-const apiKey = process.env.GEMINI_API_KEY;
-
 let genAI: GoogleGenerativeAI | null = null;
 
+export function getGeminiApiKey(env: NodeJS.ProcessEnv = process.env) {
+  return (
+    env.GEMINI_API_KEY ||
+    env.GOOGLE_GENERATIVE_AI_API_KEY ||
+    env.GOOGLE_API_KEY ||
+    ""
+  );
+}
+
+export function getGeminiModelName(env: NodeJS.ProcessEnv = process.env) {
+  return env.GEMINI_MODEL || "gemini-2.5-flash";
+}
+
 export function getGenAI() {
+  const apiKey = getGeminiApiKey();
   if (!apiKey) {
-    throw new Error("GEMINI_API_KEY is not set");
+    throw new Error(
+      "Gemini API key is not configured. Set GEMINI_API_KEY in the server environment."
+    );
   }
   if (!genAI) {
     genAI = new GoogleGenerativeAI(apiKey);
@@ -17,7 +31,7 @@ export function getGenAI() {
 export function getModel() {
   const ai = getGenAI();
   return ai.getGenerativeModel({
-    model: "gemini-2.0-flash",
+    model: getGeminiModelName(),
     generationConfig: {
       temperature: 0.7,
       topP: 0.95,

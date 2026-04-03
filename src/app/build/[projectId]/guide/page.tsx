@@ -19,6 +19,7 @@ import { CalendarPreview } from "@/components/guide/calendar-preview";
 import { RubricPreview } from "@/components/guide/rubric-preview";
 import { HandoutPreview } from "@/components/guide/handout-preview";
 import { parseGeminiJSON } from "@/lib/gemini/parse";
+import { getErrorMessageFromResponse } from "@/lib/http/error-response";
 
 /* -------------------------------------------------------------------------- */
 /*  Material type definitions                                                  */
@@ -198,7 +199,9 @@ export default function GuidePage({
         });
 
         if (!response.ok) {
-          throw new Error(`Generation failed: ${response.statusText}`);
+          throw new Error(
+            await getErrorMessageFromResponse(response, "Generation failed")
+          );
         }
 
         const reader = response.body?.getReader();
