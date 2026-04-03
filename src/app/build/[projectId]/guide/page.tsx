@@ -14,6 +14,7 @@ import {
 import { Card, CardContent } from "@/components/ui/card";
 import { GuideLayout } from "@/components/guide/guide-layout";
 import { MaterialCard } from "@/components/guide/material-card";
+import { CalendarOptionsModal } from "@/components/guide/calendar-options-modal";
 import { CalendarPreview } from "@/components/guide/calendar-preview";
 import { RubricPreview } from "@/components/guide/rubric-preview";
 import { HandoutPreview } from "@/components/guide/handout-preview";
@@ -138,6 +139,7 @@ export default function GuidePage({
   const [selectedMaterialId, setSelectedMaterialId] = useState<string | null>(
     null
   );
+  const [calendarModalOpen, setCalendarModalOpen] = useState(false);
 
   const handleDownload = useCallback(
     async (materialId: string) => {
@@ -177,8 +179,8 @@ export default function GuidePage({
     [materials]
   );
 
-  const handleGenerate = useCallback(
-    async (materialId: string) => {
+  const generateMaterial = useCallback(
+    async (materialId: string, bodyOverrides?: Record<string, unknown>) => {
       const mt = materialTypes.find((m) => m.id === materialId);
       if (!mt) return;
 
@@ -188,10 +190,11 @@ export default function GuidePage({
       }));
 
       try {
+        const body = { ...mt.apiBody(project.current), ...bodyOverrides };
         const response = await fetch(mt.apiRoute, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(mt.apiBody(project.current)),
+          body: JSON.stringify(body),
         });
 
         if (!response.ok) {
@@ -226,6 +229,24 @@ export default function GuidePage({
       }
     },
     []
+  );
+
+  const handleGenerate = useCallback(
+    (materialId: string) => {
+      if (materialId === "calendar") {
+        setCalendarModalOpen(true);
+        return;
+      }
+      generateMaterial(materialId);
+    },
+    [generateMaterial]
+  );
+
+  const handleCalendarSubmit = useCallback(
+    (options: { classMinutes: number; classesPerWeek: number }) => {
+      generateMaterial("calendar", options);
+    },
+    [generateMaterial]
   );
 
   const hasReadyMaterials = Object.values(materials).some(
@@ -321,16 +342,23 @@ export default function GuidePage({
   ));
 
   return (
-    <GuideLayout
-      projectId={projectId}
-      projectTitle={project.current.title ?? "Untitled Project"}
-      drivingQuestion={
-        project.current.drivingQuestion?.selected ?? "No driving question set"
-      }
-      sidebar={sidebar}
-      hasReadyMaterials={hasReadyMaterials}
-    >
-      {renderPreview()}
-    </GuideLayout>
+    <>
+      <GuideLayout
+        projectId={projectId}
+        projectTitle={project.current.title ?? "Untitled Project"}
+        drivingQuestion={
+          project.current.drivingQuestion?.selected ?? "No driving question set"
+        }
+        sidebar={sidebar}
+        hasReadyMaterials={hasReadyMaterials}
+      >
+        {renderPreview()}
+      </GuideLayout>
+      <CalendarOptionsModal
+        open={calendarModalOpen}
+        onOpenChange={setCalendarModalOpen}
+        onSubmit={handleCalendarSubmit}
+      />
+    </>
   );
 }

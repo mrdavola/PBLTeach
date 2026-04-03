@@ -1,11 +1,15 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
+import { FileDown } from "lucide-react";
 import { PhaseCard } from "@/components/build/phase-card";
 import { PhaseTimeline } from "@/components/build/phase-timeline";
 import { PhaseNav } from "@/components/build/phase-nav";
 import { GoldStandardGauge } from "@/components/build/gold-standard-gauge";
 import { Reveal } from "@/components/ui/motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import type { Project } from "@/lib/types/project";
 
@@ -21,6 +25,7 @@ interface LearningNarrativeViewProps {
   streamText: string;
   phaseContents?: Record<number, PhaseContent>;
   onRegeneratePhase?: (phase: number) => void;
+  projectId?: string;
 }
 
 export function LearningNarrativeView({
@@ -29,6 +34,7 @@ export function LearningNarrativeView({
   streamText,
   phaseContents,
   onRegeneratePhase,
+  projectId,
 }: LearningNarrativeViewProps) {
   const [expandedPhase, setExpandedPhase] = useState<number>(1);
   const [editableTitle, setEditableTitle] = useState(project.title ?? "");
@@ -229,6 +235,25 @@ export function LearningNarrativeView({
             </div>
           </Reveal>
         </div>
+
+        {/* Generate Materials CTA */}
+        <section className="mt-12 pt-8 border-t border-neutral-300">
+          <Card className="border-brand-teal/20 bg-brand-teal-light/30">
+            <CardContent className="flex flex-col sm:flex-row items-center justify-between gap-4 py-6">
+              <div>
+                <h3 className="font-display font-bold text-lg text-neutral-900">Ready for classroom materials?</h3>
+                <p className="text-sm text-neutral-600 mt-1">Generate day-by-day calendars, rubrics, handouts, and more.</p>
+              </div>
+              <Link
+                href={projectId ? `/build/${projectId}/guide` : "/build/project/guide"}
+                className={buttonVariants({ variant: "default" })}
+              >
+                <FileDown className="size-4 mr-2" />
+                Generate Materials
+              </Link>
+            </CardContent>
+          </Card>
+        </section>
       </div>
     </div>
   );

@@ -43,7 +43,7 @@ export const exploreModules: ExploreModule[] = [
     duration: "7-10 min",
     learningGoal: "Know the 7 elements and understand you can start with just 2",
     description: "The 7 essential design elements that define high-quality PBL.",
-    phaseForMVP: 2
+    phaseForMVP: 1
   },
   {
     id: "design-thinking",
@@ -52,7 +52,7 @@ export const exploreModules: ExploreModule[] = [
     duration: "7-10 min",
     learningGoal: "Understand the DT process and how it powers the Create phase",
     description: "The mindsets and process behind human-centered design.",
-    phaseForMVP: 2
+    phaseForMVP: 1
   },
   {
     id: "alphabet-soup",
@@ -61,7 +61,7 @@ export const exploreModules: ExploreModule[] = [
     duration: "5-8 min",
     learningGoal: "Name the key approaches and understand how they relate",
     description: "PBL, STEM, design thinking, inquiry-based... what's the difference?",
-    phaseForMVP: 2
+    phaseForMVP: 1
   },
   {
     id: "pbl-and-ai",
@@ -70,6 +70,6 @@ export const exploreModules: ExploreModule[] = [
     duration: "5-7 min",
     learningGoal: "Understand how AI supports but doesn't replace PBL design",
     description: "How AI tools can help teachers design and facilitate PBL.",
-    phaseForMVP: 2
+    phaseForMVP: 1
   }
 ];
