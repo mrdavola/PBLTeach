@@ -118,3 +118,36 @@ export async function deleteProject(userId: string, projectId: string) {
   if (!db) throw new Error("Firebase not configured");
   await deleteDoc(doc(db, "users", userId, "projects", projectId));
 }
+
+// Scope sequence operations
+export async function saveScopeSequence(
+  userId: string,
+  data: Record<string, unknown>
+): Promise<string> {
+  if (!db) throw new Error("Firebase not configured");
+  const colRef = collection(db, "users", userId, "scopeSequences");
+  const docId = doc(colRef).id;
+  const ref = doc(colRef, docId);
+  await setDoc(ref, { ...data, id: docId, uploadedAt: serverTimestamp() });
+  return docId;
+}
+
+export async function getUserScopeSequences(
+  userId: string
+): Promise<Record<string, unknown>[]> {
+  if (!db) return [];
+  const q = query(
+    collection(db, "users", userId, "scopeSequences"),
+    orderBy("uploadedAt", "desc")
+  );
+  const snap = await getDocs(q);
+  return snap.docs.map((d) => ({ id: d.id, ...d.data() }));
+}
+
+export async function deleteScopeSequence(
+  userId: string,
+  docId: string
+): Promise<void> {
+  if (!db) throw new Error("Firebase not configured");
+  await deleteDoc(doc(db, "users", userId, "scopeSequences", docId));
+}

@@ -4,6 +4,7 @@ import { PBLTeachLogoSmall } from "@/components/icons";
 const footerLinks = [
   { href: "/explore", label: "Explore" },
   { href: "/build", label: "Build" },
+  { href: "/analyze", label: "Analyze" },
   { href: "/about", label: "About" },
 ];
 

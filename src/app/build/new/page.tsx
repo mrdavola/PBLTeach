@@ -30,15 +30,25 @@ function BuildNewContent() {
     defaultValues.duration = duration;
   }
 
+  const drivingQuestion = searchParams.get("drivingQuestion");
+  const source = searchParams.get("source");
+
   return (
     <div className="mx-auto max-w-4xl px-4 py-12">
-      <h1 className="font-display text-3xl font-bold text-neutral-900 mb-8 text-center">
+      <h1 className="font-display text-3xl font-bold text-neutral-900 mb-2 text-center">
         Build Your PBL Unit
       </h1>
+      {source === "analyze" && (
+        <p className="text-center text-sm text-neutral-500 mb-8">
+          Pre-filled from your curriculum analysis
+        </p>
+      )}
+      {source !== "analyze" && <div className="mb-8" />}
       <BuilderWizard
         defaultValues={
           Object.keys(defaultValues).length > 0 ? defaultValues : undefined
         }
+        defaultDQ={drivingQuestion || undefined}
       />
     </div>
   );

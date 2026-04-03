@@ -18,9 +18,14 @@ import {
   readLocalBuilderDraft,
   writeLocalBuilderDraft,
 } from "@/lib/project/builder-draft";
+import {
+  canFallbackToLocalDraftSave,
+  getFirestoreErrorMessage,
+} from "@/lib/firebase/firestore-errors";
 
 interface BuilderWizardProps {
   defaultValues?: Partial<BuilderInput>;
+  defaultDQ?: string;
 }
 
 const STEPS = [
@@ -219,7 +224,7 @@ function DQGeneratorPlaceholder({
   );
 }
 
-export function BuilderWizard({ defaultValues }: BuilderWizardProps) {
+export function BuilderWizard({ defaultValues, defaultDQ }: BuilderWizardProps) {
   const router = useRouter();
   const { user } = useAuth();
   const { save, loading: projectSaving } = useProject();
@@ -238,7 +243,7 @@ export function BuilderWizard({ defaultValues }: BuilderWizardProps) {
 
   const [currentStep, setCurrentStep] = useState<number | null>(null);
   const [formData, setFormData] = useState<BuilderInput | null>(null);
-  const [selectedDQ, setSelectedDQ] = useState<string>("");
+  const [selectedDQ, setSelectedDQ] = useState<string>(defaultDQ || "");
   const [saveMessage, setSaveMessage] = useState<string | null>(null);
   const [saveError, setSaveError] = useState<string | null>(null);
 
@@ -341,9 +346,13 @@ export function BuilderWizard({ defaultValues }: BuilderWizardProps) {
       setSaveMessage("Draft saved to your dashboard.");
       router.push(`/build/${projectId}`);
     } catch (error) {
-      setSaveError(
-        error instanceof Error ? error.message : "Failed to save draft"
-      );
+      if (canFallbackToLocalDraftSave(error)) {
+        setSaveMessage(getFirestoreErrorMessage(error));
+        setSaveError(null);
+        return;
+      }
+
+      setSaveError(getFirestoreErrorMessage(error));
     }
   }, [
     effectiveCurrentStep,
