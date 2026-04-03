@@ -112,7 +112,7 @@ function DQGeneratorPlaceholder({
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
   const handleGenerate = useCallback(() => {
-    generate("/api/generate/dq", {
+    generate("/api/generate/driving-question", {
       gradeLevel: formData.gradeLevel,
       subjects: formData.subjects,
       topic: formData.topic,

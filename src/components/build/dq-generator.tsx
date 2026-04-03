@@ -82,7 +82,7 @@ export function DQGenerator({
     setSelectedIndex(null);
     setAnimationComplete(false);
     reset();
-    generate("/api/generate/dq", {
+    generate("/api/generate/driving-question", {
       gradeLevel,
       subjects,
       topic,
