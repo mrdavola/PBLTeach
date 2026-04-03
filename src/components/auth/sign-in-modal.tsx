@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
+import { getAuthErrorMessage } from "@/lib/firebase/auth-errors";
 
 interface SignInModalProps {
   open: boolean;
@@ -59,9 +60,7 @@ export function SignInModal({ open, onOpenChange }: SignInModalProps) {
       }
       handleOpenChange(false);
     } catch (err) {
-      setError(
-        err instanceof Error ? err.message : "Authentication failed"
-      );
+      setError(getAuthErrorMessage(err));
     } finally {
       setLoading(false);
     }
@@ -74,9 +73,7 @@ export function SignInModal({ open, onOpenChange }: SignInModalProps) {
       await signInWithGoogle();
       handleOpenChange(false);
     } catch (err) {
-      setError(
-        err instanceof Error ? err.message : "Google sign-in failed"
-      );
+      setError(getAuthErrorMessage(err));
     } finally {
       setLoading(false);
     }
@@ -149,7 +146,9 @@ export function SignInModal({ open, onOpenChange }: SignInModalProps) {
               </div>
 
               {error && (
-                <p className="text-sm text-red-600">{error}</p>
+                <p className="max-w-full break-words text-sm text-red-600">
+                  {error}
+                </p>
               )}
 
               <Button type="submit" disabled={loading}>
