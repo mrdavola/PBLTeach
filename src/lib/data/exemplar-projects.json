@@ -1,0 +1,3994 @@
+[
+  {
+    "crossCurricular": {
+      "connections": [
+        {
+          "topic": "Money & Data",
+          "connectionDescription": "Students apply skills in identifying coins/bills, counting money, making change, and collecting/graphing data from surveys.",
+          "subject": "Math"
+        },
+        {
+          "subject": "Social Studies",
+          "topic": "Economics & Community",
+          "connectionDescription": "Students learn about basic economic concepts like earning, spending, profit, and the roles of producers and consumers in a community."
+        },
+        {
+          "topic": "Persuasive Writing & Communication",
+          "connectionDescription": "Students create advertisements to persuade buyers and practice clear communication during sales pitches and team discussions.",
+          "subject": "English Language Arts"
+        },
+        {
+          "connectionDescription": "Students design creative packaging, logos, and advertisements for their snack products.",
+          "topic": "Design & Marketing",
+          "subject": "Art"
+        }
+      ],
+      "standardsAligned": [
+        {
+          "description": "Solve word problems involving dollar bills, quarters, dimes, nickels, and pennies, using $ and ¢ symbols appropriately.",
+          "code": "CCSS.MATH.CONTENT.2.MD.C.8",
+          "subject": "Math",
+          "gradeLevel": "2"
+        },
+        {
+          "description": "Production, Distribution, and Consumption - Students will understand how people organize for the production, distribution, and consumption of goods and services.",
+          "subject": "Social Studies",
+          "code": "NCSS (National Council for the Social Studies) Theme 7",
+          "gradeLevel": "2"
+        },
+        {
+          "description": "Write opinion pieces in which they introduce the topic or book they are writing about, state an opinion, supply reasons that support the opinion, use linking words to connect opinion and reasons, and provide a concluding statement or section.",
+          "code": "CCSS.ELA-LITERACY.W.2.1",
+          "subject": "ELA",
+          "gradeLevel": "2"
+        }
+      ]
+    },
+    "title": "2nd Grade Street",
+    "assessment": {
+      "formative": [
+        {
+          "method": "rubric",
+          "title": "Money Skill Checklist",
+          "description": "Observe students during the 'Money Matters Workshop' to check their ability to identify coins, count small amounts, and make simple change.",
+          "type": "formative",
+          "phase": 2
+        },
+        {
+          "description": "Take notes on student participation, collaboration, and problem-solving during group activities like snack brainstorming and ad design.",
+          "title": "Teamwork Observation Notes",
+          "method": "journal",
+          "phase": 2,
+          "type": "formative"
+        },
+        {
+          "type": "formative",
+          "phase": 2,
+          "description": "Students write or draw about their learning throughout the investigation and creation phases, sharing what they are discovering about business and money.",
+          "method": "journal",
+          "title": "Reflection Journal Entries"
+        }
+      ],
+      "summative": [
+        {
+          "phase": 5,
+          "type": "summative",
+          "title": "Mini Snack Market Performance",
+          "method": "rubric",
+          "description": "Assess students' ability to sell their snack, handle money, and interact with customers during the sales event."
+        },
+        {
+          "title": "Business Product & Presentation",
+          "method": "rubric",
+          "description": "Evaluate the quality of the snack (simplicity, presentation) and the effectiveness of their advertising materials and sales pitch.",
+          "phase": 5,
+          "type": "summative"
+        },
+        {
+          "method": "self-assessment",
+          "title": "Final Project Reflection",
+          "description": "Students complete a reflection, either written or verbal, addressing what they learned about money, business, and teamwork.",
+          "type": "summative",
+          "phase": 5
+        }
+      ],
+      "rubricType": "both"
+    },
+    "status": "published",
+    "duration": "mini",
+    "updatedAt": "2026-04-04T11:26:19.641Z",
+    "topic": "Designing and running small businesses like a mini community (inspired by Starbucks Day)",
+    "drivingQuestion": {
+      "options": [
+        "How can we, as class market makers, create and sell a simple snack for our school community to learn about earning money?",
+        "How can we, as young entrepreneurs, design and operate a small business for our school community to meet a need and earn funds for a class project?",
+        "How can we, as community problem-solvers, research and develop a product or service for our schoolmates to improve our school environment and understand economic choices?"
+      ],
+      "selected": "How can we, as class market makers, create and sell a simple snack for our school community to learn about earning money?",
+      "formula": {
+        "action": "create and sell",
+        "product": "a simple snack",
+        "purpose": "to learn about earning money",
+        "audience": "our school community",
+        "role": "class market makers"
+      }
+    },
+    "id": "exemplar-2nd-grade-street",
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "gradeLevel": "2",
+    "phases": {
+      "problemChallenge": {
+        "refinedDQ": "How can we, as class market makers, create and sell a simple, delicious snack for our school community to learn about earning money and making good choices?",
+        "expertSuggestions": [
+          "Invite a parent who owns a small business to talk about how they started and what they sell.",
+          "Interview the school cafeteria manager about popular snacks and food safety.",
+          "Ask a local baker or grocery store owner about ingredient sourcing and pricing."
+        ],
+        "needToKnow": [
+          "What ingredients do we need for our chosen snack?",
+          "How much will the ingredients cost?",
+          "How much should we sell our snack for to make a profit?",
+          "How will we make our snack appealing to buyers?",
+          "What rules do we need for selling and handling money?"
+        ]
+      },
+      "share": {
+        "presentationFormats": [
+          "A 'Mini Snack Market' setup in the classroom or hallway, where students act as sellers.",
+          "A short 'commercial' or sales pitch presented to another class.",
+          "Individual student 'business booths' where they showcase their snack and explain their pricing."
+        ],
+        "audienceSuggestions": [
+          "Other classes (e.g., Grade 1 or 3)",
+          "School staff and teachers",
+          "Parents (during a designated school event if feasible for a 'mini' project)"
+        ],
+        "reflectionPrompts": [
+          "What was the most challenging part of creating and selling our snack?",
+          "What did you learn about earning and spending money?",
+          "If we did this project again, what would your business team do differently?",
+          "How did working with your team help you achieve your goal?"
+        ]
+      },
+      "entryEvent": {
+        "ideas": [
+          {
+            "materials": [
+              "cardboard box",
+              "play money",
+              "small snack bag",
+              "toy cash register",
+              "pictures of stores"
+            ],
+            "type": "activity",
+            "timeNeeded": "20 minutes",
+            "description": "Students open a 'mystery box' filled with items related to running a business (e.g., play money, a small bag of chips, a receipt, a picture of a store). Discuss what each item is and how it connects to selling things.",
+            "title": "The Mystery Snack Box"
+          },
+          {
+            "type": "video",
+            "materials": [
+              "picture book about a small business",
+              "short animated video (e.g., 'Lemonade Stand' on YouTube Kids)"
+            ],
+            "title": "Local Business Story Time",
+            "timeNeeded": "15-20 minutes",
+            "description": "Read a short story or watch a brief video about a child starting a simple business, like a lemonade stand or selling handmade cards. Discuss the challenges and successes the character faced."
+          }
+        ]
+      },
+      "create": {
+        "prototypingIdeas": [
+          "Prepare a 'test batch' of the snack, focusing on taste and presentation.",
+          "Design and draw packaging for the snack, including a business logo and name.",
+          "Create simple advertisements (posters, flyers) to promote the snack sale.",
+          "Practice the sales pitch: 'Hello! Would you like to buy our delicious [snack name]?'"
+        ],
+        "materials": [
+          "Safe, simple snack ingredients (e.g., pretzel sticks, chocolate chips, fruit, crackers, cream cheese)",
+          "Mixing bowls, spoons, measuring cups",
+          "Small paper bags or cups for packaging",
+          "Construction paper, markers, crayons, glue for advertisements and packaging",
+          "Play money for sales practice"
+        ],
+        "iterationPlan": "Based on peer feedback during 'Two Stars and a Wish,' students will revise their snack packaging or advertisement to make it more clear, appealing, or informative. They might also adjust the snack recipe based on taste testing.",
+        "critiqueProtocol": "Use a 'Two Stars and a Wish' protocol. Students share their snack packaging or advertisement, and peers offer two specific things they like ('stars') and one suggestion for improvement ('wish')."
+      },
+      "investigation": {
+        "skills": [
+          "Identifying coins and bills",
+          "Counting money (addition/subtraction)",
+          "Collecting and interpreting data (tally marks, simple graphs)",
+          "Brainstorming and decision-making",
+          "Teamwork and communication"
+        ],
+        "empathyExercises": [
+          "What kind of snack would make our school friends happy and healthy?",
+          "If I were buying a snack, what would make me choose one over another?",
+          "How can we make sure everyone feels included and gets a fair turn in our business team?"
+        ],
+        "activities": [
+          {
+            "phase": 2,
+            "type": "research",
+            "title": "Market Survey Detectives",
+            "description": "Students brainstorm and survey classmates and other teachers about their favorite simple snacks, considering allergies and healthy options. They record findings using tally marks or simple graphs.",
+            "duration": "30 minutes"
+          },
+          {
+            "phase": 2,
+            "type": "skill-building",
+            "title": "Money Matters Workshop",
+            "description": "Practice identifying coins and bills, counting money, and making change for small amounts. Use play money to simulate buying and selling simple items.",
+            "duration": "45 minutes"
+          },
+          {
+            "description": "In small groups, students choose a simple, safe snack idea based on their survey results. They discuss potential ingredients, how to make it, and what to name their snack business.",
+            "duration": "30 minutes",
+            "title": "Team Business Brainstorm",
+            "phase": 2,
+            "type": "collaboration"
+          }
+        ],
+        "resources": [
+          {
+            "description": "Interactive online games for practicing coin and bill identification and counting for young learners.",
+            "title": "Count Money Games (Online)",
+            "type": "tool"
+          },
+          {
+            "description": "Age-appropriate books showing children starting small businesses (e.g., 'The Lemonade War' series for slightly older kids, or simpler ones like 'A Chair for My Mother').",
+            "type": "book",
+            "title": "Picture Books about Entrepreneurship"
+          },
+          {
+            "title": "Simple Survey Template",
+            "type": "template",
+            "description": "A basic paper template with columns for snack choices and tally marks for students to record survey responses."
+          }
+        ]
+      }
+    },
+    "published": {
+      "publishedAt": "2026-04-04T11:26:19.641Z",
+      "ratingSum": 0,
+      "hidden": false,
+      "adaptationCount": 0,
+      "featured": true,
+      "authorName": "PBLTeach Team",
+      "ratingCount": 0,
+      "authorSchool": null
+    },
+    "userId": "pblteach-team",
+    "source": "builder",
+    "subjects": [
+      "Math",
+      "Social Studies"
+    ],
+    "createdAt": "2026-04-04T11:26:19.641Z",
+    "comfortLevel": "tried"
+  },
+  {
+    "gradeLevel": "3",
+    "phases": {
+      "share": {
+        "presentationFormats": [
+          "Oral presentations with their blueprint and budget sheet",
+          "A 'gallery walk' where students display their designs and explain them to visitors",
+          "Short video presentations explaining their design choices and budget"
+        ],
+        "audienceSuggestions": [
+          "Classmates (peer presentations)",
+          "The principal or other school administrators",
+          "A representative from the PTA",
+          "Another 3rd-grade class"
+        ],
+        "reflectionPrompts": [
+          "What was the most challenging part of designing your playground and how did you overcome it?",
+          "How did you use math (area, perimeter, money) to make your design decisions?",
+          "If you could add one more thing to your playground with unlimited money, what would it be and why?",
+          "What did you learn about designing a space that works for everyone?"
+        ]
+      },
+      "problemChallenge": {
+        "refinedDQ": "How can we, as Park Designers, plan a new playground for our school that fits within a budget and creates a fun, safe space for everyone?",
+        "needToKnow": [
+          "How to measure and calculate perimeter and area accurately.",
+          "How to manage a budget using addition and subtraction.",
+          "What types of playground equipment are available and their costs.",
+          "What features make a playground fun and accessible for different ages and abilities.",
+          "How to create a scale drawing or model of a playground design."
+        ],
+        "expertSuggestions": [
+          "A school custodian or facilities manager could share insights on playground safety, maintenance, and space limitations.",
+          "A parent from the PTA could discuss fundraising for school projects and how budgets are managed."
+        ]
+      },
+      "entryEvent": {
+        "ideas": [
+          {
+            "type": "artifact",
+            "materials": [
+              "Letter from principal (template provided)",
+              "Optional: short video message"
+            ],
+            "title": "Principal's Playground Plea",
+            "description": "The principal sends a letter (or makes a video announcement) to the class, asking for their help to design a new, fun, and safe playground for the school, mentioning budget constraints and the need to include features for all students.",
+            "timeNeeded": "15-20 minutes"
+          },
+          {
+            "materials": [
+              "Paper",
+              "drawing supplies"
+            ],
+            "type": "activity",
+            "description": "Students individually brainstorm and sketch their 'dream playground' features. Then, they share their ideas in small groups, discussing what makes a playground fun and accessible for everyone.",
+            "timeNeeded": "30 minutes",
+            "title": "Dream Playground Brainstorm"
+          }
+        ]
+      },
+      "create": {
+        "prototypingIdeas": [
+          "Design playground blueprints on grid paper, labeling dimensions, area, and perimeter for each feature.",
+          "Create 3D models of their playground using craft supplies, clearly showing equipment placement and scale.",
+          "Develop a detailed budget sheet for their chosen playground equipment, ensuring it stays within the allocated funds."
+        ],
+        "iterationPlan": "Students will revise their blueprint or model based on peer feedback and ensure all math calculations (area, perimeter, budget) are accurate and meet project requirements. They will highlight changes made.",
+        "materials": [
+          "Grid paper",
+          "Rulers",
+          "Pencils",
+          "Colored pencils or markers",
+          "Construction paper",
+          "Scissors",
+          "Glue",
+          "Small blocks or craft sticks for 3D models",
+          "Playground equipment price list (simplified)"
+        ],
+        "critiqueProtocol": "Use a 'Two Stars and a Wish' protocol where peers identify two positive aspects of a design and offer one constructive suggestion for improvement, focusing on budget, space, and inclusivity."
+      },
+      "investigation": {
+        "resources": [
+          {
+            "description": "A teacher-created or simplified online catalog with images and prices for various playground elements like swings, slides, climbing structures, and ground cover, adjusted for grade 3 math.",
+            "title": "Playground Equipment Catalog (Simplified)",
+            "type": "tool"
+          },
+          {
+            "description": "Worksheets or interactive online tools for practicing calculating perimeter and area of different shapes, tailored to grade 3 math standards.",
+            "title": "Perimeter & Area Practice Sheets",
+            "type": "template"
+          }
+        ],
+        "activities": [
+          {
+            "phase": 2,
+            "type": "research",
+            "title": "Playground User Interviews",
+            "description": "Students interview classmates (or other grade levels if possible) to gather ideas on what makes a playground fun and what features they would like to see, focusing on different age groups and abilities.",
+            "duration": "45 minutes"
+          },
+          {
+            "phase": 2,
+            "type": "skill-building",
+            "title": "Measuring Our Space",
+            "duration": "60 minutes",
+            "description": "Students use measuring tools (rulers, yardsticks, tape measures) to measure the perimeter and area of different spaces in the classroom or schoolyard, practicing foundational math skills."
+          },
+          {
+            "type": "skill-building",
+            "phase": 2,
+            "title": "Budgeting Basics for Playgrounds",
+            "duration": "60 minutes",
+            "description": "Students learn about different playground equipment costs using simplified price lists. They practice adding and subtracting money to understand how to stay within a budget."
+          }
+        ],
+        "empathyExercises": [
+          "Interviewing diverse groups of students (e.g., younger grades, students with different physical abilities) about their playground needs and wants.",
+          "Reflecting on personal experiences with playgrounds and identifying elements that promote inclusion and fun for all."
+        ],
+        "skills": [
+          "Measuring perimeter and area",
+          "Adding and subtracting money",
+          "Data collection (interviewing)",
+          "Problem-solving with constraints",
+          "Collaboration and communication"
+        ]
+      }
+    },
+    "id": "exemplar-budget-park",
+    "drivingQuestion": {
+      "selected": "How can we, as Park Designers, plan a new playground for our school to create a fun space for everyone?",
+      "formula": {
+        "product": "a new playground",
+        "action": "plan",
+        "role": "Park Designers",
+        "audience": "our school",
+        "purpose": "to create a fun space for everyone"
+      },
+      "options": [
+        "How can we, as Park Designers, plan a new playground for our school to create a fun space for everyone?",
+        "How can we, as Junior City Planners, design a community park layout for our neighborhood to create a fun and affordable green space?",
+        "How can we, as Community Park Architects, develop a budget-friendly park proposal for our town's Recreation Department to meet the diverse needs of local families?"
+      ]
+    },
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "subjects": [
+      "Math"
+    ],
+    "createdAt": "2026-04-04T11:27:20.497Z",
+    "comfortLevel": "new",
+    "published": {
+      "publishedAt": "2026-04-04T11:27:20.497Z",
+      "ratingSum": 0,
+      "authorName": "PBLTeach Team",
+      "featured": false,
+      "hidden": false,
+      "adaptationCount": 0,
+      "authorSchool": null,
+      "ratingCount": 0
+    },
+    "userId": "pblteach-team",
+    "source": "builder",
+    "crossCurricular": {
+      "connections": [
+        {
+          "topic": "Communication & Persuasion",
+          "connectionDescription": "Students practice interviewing skills, explaining their design choices clearly, and listening actively to feedback during critique and presentations.",
+          "subject": "English Language Arts"
+        },
+        {
+          "connectionDescription": "Students can briefly explore the types of materials used in playground equipment and basic concepts of forces (e.g., how swings work) when considering safety and durability.",
+          "topic": "Forces & Materials",
+          "subject": "Science"
+        },
+        {
+          "subject": "Social Studies",
+          "topic": "Community Planning",
+          "connectionDescription": "Students learn about the process of planning public spaces and making decisions that benefit a diverse community, considering different needs and perspectives."
+        }
+      ],
+      "standardsAligned": [
+        {
+          "gradeLevel": "3",
+          "subject": "Math",
+          "code": "CCSS.MATH.CONTENT.3.MD.C.5",
+          "description": "Recognize area as an attribute of plane figures and understand concepts of area measurement."
+        },
+        {
+          "gradeLevel": "3",
+          "code": "CCSS.MATH.CONTENT.3.MD.D.8",
+          "description": "Solve real world and mathematical problems involving perimeters of polygons, including finding the perimeter given the side lengths, finding an unknown side length, and exhibiting rectangles with the same perimeter and different areas or with the same area and different perimeters.",
+          "subject": "Math"
+        },
+        {
+          "description": "Fluently add and subtract within 1000 using strategies and algorithms based on place value, properties of operations, and/or the relationship between addition and subtraction.",
+          "subject": "Math",
+          "code": "CCSS.MATH.CONTENT.3.NBT.A.2",
+          "gradeLevel": "3"
+        }
+      ]
+    },
+    "topic": "Designing a community park within a budget using area, perimeter, and money math",
+    "title": "Budget Park",
+    "assessment": {
+      "summative": [
+        {
+          "description": "Students present their final playground blueprint/model and budget, explaining their design choices, mathematical calculations, and how they met the project criteria.",
+          "method": "rubric",
+          "title": "Final Playground Design & Presentation",
+          "type": "summative",
+          "phase": 5
+        }
+      ],
+      "rubricType": "both",
+      "formative": [
+        {
+          "type": "formative",
+          "phase": 1,
+          "method": "journal",
+          "title": "Playground Needs Survey Check-in",
+          "description": "Teacher reviews student interview notes and initial brainstorms to check for understanding of user needs and initial ideas."
+        },
+        {
+          "description": "A short quiz or worksheet to assess students' understanding of calculating perimeter and area before applying it to their designs.",
+          "title": "Perimeter & Area Practice Quiz",
+          "method": "other",
+          "phase": 2,
+          "type": "formative"
+        },
+        {
+          "title": "Budget Tracking Check",
+          "method": "conference",
+          "description": "Teacher reviews students' preliminary budget sheets to ensure they are accurately adding and subtracting costs and staying within the given budget.",
+          "phase": 3,
+          "type": "formative"
+        }
+      ]
+    },
+    "duration": "mini",
+    "status": "published",
+    "updatedAt": "2026-04-04T11:27:20.497Z"
+  },
+  {
+    "gradeLevel": "7",
+    "phases": {
+      "entryEvent": {
+        "ideas": [
+          {
+            "materials": [
+              "Projector",
+              "Speakers",
+              "Curated podcast excerpts"
+            ],
+            "type": "video",
+            "description": "Play excerpts from compelling narrative podcasts that tell local community stories. Discuss what makes them engaging and why sharing community stories is important.",
+            "timeNeeded": "45 minutes",
+            "title": "Echoes of Our Town Podcast Showcase"
+          },
+          {
+            "materials": [
+              "Guest speaker",
+              "Projector (optional for visuals)"
+            ],
+            "type": "guest",
+            "description": "Invite a local journalist, historian, or podcaster to share their experiences in finding and telling community stories, and the impact of their work.",
+            "timeNeeded": "45-60 minutes",
+            "title": "Guest Speaker: Local Storyteller/Podcaster"
+          }
+        ]
+      },
+      "share": {
+        "presentationFormats": [
+          "Play selected podcast episodes for the audience, with student creators introducing their work and sharing their process.",
+          "Students host a live 'Q&A' session after playing their podcast, answering questions about their story, challenges, and learning.",
+          "Create a simple website or blog post featuring the podcasts, including creator bios and reflections."
+        ],
+        "audienceSuggestions": [
+          "School assembly or morning announcements",
+          "Parent-teacher night or school open house",
+          "School website or learning management system",
+          "A 'Podcast Listening Party' in the classroom for peers and invited guests",
+          "Local community radio station (if applicable and feasible for a mini-project)"
+        ],
+        "reflectionPrompts": [
+          "What was the most challenging part of bringing your community story to life, and how did you overcome it?",
+          "How did creating this podcast change your understanding of your community or specific individuals within it?",
+          "What feedback did you receive from your audience, and what did you learn from their reactions?",
+          "If you were to create another podcast episode, what would you do differently and why?"
+        ]
+      },
+      "problemChallenge": {
+        "refinedDQ": "How can we, as local storytellers, create a podcast episode for our school and families to share a unique story about our community?",
+        "expertSuggestions": [
+          "Invite a local journalist or media professional to offer tips on crafting compelling narratives and ethical interviewing.",
+          "Have a sound engineer or experienced podcaster provide feedback on early audio recording samples and technical quality.",
+          "Connect students with local historians or community leaders to help them identify lesser-known stories."
+        ],
+        "needToKnow": [
+          "How do I find a compelling, unique story in our community?",
+          "What makes a good interview, and how do I conduct one respectfully?",
+          "How do I write an engaging podcast script that flows well?",
+          "What are the best practices for recording clear, high-quality audio?",
+          "How do I use audio editing software to combine interviews, narration, and sound effects?",
+          "How can I ensure my podcast is appropriate and respectful for our school and families?"
+        ]
+      },
+      "create": {
+        "iterationPlan": "Students revise their podcast scripts based on peer and teacher feedback, re-record audio as needed to improve clarity and performance, and refine their editing for impact and engagement.",
+        "materials": [
+          "Student devices (phones/tablets)",
+          "Headphones",
+          "Basic audio editing software/apps",
+          "Podcast script templates",
+          "Microphones (optional, if available)"
+        ],
+        "critiqueProtocol": "Students use a 'Two Stars and a Wish' protocol, providing two specific positive comments about a peer's work and one actionable suggestion for improvement.",
+        "prototypingIdeas": [
+          "Script Slam: Students share early script drafts with peers for feedback on narrative arc, clarity, and overall flow.",
+          "Sound Check Studio: Record short interview segments and narration, then listen back for audio quality, pacing, and vocal delivery.",
+          "Mini-Mix: Assemble a 1-2 minute raw audio segment with intro/outro music to test transitions and overall sound before full production."
+        ]
+      },
+      "investigation": {
+        "empathyExercises": [
+          "Walk in Their Shoes: Students brainstorm different perspectives within the community related to potential story topics.",
+          "Listen Deeply: Practice non-judgmental listening during mock interviews, focusing on understanding the speaker's emotions and experiences."
+        ],
+        "skills": [
+          "Active listening",
+          "Interviewing techniques",
+          "Narrative storytelling",
+          "Scriptwriting",
+          "Basic audio recording",
+          "Basic audio editing",
+          "Critical analysis of media"
+        ],
+        "activities": [
+          {
+            "phase": 2,
+            "type": "research",
+            "duration": "60 minutes",
+            "description": "Students brainstorm and research potential unique stories, local traditions, or interesting community members who could be featured in a podcast episode.",
+            "title": "Community Story Scavenger Hunt"
+          },
+          {
+            "duration": "90 minutes",
+            "description": "Students learn and practice active listening skills and craft open-ended questions designed to elicit compelling stories and insights from interview subjects.",
+            "title": "Interview Masterclass",
+            "type": "skill-building",
+            "phase": 2
+          },
+          {
+            "title": "Podcast Dissection Workshop",
+            "description": "Students analyze the structure, narrative arc, use of sound, and storytelling techniques of various existing podcasts to identify effective elements.",
+            "duration": "60 minutes",
+            "phase": 2,
+            "type": "skill-building"
+          },
+          {
+            "type": "skill-building",
+            "phase": 2,
+            "description": "Hands-on practice with basic audio recording using student devices (phones/tablets) and an introduction to simple audio editing applications.",
+            "duration": "90 minutes",
+            "title": "Audio Toolkit Exploration"
+          }
+        ],
+        "resources": [
+          {
+            "type": "template",
+            "title": "Sample Interview Question Guide",
+            "description": "A guide with examples of open-ended questions to help students prepare for interviews."
+          },
+          {
+            "title": "Podcast Script Template",
+            "type": "template",
+            "description": "A structured template for students to organize their podcast script, including intro, narrative, interview segments, and outro."
+          },
+          {
+            "type": "tool",
+            "title": "Free Audio Editing Apps (e.g., GarageBand, Anchor by Spotify)",
+            "description": "Accessible software/apps for recording and editing audio on student devices."
+          },
+          {
+            "title": "Examples of Narrative Community Podcasts",
+            "type": "video",
+            "description": "Curated list of podcasts showcasing effective storytelling about local communities or specific individuals."
+          }
+        ]
+      }
+    },
+    "id": "exemplar-community-podcast",
+    "drivingQuestion": {
+      "selected": "How can we, as local storytellers, create a podcast episode for our school and families to share a unique story about our community?",
+      "formula": {
+        "action": "create",
+        "product": "podcast episode",
+        "role": "local storytellers",
+        "purpose": "share a unique story about our community",
+        "audience": "our school and families"
+      },
+      "options": [
+        "How can we, as local storytellers, create a podcast episode for our school and families to share a unique story about our community?",
+        "How can we, as community journalists, produce a short podcast series for local residents to amplify untold stories and perspectives from our neighborhood?",
+        "How can we, as youth oral historians, curate a podcast series for our local historical society and future generations to capture and share the evolving narratives of our community's heritage?"
+      ]
+    },
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "subjects": [
+      "ELA"
+    ],
+    "createdAt": "2026-04-04T11:29:57.984Z",
+    "comfortLevel": "tried",
+    "published": {
+      "hidden": false,
+      "adaptationCount": 0,
+      "authorName": "PBLTeach Team",
+      "featured": false,
+      "ratingCount": 0,
+      "authorSchool": null,
+      "publishedAt": "2026-04-04T11:29:57.984Z",
+      "ratingSum": 0
+    },
+    "userId": "pblteach-team",
+    "source": "builder",
+    "crossCurricular": {
+      "connections": [
+        {
+          "topic": "Local History & Civics",
+          "connectionDescription": "Students research and explore historical events, local figures, or current community issues to find compelling stories for their podcasts.",
+          "subject": "Social Studies"
+        },
+        {
+          "subject": "Technology/Digital Media",
+          "connectionDescription": "Students develop technical skills in audio recording, editing, and understanding media ethics while producing a digital product.",
+          "topic": "Audio Production & Digital Literacy"
+        },
+        {
+          "topic": "Sound Design & Creative Expression",
+          "connectionDescription": "Students consider how music, sound effects, and vocal tone contribute to the mood and impact of their storytelling.",
+          "subject": "Music/Arts"
+        }
+      ],
+      "standardsAligned": [
+        {
+          "gradeLevel": "7",
+          "subject": "ELA",
+          "code": "CCSS.ELA-LITERACY.SL.7.4",
+          "description": "Present claims and findings, emphasizing salient points in a focused, coherent manner with pertinent descriptions, facts, details, and examples; use appropriate eye contact, adequate volume, and clear pronunciation."
+        },
+        {
+          "subject": "ELA",
+          "description": "Write narratives to develop real or imagined experiences or events using effective technique, relevant descriptive details, and well-structured event sequences.",
+          "code": "CCSS.ELA-LITERACY.W.7.3",
+          "gradeLevel": "7"
+        },
+        {
+          "gradeLevel": "7",
+          "description": "Engage effectively in a range of collaborative discussions (one-on-one, in groups, and teacher-led) with diverse partners on grade 7 topics, texts, and issues, building on others' ideas and expressing their own clearly.",
+          "subject": "ELA",
+          "code": "CCSS.ELA-LITERACY.SL.7.1"
+        }
+      ]
+    },
+    "topic": "Producing a podcast series that tells stories from the local community",
+    "title": "Community Podcast",
+    "assessment": {
+      "summative": [
+        {
+          "method": "rubric",
+          "title": "Final Podcast Episode",
+          "description": "Assessment of the completed podcast episode based on a rubric evaluating storytelling, audio quality, engagement, and adherence to project requirements.",
+          "type": "summative",
+          "phase": 5
+        },
+        {
+          "description": "Students submit a written reflection or present on their learning journey, challenges, successes, and insights gained during the project.",
+          "method": "journal",
+          "title": "Project Reflection",
+          "type": "summative",
+          "phase": 5
+        }
+      ],
+      "rubricType": "both",
+      "formative": [
+        {
+          "phase": 2,
+          "type": "formative",
+          "title": "Interview Question Critique",
+          "method": "peer-assessment",
+          "description": "Students submit interview questions for peer and teacher feedback on depth, clarity, and potential to elicit compelling stories."
+        },
+        {
+          "method": "rubric",
+          "title": "Podcast Script Draft Review",
+          "description": "Teacher and peer review of podcast scripts using a checklist focused on story arc, clarity, narrative voice, and alignment to the DQ.",
+          "type": "formative",
+          "phase": 3
+        },
+        {
+          "type": "formative",
+          "phase": 4,
+          "method": "conference",
+          "title": "Audio Recording Check-in",
+          "description": "Teacher listens to short audio samples from students to provide targeted feedback on recording quality, clarity, and initial editing progress."
+        }
+      ]
+    },
+    "status": "published",
+    "duration": "mini",
+    "updatedAt": "2026-04-04T11:29:57.984Z"
+  },
+  {
+    "title": "Create a Country",
+    "assessment": {
+      "summative": [
+        {
+          "phase": 5,
+          "type": "summative",
+          "description": "Final country plan (e.g., 3D model, map, booklet) assessed for inclusion of all required elements, creativity, and sustainability principles.",
+          "title": "Sustainable Country Plan & Model",
+          "method": "rubric"
+        },
+        {
+          "type": "summative",
+          "phase": 5,
+          "description": "Group presentation assessed on clarity, organization, teamwork, and demonstration of understanding of their country's design and sustainability.",
+          "method": "rubric",
+          "title": "Country Presentation"
+        },
+        {
+          "type": "summative",
+          "phase": 5,
+          "description": "Individual student reflection on their learning journey, challenges, successes, and understanding of sustainability and civics.",
+          "method": "journal",
+          "title": "Project Reflection"
+        }
+      ],
+      "rubricType": "both",
+      "formative": [
+        {
+          "phase": 2,
+          "type": "formative",
+          "title": "Research Notes Checklist",
+          "method": "rubric",
+          "description": "Teacher checks student notes on geography, government, economy, and environment for completeness and accuracy."
+        },
+        {
+          "description": "Teacher observes and takes notes on student collaboration, participation, and problem-solving during group activities.",
+          "title": "Group Work Observation",
+          "method": "conference",
+          "phase": 2,
+          "type": "formative"
+        },
+        {
+          "title": "Journal Entries on 'Need to Knows'",
+          "method": "journal",
+          "description": "Students reflect in their journals on what they've learned and what questions they still have about building a country.",
+          "phase": 3,
+          "type": "formative"
+        },
+        {
+          "title": "Critique Feedback Form",
+          "method": "peer-assessment",
+          "description": "Students provide constructive feedback to peers using the 'Two Stars and a Wish' protocol, demonstrating understanding of project criteria.",
+          "phase": 4,
+          "type": "formative"
+        }
+      ]
+    },
+    "updatedAt": "2026-04-04T11:26:52.445Z",
+    "status": "published",
+    "duration": "full",
+    "topic": "Designing a sustainable country with its own geography, government, economy, and environmental plan",
+    "crossCurricular": {
+      "standardsAligned": [
+        {
+          "gradeLevel": "3",
+          "subject": "Social Studies",
+          "description": "Describe the physical and human characteristics of a place.",
+          "code": "SS.3.G.1.1"
+        },
+        {
+          "gradeLevel": "3",
+          "description": "Explain the importance of rules and laws in a community.",
+          "subject": "Social Studies",
+          "code": "SS.3.C.2.1"
+        },
+        {
+          "gradeLevel": "3",
+          "subject": "Science",
+          "description": "Describe the various ways plants and animals depend on each other and their environment.",
+          "code": "SC.3.L.17.1"
+        },
+        {
+          "gradeLevel": "3",
+          "subject": "Science",
+          "description": "Recognize that there are a variety of natural resources and that these resources are important to living things.",
+          "code": "SC.3.E.6.1"
+        },
+        {
+          "gradeLevel": "3",
+          "description": "Write informative/explanatory texts to examine a topic and convey ideas and information clearly.",
+          "code": "ELA.3.W.2.1",
+          "subject": "English Language Arts"
+        },
+        {
+          "subject": "English Language Arts",
+          "description": "Report on a topic or text, tell a story, or recount an experience with appropriate facts and relevant descriptive details, speaking clearly at an understandable pace.",
+          "code": "ELA.3.SL.1.4",
+          "gradeLevel": "3"
+        }
+      ],
+      "connections": [
+        {
+          "topic": "Geography, Government, Economics, Civics",
+          "connectionDescription": "Students apply knowledge of physical and human geography, understand basic governmental structures and laws, explore fundamental economic concepts (needs/wants, resources), and practice civic responsibility by designing a functional society.",
+          "subject": "Social Studies"
+        },
+        {
+          "subject": "Science",
+          "topic": "Ecosystems, Natural Resources, Environmental Science, Sustainability",
+          "connectionDescription": "Students investigate how living things interact with their environment, the importance of natural resources, human impact on ecosystems, and develop plans for environmental protection and sustainable living."
+        },
+        {
+          "subject": "English Language Arts",
+          "connectionDescription": "Students conduct research, synthesize information, write descriptive and persuasive texts for their country plan, develop presentation skills, and engage in collaborative discussions.",
+          "topic": "Research, Expository Writing, Oral Communication, Collaboration"
+        },
+        {
+          "connectionDescription": "Students use measurement for map scale and model construction, develop spatial reasoning skills when designing their country's layout, and potentially represent resource allocation or population data.",
+          "topic": "Measurement, Spatial Reasoning, Data Representation",
+          "subject": "Mathematics"
+        },
+        {
+          "subject": "Art",
+          "connectionDescription": "Students apply design principles to create maps, flags, and 3D models of their country, using visual elements to communicate ideas and represent their vision.",
+          "topic": "Design, Visual Communication, Model Building"
+        }
+      ]
+    },
+    "userId": "pblteach-team",
+    "published": {
+      "publishedAt": "2026-04-04T11:26:52.445Z",
+      "ratingSum": 0,
+      "hidden": false,
+      "adaptationCount": 0,
+      "featured": true,
+      "authorName": "PBLTeach Team",
+      "ratingCount": 0,
+      "authorSchool": null
+    },
+    "source": "builder",
+    "createdAt": "2026-04-04T11:26:52.445Z",
+    "subjects": [
+      "Social Studies",
+      "Science"
+    ],
+    "comfortLevel": "tried",
+    "id": "exemplar-create-a-country",
+    "drivingQuestion": {
+      "options": [
+        "How can we, as young country builders, design a sustainable country plan for future citizens to create a happy and healthy place for people and nature?",
+        "How can we, as sustainability architects, propose a detailed plan for a sustainable country to our school board and local community leaders to inspire others to build communities that last?",
+        "How can we, as global citizen leaders, develop and present a comprehensive model of a sustainable country and its governing policies to an international sustainability conference to demonstrate how a country can thrive while protecting the planet and its people?"
+      ],
+      "selected": "How can we, as young country builders, design a sustainable country plan for future citizens to create a happy and healthy place for people and nature?",
+      "formula": {
+        "action": "design",
+        "product": "a sustainable country plan",
+        "role": "young country builders",
+        "purpose": "to create a happy and healthy place for people and nature",
+        "audience": "future citizens"
+      }
+    },
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "gradeLevel": "3",
+    "phases": {
+      "create": {
+        "prototypingIdeas": [
+          "A 3D model of their country, showing landforms, cities, and natural areas.",
+          "A 'Country Plan' booklet including a map, flag, simple constitution, and environmental policy.",
+          "A multimedia presentation (e.g., Google Slides with drawings/photos) showcasing their country's features.",
+          "A detailed map with labeled geographical features, resource locations, and community areas."
+        ],
+        "iterationPlan": "After receiving feedback from peers and the teacher, students will have dedicated time to revise their country plan. They will focus on incorporating at least one 'wish' and refining elements for clarity and sustainability.",
+        "critiqueProtocol": "Students will use 'Two Stars and a Wish' protocol. They will identify two things they like about a peer's country plan (stars) and one suggestion for improvement (wish).",
+        "materials": [
+          "Poster board or large paper",
+          "Art supplies (markers, crayons, colored pencils, paint)",
+          "Recycled materials (cardboard, plastic containers for 3D models)",
+          "Construction paper",
+          "Clay or play-doh",
+          "Glue, scissors",
+          "Computer/tablet for research and presentation tools (optional)"
+        ]
+      },
+      "investigation": {
+        "resources": [
+          {
+            "title": "National Geographic Kids: Countries",
+            "type": "article",
+            "description": "Kid-friendly articles and videos explaining different countries, cultures, and geographical features."
+          },
+          {
+            "description": "Short animated videos explaining concepts like communities, government, and natural resources in an accessible way for young learners.",
+            "title": "BrainPOP Jr. - Communities",
+            "type": "video"
+          },
+          {
+            "title": "My Map Book by Sara Fanelli",
+            "type": "book",
+            "description": "An engaging book that introduces the concept of maps and different things they can represent, inspiring creative map-making."
+          },
+          {
+            "description": "A simple graphic organizer to help students categorize and understand the difference between essential needs and desires.",
+            "title": "Basic Needs vs. Wants Chart",
+            "type": "template"
+          }
+        ],
+        "activities": [
+          {
+            "phase": 2,
+            "type": "research",
+            "title": "Geography Explorers",
+            "description": "Students research different types of landforms, bodies of water, and natural resources. They identify how these features impact where people live and what they need to survive.",
+            "duration": "2-3 days"
+          },
+          {
+            "phase": 2,
+            "type": "skill-building",
+            "description": "Introduce basic concepts of government (rules, leaders, community needs). Students compare simple rules from their school or home to basic laws needed for a country.",
+            "duration": "2 days",
+            "title": "Government Galore"
+          },
+          {
+            "phase": 2,
+            "type": "skill-building",
+            "title": "Economy Basics: Needs vs. Wants",
+            "description": "Students learn about essential needs (food, shelter, water) versus wants. They brainstorm ways a country can provide for its citizens' basic needs and manage resources.",
+            "duration": "1-2 days"
+          },
+          {
+            "phase": 2,
+            "type": "research",
+            "title": "Environmental Stewards",
+            "duration": "2 days",
+            "description": "Students investigate local environmental issues (e.g., litter, water conservation). They discuss the importance of protecting nature and brainstorm simple solutions for their own country."
+          },
+          {
+            "type": "collaboration",
+            "phase": 2,
+            "title": "Mapping Our Ideas",
+            "description": "In small groups, students begin to sketch initial ideas for their country's geography, marking where cities, farms, and natural areas might go.",
+            "duration": "1 day"
+          }
+        ],
+        "skills": [
+          "Research and information gathering",
+          "Map reading and creation",
+          "Problem-solving and critical thinking",
+          "Collaboration and communication",
+          "Identifying cause and effect (e.g., environmental impact)",
+          "Basic civic understanding"
+        ],
+        "empathyExercises": [
+          "Imagine you are a wild animal living in this country. What do you need to survive and be safe?",
+          "Think about a new family moving to your country. What would they need to feel welcome and have a good life?",
+          "If you were a farmer, what would be important for your crops and animals to thrive in this country?"
+        ]
+      },
+      "entryEvent": {
+        "ideas": [
+          {
+            "type": "simulation",
+            "materials": [
+              "large map or poster paper",
+              "markers",
+              "scenario cards (e.g., 'no fresh water', 'dangerous animals')"
+            ],
+            "title": "Lost on 'New Earth' Simulation",
+            "description": "Students imagine they are part of a small group stranded on a newly discovered planet. They must work together to decide what their new society needs to survive and thrive, considering land, resources, and basic rules.",
+            "timeNeeded": "60 minutes"
+          },
+          {
+            "description": "Invite a local community planner, city council member, or a parent in a related field to share what goes into designing a town or city. They can discuss infrastructure, services, and making decisions for a community.",
+            "timeNeeded": "45 minutes",
+            "title": "Guest Speaker: Community Planner",
+            "materials": [
+              "projector (optional)",
+              "questions prepared by students"
+            ],
+            "type": "guest"
+          }
+        ]
+      },
+      "problemChallenge": {
+        "refinedDQ": "How can we, as young country builders, design a sustainable country plan for future citizens to create a happy and healthy place for people and nature?",
+        "needToKnow": [
+          "What does 'sustainable' really mean for a country?",
+          "How do we decide what rules and leaders our country needs?",
+          "What kind of geography would be best for people and animals?",
+          "How will people get food, water, and homes in our country?",
+          "What do we need to do to protect the environment in our country?",
+          "How can we make sure everyone in our country feels happy and safe?"
+        ],
+        "expertSuggestions": [
+          "Think about how everything in your country plan connects together, like a big puzzle.",
+          "Remember that a good country takes care of its land, its people, and its future.",
+          "Consider what makes a community fair and where everyone has a voice, even if it's a small one.",
+          "Don't forget to include places for fun and learning, not just work and rules."
+        ]
+      },
+      "share": {
+        "presentationFormats": [
+          "Country Fair Booth: Each group sets up a display with their model/plan and answers questions.",
+          "Short 'Commercial' or 'News Report': Students present highlights of their country, explaining why it's a great place to live.",
+          "Formal Presentation: Groups present their country plan using visuals (posters, slides, models) to an audience.",
+          "Interactive Tour: Students guide the audience through their 3D model or map, explaining key features."
+        ],
+        "audienceSuggestions": [
+          "Other 3rd-grade classes",
+          "Parents and family members (during an open house or 'Country Fair')",
+          "School principal and administrators",
+          "A younger grade class (e.g., 1st grade) where students can 'teach' them about their country"
+        ],
+        "reflectionPrompts": [
+          "What was the most challenging part of designing your country, and how did your group overcome it?",
+          "What is one thing you learned about sustainability that you didn't know before?",
+          "If you could add one more thing to your country plan, what would it be and why?",
+          "How did your group work together to build your country, and what did you learn about teamwork?",
+          "What makes your country a happy and healthy place for both people and nature?"
+        ]
+      }
+    }
+  },
+  {
+    "gradeLevel": "5",
+    "phases": {
+      "create": {
+        "prototypingIdeas": [
+          "Students sketch multiple small-scale poster layouts, experimenting with different headlines, images, and calls to action.",
+          "Students draft key messages or slogans for their PSA, testing different wording for clarity and impact.",
+          "Students create a rough 'storyboard' for their poster, showing the flow of information and visual elements."
+        ],
+        "critiqueProtocol": "Use 'Two Stars and a Wish' protocol: Students present their poster prototype to a peer group. Each peer offers two specific positive observations ('stars') and one constructive suggestion for improvement ('wish').",
+        "materials": [
+          "Poster board (various sizes)",
+          "Markers, colored pencils, crayons",
+          "Rulers",
+          "Scissors",
+          "Glue sticks",
+          "Recycled magazines or newspapers (for collage elements)",
+          "Access to computers/printers for images (optional)"
+        ],
+        "iterationPlan": "Based on peer feedback, students will revise their poster prototypes, focusing on improving clarity of message, visual appeal, and the strength of their call to action. They will make at least one significant change."
+      },
+      "investigation": {
+        "empathyExercises": [
+          "Imagine you are a small animal living in the affected area. How does this environmental problem impact your daily life?",
+          "Discuss as a class: How does this issue affect our school community or local neighborhood? What might people not realize?"
+        ],
+        "skills": [
+          "Scientific observation and data collection",
+          "Identifying reliable information sources",
+          "Summarizing complex information",
+          "Analyzing persuasive communication",
+          "Collaborative problem-solving"
+        ],
+        "activities": [
+          {
+            "phase": 2,
+            "type": "research",
+            "title": "Environmental Issue Deep Dive",
+            "duration": "90 minutes",
+            "description": "Students choose one specific local environmental issue observed during the Entry Event or identified through initial research. They use provided resources to gather information on its causes, effects, and potential solutions."
+          },
+          {
+            "phase": 2,
+            "type": "skill-building",
+            "duration": "45 minutes",
+            "description": "Students analyze examples of public service announcements (PSAs) to identify common features, persuasive techniques, and visual design elements that make them impactful. They discuss what makes a message clear and memorable.",
+            "title": "Effective PSA Elements"
+          }
+        ],
+        "resources": [
+          {
+            "description": "Information on local recycling programs, litter prevention, and environmental initiatives in the community.",
+            "type": "article",
+            "title": "Local Waste Management Website"
+          },
+          {
+            "description": "A curated collection of short, effective public service announcements designed for a younger audience, focusing on environmental themes.",
+            "title": "Examples of PSAs for Kids",
+            "type": "video"
+          },
+          {
+            "title": "School Library Books on Local Ecosystems",
+            "type": "book",
+            "description": "Books providing background information on local flora, fauna, and environmental challenges specific to the region."
+          }
+        ]
+      },
+      "entryEvent": {
+        "ideas": [
+          {
+            "materials": [
+              "Clipboards",
+              "Observation checklists/notebooks",
+              "Pencils",
+              "Optional: Cameras or drawing supplies"
+            ],
+            "type": "activity",
+            "description": "Take students on a guided walk around the school grounds or a nearby park. Students act as 'environmental detectives' to observe and document signs of potential local environmental issues like litter, water runoff, or unhealthy plants. This activity directly connects them to the problem.",
+            "timeNeeded": "45 minutes",
+            "title": "Local Environmental Mystery Walk"
+          }
+        ]
+      },
+      "share": {
+        "presentationFormats": [
+          "In-class 'Poster Walk' with students explaining their design and message to classmates.",
+          "Short, informal presentations to a small group of invited teachers or administrators.",
+          "Digital display of posters on a rotating screen in the school lobby."
+        ],
+        "audienceSuggestions": [
+          "Display posters in prominent school hallways or the library for the entire school community to see.",
+          "Organize a 'Gallery Walk' where other classes visit and view the posters, with students briefly explaining their work.",
+          "Present posters during a school assembly or morning announcements (a select few, given mini-project duration).",
+          "Share digital versions of posters on the school website or social media (with parent permission)."
+        ],
+        "reflectionPrompts": [
+          "What was the most challenging part of creating your PSA poster, and how did you overcome it?",
+          "How did your poster effectively communicate the environmental problem and a solution to our school community?",
+          "What new understanding about local environmental issues or persuasive communication did you gain?",
+          "If you could revise your poster one more time, what would you change and why?"
+        ]
+      },
+      "problemChallenge": {
+        "expertSuggestions": [
+          "Invite a local environmental volunteer (real or simulated by teacher) to share insights on common local issues and effective community outreach strategies.",
+          "Review a gallery of award-winning PSA posters with students, discussing their impact and design choices."
+        ],
+        "needToKnow": [
+          "What is the most pressing local environmental problem we want to address?",
+          "Who is our target audience within the school community?",
+          "What specific message do we want to convey?",
+          "What are the key facts or statistics we need to include?",
+          "What actions can our audience take to help?",
+          "What makes a PSA poster visually appealing and easy to understand?"
+        ],
+        "refinedDQ": "How can we, as junior scientists, create an impactful public service announcement (PSA) poster for our school community to raise awareness about a local environmental problem and inspire action?"
+      }
+    },
+    "id": "exemplar-eco-report",
+    "drivingQuestion": {
+      "selected": "How can we, as junior scientists, create a public service announcement (PSA) poster for our school community to raise awareness about a local environmental problem?",
+      "formula": {
+        "action": "create",
+        "product": "a public service announcement (PSA) poster",
+        "role": "junior scientists",
+        "audience": "our school community",
+        "purpose": "to raise awareness about a local environmental problem"
+      },
+      "options": [
+        "How can we, as junior scientists, create a public service announcement (PSA) poster for our school community to raise awareness about a local environmental problem?",
+        "How can we, as environmental researchers, recommend a short action plan for local residents to help reduce a specific environmental issue in our neighborhood?",
+        "How can we, as citizen scientists, propose a persuasive presentation for our town council to advocate for a change that improves a local environmental concern?"
+      ]
+    },
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "createdAt": "2026-04-04T11:28:52.216Z",
+    "subjects": [
+      "Science"
+    ],
+    "comfortLevel": "tried",
+    "userId": "pblteach-team",
+    "published": {
+      "authorSchool": null,
+      "ratingCount": 0,
+      "featured": false,
+      "authorName": "PBLTeach Team",
+      "adaptationCount": 0,
+      "hidden": false,
+      "ratingSum": 0,
+      "publishedAt": "2026-04-04T11:28:52.216Z"
+    },
+    "source": "builder",
+    "crossCurricular": {
+      "connections": [
+        {
+          "subject": "English Language Arts",
+          "topic": "Informational Writing & Persuasive Communication",
+          "connectionDescription": "Students conduct research, synthesize information, and craft persuasive messages for their PSA posters. They practice clear and concise writing."
+        },
+        {
+          "topic": "Visual Communication & Design Principles",
+          "connectionDescription": "Students apply design principles (layout, color, typography, imagery) to create visually appealing and effective PSA posters that convey their message.",
+          "subject": "Art"
+        },
+        {
+          "connectionDescription": "Students investigate how environmental issues impact their local community and explore their role as active citizens in addressing these problems.",
+          "topic": "Community & Citizenship",
+          "subject": "Social Studies"
+        }
+      ],
+      "standardsAligned": [
+        {
+          "code": "5-LS2-1",
+          "subject": "Science",
+          "description": "Develop a model to describe the movement of matter among plants, animals, decomposers, and the environment.",
+          "gradeLevel": "5"
+        },
+        {
+          "gradeLevel": "5",
+          "subject": "English Language Arts",
+          "code": "CCSS.ELA-LITERACY.W.5.7",
+          "description": "Conduct short research projects that use several sources to build knowledge through investigation of different aspects of a topic."
+        },
+        {
+          "subject": "English Language Arts",
+          "description": "Include multimedia components (e.g., graphics, sound) and visual displays in presentations when appropriate to enhance the development of main ideas or themes.",
+          "code": "CCSS.ELA-LITERACY.SL.5.5",
+          "gradeLevel": "5"
+        }
+      ]
+    },
+    "topic": "Investigating a local environmental issue and presenting findings to the community",
+    "title": "Eco-Report",
+    "assessment": {
+      "rubricType": "both",
+      "summative": [
+        {
+          "description": "Teacher uses a rubric to evaluate the final PSA poster based on scientific accuracy, clarity of message, visual appeal, and effectiveness in raising awareness.",
+          "title": "Final PSA Poster Rubric",
+          "method": "rubric",
+          "phase": 5,
+          "type": "summative"
+        },
+        {
+          "type": "summative",
+          "phase": 5,
+          "description": "Students complete a written reflection on their learning journey, challenges, and the impact of their PSA poster on the school community.",
+          "method": "self-assessment",
+          "title": "Student Self-Reflection"
+        }
+      ],
+      "formative": [
+        {
+          "type": "formative",
+          "phase": 1,
+          "method": "rubric",
+          "title": "Observation Checklist for Local Issue",
+          "description": "Teacher uses a checklist to observe students' engagement and detail during the 'Environmental Mystery Walk' and their initial documentation of issues."
+        },
+        {
+          "method": "conference",
+          "title": "Research Notes Check",
+          "description": "Teacher reviews student research notes for completeness, accuracy, and identification of key facts about their chosen environmental issue.",
+          "type": "formative",
+          "phase": 2
+        },
+        {
+          "phase": 4,
+          "type": "formative",
+          "description": "Students receive and give peer feedback on their initial PSA poster prototypes, demonstrating their ability to critique and revise.",
+          "title": "PSA Prototype Critique",
+          "method": "peer-assessment"
+        }
+      ]
+    },
+    "updatedAt": "2026-04-04T11:28:52.216Z",
+    "duration": "mini",
+    "status": "published"
+  },
+  {
+    "crossCurricular": {
+      "standardsAligned": [
+        {
+          "gradeLevel": "5",
+          "description": "Use geographic tools to locate and describe major landforms and bodies of water on Earth.",
+          "code": "SS.5.G.1.1",
+          "subject": "Social Studies"
+        },
+        {
+          "subject": "Social Studies",
+          "code": "SS.5.C.1.2",
+          "description": "Explain how major cultures of the world have influenced each other.",
+          "gradeLevel": "5"
+        },
+        {
+          "code": "SC.5.N.1.1",
+          "description": "Define a problem, use appropriate reference materials to support scientific understanding, plan and carry out scientific investigations of various types, and evaluate the explanations.",
+          "subject": "Science",
+          "gradeLevel": "5"
+        },
+        {
+          "gradeLevel": "5",
+          "description": "Investigate and describe the forms of energy, including mechanical, chemical, electrical, light, sound, and heat.",
+          "subject": "Science",
+          "code": "SC.5.P.10.1"
+        },
+        {
+          "code": "ELA.5.W.2.4",
+          "description": "Conduct short research projects that use several sources to build knowledge through investigation of different aspects of a topic.",
+          "subject": "English Language Arts",
+          "gradeLevel": "5"
+        },
+        {
+          "gradeLevel": "5",
+          "description": "Report on a topic or text or present an opinion, sequencing ideas logically and using appropriate facts and relevant, descriptive details to support main ideas or themes; speak clearly at an understandable pace.",
+          "code": "ELA.5.SL.1.4",
+          "subject": "English Language Arts"
+        }
+      ],
+      "connections": [
+        {
+          "subject": "Social Studies",
+          "connectionDescription": "Students deeply research physical and human geography, including landforms, climate, resources, and cultural landscapes of a chosen nation.",
+          "topic": "Geography"
+        },
+        {
+          "topic": "Culture & History",
+          "connectionDescription": "Students investigate traditions, customs, historical events, and societal structures that define their chosen country's identity.",
+          "subject": "Social Studies"
+        },
+        {
+          "subject": "Science",
+          "topic": "Innovation & Technology",
+          "connectionDescription": "Students explore scientific discoveries, technological advancements, and engineering feats that originated in or significantly impacted their chosen country, understanding their real-world impact."
+        },
+        {
+          "subject": "English Language Arts",
+          "topic": "Research & Writing",
+          "connectionDescription": "Students conduct research, synthesize information, take notes, cite sources, and write descriptive texts for their pavilion and presentations."
+        },
+        {
+          "connectionDescription": "Students develop public speaking skills through team presentations, pitches, and acting as 'Cultural Ambassadors' during the World's Fair.",
+          "topic": "Oral Communication",
+          "subject": "English Language Arts"
+        },
+        {
+          "subject": "Math",
+          "connectionDescription": "Students apply concepts of measurement, proportion, and scale when designing and constructing their miniature pavilions.",
+          "topic": "Measurement & Scale"
+        },
+        {
+          "subject": "Art",
+          "topic": "Design & Craftsmanship",
+          "connectionDescription": "Students apply principles of design, visual arts, and craftsmanship in creating an aesthetically pleasing and informative pavilion."
+        }
+      ]
+    },
+    "topic": "Building a miniature World's Fair with research-based country pavilions",
+    "duration": "full",
+    "status": "published",
+    "updatedAt": "2026-04-04T11:28:24.392Z",
+    "title": "EPCOT World's Fair",
+    "assessment": {
+      "formative": [
+        {
+          "title": "Research Notes & Source Log",
+          "method": "journal",
+          "description": "Students maintain a research journal or digital log, documenting key findings and citing sources for geography, culture, and innovations.",
+          "phase": 2,
+          "type": "formative"
+        },
+        {
+          "description": "Teams present their chosen country and initial research findings, justifying their selection to the class or teacher.",
+          "title": "Country Proposal Presentation",
+          "method": "presentation",
+          "phase": 2,
+          "type": "formative"
+        },
+        {
+          "type": "formative",
+          "phase": 3,
+          "description": "Students submit initial sketches and blueprints of their miniature pavilion, including labels for proposed features and interactive elements.",
+          "method": "portfolio",
+          "title": "Pavilion Design Sketches"
+        },
+        {
+          "description": "Students reflect on the feedback received during critique sessions and outline their plan for revising their pavilion design.",
+          "method": "journal",
+          "title": "Critique & Revision Reflection",
+          "type": "formative",
+          "phase": 4
+        }
+      ],
+      "rubricType": "both",
+      "summative": [
+        {
+          "type": "summative",
+          "phase": 5,
+          "method": "rubric",
+          "title": "Miniature Country Pavilion",
+          "description": "The final constructed miniature pavilion will be assessed based on its representation of the chosen country's geography, culture, and innovations, as well as its creativity, craftsmanship, and engagement features."
+        },
+        {
+          "description": "Teams will be assessed on their ability to clearly and engagingly present their country and pavilion to the school community, demonstrating their role as Cultural Ambassadors.",
+          "method": "rubric",
+          "title": "World's Fair Presentation",
+          "type": "summative",
+          "phase": 5
+        },
+        {
+          "title": "Individual Reflection",
+          "method": "journal",
+          "description": "Students will complete a final written reflection on their learning journey, teamwork, challenges, and insights gained about global cultures.",
+          "phase": 5,
+          "type": "summative"
+        }
+      ]
+    },
+    "phases": {
+      "share": {
+        "reflectionPrompts": [
+          "What was the most challenging part of designing and building your pavilion, and how did your team overcome it?",
+          "What new understanding or appreciation do you have for your chosen country after this project?",
+          "How did your team use feedback from others to improve your pavilion or presentation?",
+          "If you could add one more feature to your pavilion, what would it be and why?",
+          "What did you learn about teamwork and collaboration during this project?"
+        ],
+        "presentationFormats": [
+          "Interactive display within the miniature pavilion, featuring artifacts, maps, and information.",
+          "Short, engaging oral presentations to small groups of visitors, acting as 'tour guides.'",
+          "Multimedia presentations (slideshows, short videos) playing on a loop within their pavilion.",
+          "Demonstrations of a cultural activity (e.g., a simple dance move, a few words in another language, a traditional craft).",
+          "Tasting station (with prior approval and allergy considerations) of a representative snack or drink."
+        ],
+        "audienceSuggestions": [
+          "Other classes in the school (especially younger grades for inspiration)",
+          "Parents and guardians during an open house or school event",
+          "School administrators and faculty",
+          "Local community members interested in cultural exchange"
+        ]
+      },
+      "problemChallenge": {
+        "refinedDQ": "How can we, as Cultural Ambassadors, design and build a miniature country pavilion for our school community to showcase the unique geography, culture, and innovations of a chosen nation?",
+        "needToKnow": [
+          "What are the most interesting facts about our country's geography, culture, and innovations?",
+          "What materials can we use to build a miniature pavilion that represents our country well?",
+          "How can we make our pavilion interactive and engaging for our school community?",
+          "What scale should our miniature pavilion be to fit our display space?",
+          "How will we present our research and pavilion to our audience?",
+          "What criteria will be used to evaluate our pavilion and presentation?"
+        ],
+        "expertSuggestions": [
+          "Invite a local architect or engineer to talk about model building, scale, and structural design.",
+          "Host a guest speaker from a local cultural organization or university who can share insights about a specific country or cultural exchange.",
+          "Arrange a virtual Q&A session with a traveler or someone living abroad to answer student questions about daily life and culture."
+        ]
+      },
+      "entryEvent": {
+        "ideas": [
+          {
+            "type": "video",
+            "materials": [
+              "Projector",
+              "Speakers",
+              "Curated World's Fair video clips (e.g., Expo 67, Expo 2020 Dubai)"
+            ],
+            "title": "Journey to the World's Fair",
+            "timeNeeded": "30-45 minutes",
+            "description": "Students watch a captivating video showcasing past World's Fairs, highlighting diverse country pavilions, incredible innovations, and the global atmosphere. This sparks curiosity about different cultures and the purpose of such events."
+          },
+          {
+            "title": "Mystery Artifact Gallery",
+            "timeNeeded": "45-60 minutes",
+            "description": "Set up stations with artifacts or images from various countries (e.g., a traditional instrument, a unique food package, a map highlighting a specific landform, a picture of a historical invention). Students rotate to examine each item, making inferences about the country's culture, geography, or innovation.",
+            "type": "activity",
+            "materials": [
+              "Various cultural artifacts/images (e.g., chopsticks, small maraca, picture of Eiffel Tower, map of Amazon River, picture of a microchip)",
+              "Observation sheets",
+              "Pens/Pencils"
+            ]
+          }
+        ]
+      },
+      "create": {
+        "iterationPlan": "After receiving critique, teams review feedback and identify key areas for improvement. They will revise their designs, materials choices, or presentation approach based on the suggestions. This might involve re-sketching, rebuilding sections, or refining content before the final build.",
+        "materials": [
+          "Cardboard (various sizes and thicknesses)",
+          "Craft sticks, pipe cleaners, construction paper",
+          "Paints, markers, colored pencils",
+          "Glue, tape, scissors",
+          "Recycled materials (plastic bottles, containers, fabric scraps)",
+          "Clay or play-doh for models of landforms/artifacts",
+          "Multimedia devices (tablets, laptops) for digital displays/presentations",
+          "Printouts of maps, flags, cultural images, innovation diagrams",
+          "Fabrics, yarn, thread for cultural textiles"
+        ],
+        "critiqueProtocol": "Use a 'Two Stars and a Wish' protocol. Students present their pavilion prototypes to another team. The audience offers two specific positive comments ('stars') and one constructive suggestion for improvement ('wish'). Presenters actively listen and take notes.",
+        "prototypingIdeas": [
+          "Sketching multiple pavilion designs, considering layout, interactive elements, and visual appeal.",
+          "Building small-scale cardboard models to test structural stability and spatial arrangements.",
+          "Creating digital mock-ups or storyboards of interactive displays or multimedia components.",
+          "Drafting scripts or outlines for presentations and demonstrations within the pavilion."
+        ]
+      },
+      "investigation": {
+        "resources": [
+          {
+            "title": "National Geographic Kids",
+            "type": "website",
+            "description": "An excellent resource for grade-appropriate information on countries, cultures, animals, and geography."
+          },
+          {
+            "title": "PebbleGo / BrainPOP Jr.",
+            "type": "website",
+            "description": "Digital resources offering articles and videos on various topics, including countries and historical figures, tailored for younger learners."
+          },
+          {
+            "title": "CIA World Factbook (Simplified sections)",
+            "type": "website",
+            "description": "Provides comprehensive data on countries; teachers can guide students to specific, digestible sections for basic facts."
+          },
+          {
+            "description": "Physical resources for in-depth research on geography, culture, and history of nations.",
+            "type": "book",
+            "title": "Library Books & Atlases"
+          },
+          {
+            "description": "Short, engaging videos showcasing past World's Fairs can inspire design and content ideas.",
+            "title": "World's Fair Documentaries/Clips",
+            "type": "video"
+          }
+        ],
+        "activities": [
+          {
+            "title": "Country Selection & Initial Research",
+            "duration": "2 hours",
+            "description": "Students work in small teams to research potential countries, considering their interest in a nation's geography, culture, and technological advancements. They will present their top choices to the class, justifying their interest.",
+            "phase": 2,
+            "type": "research"
+          },
+          {
+            "phase": 2,
+            "type": "research",
+            "duration": "3 hours",
+            "description": "Teams investigate their chosen country's physical geography, including major landforms, climate zones, natural resources, and how these elements influence its culture and innovation. They will create annotated maps or digital presentations.",
+            "title": "Geography Deep Dive"
+          },
+          {
+            "description": "Students explore the traditions, arts, foods, languages, and daily life of their chosen country. They might research traditional music, folk tales, or significant holidays, looking for unique cultural expressions.",
+            "duration": "3 hours",
+            "title": "Cultural Kaleidoscope",
+            "phase": 2,
+            "type": "research"
+          },
+          {
+            "type": "research",
+            "phase": 2,
+            "title": "Innovation Nation",
+            "duration": "3 hours",
+            "description": "Teams research historical and modern innovations, scientific discoveries, or technological advancements that originated from or are significant to their country. They consider how these impact the world."
+          },
+          {
+            "duration": "2 hours",
+            "description": "Students participate in a workshop to understand the needs and interests of their school community (their audience). They brainstorm initial ideas for how to represent their country's unique aspects in a miniature pavilion.",
+            "title": "Design Thinking Workshop: Empathy & Ideation",
+            "phase": 2,
+            "type": "skill-building"
+          },
+          {
+            "phase": 2,
+            "type": "collaboration",
+            "title": "Research Synthesis & Presentation Planning",
+            "duration": "2 hours",
+            "description": "Teams synthesize their findings from geography, culture, and innovation. They begin to outline what key information and artifacts they want to feature in their pavilion, considering how to make it engaging for visitors."
+          }
+        ],
+        "skills": [
+          "Research and information literacy",
+          "Critical thinking and analysis",
+          "Collaboration and teamwork",
+          "Communication (oral and written)",
+          "Mapping and geographic interpretation",
+          "Cultural understanding and empathy",
+          "Problem-solving",
+          "Design thinking (empathy, ideation)"
+        ],
+        "empathyExercises": [
+          "Interview school community members (younger students, teachers, parents) about what they'd like to learn or experience at a 'World's Fair.'",
+          "Watch short videos or read stories about children's daily lives in different countries to build connections and understanding.",
+          "Taste or experience a small cultural element (e.g., listen to music, try a simple snack) from a different country and reflect on the experience."
+        ]
+      }
+    },
+    "gradeLevel": "5",
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "drivingQuestion": {
+      "options": [
+        "How can we, as Cultural Ambassadors, design and build a miniature country pavilion for our school community to showcase the unique geography, culture, and innovations of a chosen nation?",
+        "How can we, as World's Fair Curators, develop and host an interactive country pavilion for local community members to celebrate global diversity and explore how countries address shared scientific and social challenges?",
+        "How can we, as Global Innovators, design and advocate for a sustainable country pavilion for a panel of community leaders to inspire action on critical global issues through innovative solutions informed by our chosen nation's context?"
+      ],
+      "formula": {
+        "product": "a miniature country pavilion",
+        "action": "design and build",
+        "purpose": "to showcase the unique geography, culture, and innovations of a chosen nation",
+        "audience": "our school community",
+        "role": "Cultural Ambassadors"
+      },
+      "selected": "How can we, as Cultural Ambassadors, design and build a miniature country pavilion for our school community to showcase the unique geography, culture, and innovations of a chosen nation?"
+    },
+    "id": "exemplar-epcot-world-s-fair",
+    "comfortLevel": "experienced",
+    "subjects": [
+      "Social Studies",
+      "Science"
+    ],
+    "createdAt": "2026-04-04T11:28:24.392Z",
+    "source": "builder",
+    "published": {
+      "publishedAt": "2026-04-04T11:28:24.392Z",
+      "ratingSum": 0,
+      "adaptationCount": 0,
+      "hidden": false,
+      "featured": false,
+      "authorName": "PBLTeach Team",
+      "ratingCount": 0,
+      "authorSchool": null
+    },
+    "userId": "pblteach-team"
+  },
+  {
+    "subjects": [
+      "Cross-curricular"
+    ],
+    "createdAt": "2026-04-04T11:29:23.790Z",
+    "comfortLevel": "tried",
+    "published": {
+      "authorSchool": null,
+      "ratingCount": 0,
+      "featured": false,
+      "authorName": "PBLTeach Team",
+      "hidden": false,
+      "adaptationCount": 0,
+      "ratingSum": 0,
+      "publishedAt": "2026-04-04T11:29:23.790Z"
+    },
+    "userId": "pblteach-team",
+    "source": "builder",
+    "phases": {
+      "share": {
+        "presentationFormats": [
+          "Curiosity Fair: Students set up stations to present their interactive experiences to rotating groups of classmates.",
+          "Small Group Rotations: Students present their experience to a small group, then rotate to experience others' projects.",
+          "Whole-Class Demonstrations: A few students present their interactive experiences to the entire class each day."
+        ],
+        "audienceSuggestions": [
+          "Classmates",
+          "Another 6th-grade class",
+          "Parents/Guardians (during a 'Curiosity Fair')"
+        ],
+        "reflectionPrompts": [
+          "What was the most challenging part of designing your interactive experience, and how did you overcome it?",
+          "What new or surprising thing did you learn about your passion topic during this project?",
+          "How did your classmates react to your interactive experience? What did you notice about their engagement?",
+          "If you were to do this project again, what would you change or improve about your experience or your process?",
+          "What does it mean to be a 'Curiosity Coach'?"
+        ]
+      },
+      "problemChallenge": {
+        "needToKnow": [
+          "What is my passion topic and why is it interesting?",
+          "What are the most compelling facts or aspects of my topic?",
+          "How do I conduct efficient and reliable research?",
+          "What are different types of interactive experiences I can design?",
+          "How can I present complex information in a simple, engaging way for my peers?",
+          "What materials or resources will I need to create my experience?"
+        ],
+        "expertSuggestions": [
+          "Analyze successful interactive exhibits at children's museums or science centers.",
+          "Watch engaging TED-Ed talks or educational YouTube channels for presentation style.",
+          "Review examples of educational games or hands-on activities."
+        ],
+        "refinedDQ": "How can we, as Curiosity Coaches, design an interactive experience for our classmates to spark new interests?"
+      },
+      "entryEvent": {
+        "ideas": [
+          {
+            "title": "The Curiosity Spark Challenge",
+            "timeNeeded": "30-45 minutes",
+            "description": "Students receive a 'mystery box' with intriguing, diverse objects (e.g., a strange seed, a small fossil, an ancient coin replica). The teacher then poses the driving question, challenging students to become 'Curiosity Coaches.'",
+            "type": "activity",
+            "materials": [
+              "Mystery box",
+              "Intriguing objects (e.g., fossil, seed, circuit board, unusual rock)",
+              "Driving Question display"
+            ]
+          },
+          {
+            "title": "Curiosity Catalyst Video Reel",
+            "timeNeeded": "20-30 minutes",
+            "description": "Show a short, fast-paced video compilation featuring unusual hobbies, mind-bending scientific facts, or unique cultural traditions. This visually sparks initial interest before introducing the project challenge.",
+            "type": "video",
+            "materials": [
+              "Projector/screen",
+              "Curated video reel (5-7 minutes)"
+            ]
+          }
+        ]
+      },
+      "create": {
+        "prototypingIdeas": [
+          "Mini-game (e.g., trivia, 'guess the fact,' quick challenge)",
+          "Hands-on demonstration (e.g., simple science experiment, art technique, craft)",
+          "Interactive story or role-play scenario related to the topic",
+          "Digital presentation with embedded polls, quizzes, or interactive elements",
+          "Curiosity 'Show and Tell' with a twist (e.g., demonstrating a skill, explaining an artifact)"
+        ],
+        "materials": [
+          "Poster board",
+          "Markers, colored pencils",
+          "Craft supplies (scissors, glue, construction paper)",
+          "Laptops/tablets for digital presentations",
+          "Everyday objects or simple props related to their topic"
+        ],
+        "critiqueProtocol": "Students will participate in 'Two Stars and a Wish' peer feedback sessions, focusing on clarity, engagement, and the potential to spark curiosity. They will test their interactive experience with a small group of peers.",
+        "iterationPlan": "Based on peer feedback, students will revise their interactive experience to enhance clarity, increase engagement, and ensure it effectively sparks new interests. They might simplify instructions, add more visual aids, or refine the activity itself."
+      },
+      "investigation": {
+        "activities": [
+          {
+            "description": "Students list personal interests and passion topics, then narrow down to one that excites them most and has potential for an interactive experience.",
+            "duration": "45 minutes",
+            "title": "Passion Exploration & Brainstorm",
+            "type": "reflection",
+            "phase": 2
+          },
+          {
+            "description": "Students conduct focused research on their chosen topic, identifying key facts, surprising details, and potential 'wow' moments to share.",
+            "duration": "1-2 hours",
+            "title": "Research Blitz: My Passion Uncovered",
+            "type": "research",
+            "phase": 2
+          },
+          {
+            "phase": 2,
+            "type": "skill-building",
+            "duration": "1 hour",
+            "description": "Students explore examples of engaging presentations, games, and hands-on activities. They brainstorm different ways to make their topic interactive and accessible for peers.",
+            "title": "Interactive Experience Design Workshop"
+          }
+        ],
+        "resources": [
+          {
+            "description": "A simple guide with tips on finding the 'hook' in any topic and making it appealing to others.",
+            "title": "How to Make Anything Interesting (Short Guide)",
+            "type": "article"
+          },
+          {
+            "description": "An infographic or checklist outlining key components of interactive and memorable learning activities.",
+            "type": "template",
+            "title": "Elements of Engaging Learning Experiences"
+          }
+        ],
+        "skills": [
+          "Information literacy",
+          "Research strategies",
+          "Audience analysis",
+          "Creative problem-solving",
+          "Presentation design"
+        ],
+        "empathyExercises": [
+          "What Makes Learning Stick? Brainstorming engaging learning experiences students have had.",
+          "Classmate Interest Inventory: A quick survey or discussion about what sparks their peers' curiosity and preferred learning styles."
+        ]
+      }
+    },
+    "gradeLevel": "6",
+    "drivingQuestion": {
+      "options": [
+        "How can we, as Curiosity Coaches, design an interactive experience for our classmates to spark new interests?",
+        "How can we, as Discovery Guides, develop a compelling resource for our school community to share fascinating insights about our passion topics?",
+        "How can we, as Passion Project Ambassadors, design an engaging outreach plan for local community members to showcase the real-world value of our interests?"
+      ],
+      "selected": "How can we, as Curiosity Coaches, design an interactive experience for our classmates to spark new interests?",
+      "formula": {
+        "product": "an interactive experience",
+        "action": "design",
+        "audience": "our classmates",
+        "purpose": "to spark new interests",
+        "role": "Curiosity Coaches"
+      }
+    },
+    "id": "exemplar-genius-hour",
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "topic": "Student-driven inquiry projects where each student explores a passion topic and teaches others",
+    "assessment": {
+      "rubricType": "both",
+      "summative": [
+        {
+          "phase": 5,
+          "type": "summative",
+          "description": "Assessment of the final interactive experience, evaluating its clarity, engagement, accuracy, and effectiveness in sparking interest.",
+          "title": "Curiosity Coach Interactive Experience",
+          "method": "rubric"
+        },
+        {
+          "phase": 5,
+          "type": "summative",
+          "title": "Curiosity Coach Reflection Journal",
+          "method": "journal",
+          "description": "Students' written reflections on their learning journey, challenges, successes, and insights gained from being a 'Curiosity Coach.'"
+        }
+      ],
+      "formative": [
+        {
+          "type": "formative",
+          "phase": 2,
+          "description": "Students submit a brief written proposal outlining their chosen topic, initial research questions, and preliminary ideas for an interactive experience.",
+          "method": "self-assessment",
+          "title": "Passion Project Proposal"
+        },
+        {
+          "phase": 2,
+          "type": "formative",
+          "title": "Research Notes & Sources Check",
+          "method": "rubric",
+          "description": "Teacher reviews student research notes and source citations to ensure sustained inquiry and credible information gathering."
+        },
+        {
+          "phase": 4,
+          "type": "formative",
+          "description": "Students create a visual plan for their interactive experience and receive feedback from peers using the 'Two Stars and a Wish' protocol.",
+          "title": "Interactive Design Sketch & Peer Feedback",
+          "method": "peer-assessment"
+        }
+      ]
+    },
+    "title": "Genius Hour",
+    "status": "published",
+    "duration": "mini",
+    "updatedAt": "2026-04-04T11:29:23.790Z",
+    "crossCurricular": {
+      "connections": [
+        {
+          "subject": "English Language Arts",
+          "connectionDescription": "Students conduct research, synthesize information, and present findings effectively and persuasively to an audience.",
+          "topic": "Research & Presentation"
+        },
+        {
+          "topic": "Scientific Inquiry & Communication",
+          "connectionDescription": "Students apply scientific inquiry skills to explore topics and communicate complex concepts clearly and engagingly.",
+          "subject": "Science"
+        },
+        {
+          "subject": "Social Studies",
+          "connectionDescription": "Students investigate historical events, cultural practices, or geographical phenomena, then design ways to share their discoveries.",
+          "topic": "Historical & Cultural Inquiry"
+        },
+        {
+          "topic": "Visual Communication & Creativity",
+          "connectionDescription": "Students use design principles to create visually appealing and effective interactive experiences, considering aesthetics and audience engagement.",
+          "subject": "Art & Design"
+        }
+      ],
+      "standardsAligned": [
+        {
+          "gradeLevel": "6",
+          "description": "Conduct short research projects to answer a question, drawing on several sources and refocusing the inquiry when appropriate.",
+          "code": "CCSS.ELA-LITERACY.W.6.7",
+          "subject": "English Language Arts"
+        },
+        {
+          "subject": "English Language Arts",
+          "code": "CCSS.ELA-LITERACY.SL.6.4",
+          "description": "Present claims and findings, sequencing ideas logically and using appropriate eye contact, adequate volume, and clear pronunciation.",
+          "gradeLevel": "6"
+        },
+        {
+          "subject": "Science",
+          "code": "NGSS Science and Engineering Practices",
+          "description": "Asking Questions and Defining Problems; Planning and Carrying Out Investigations; Obtaining, Evaluating, and Communicating Information.",
+          "gradeLevel": "6"
+        }
+      ]
+    }
+  },
+  {
+    "subjects": [
+      "ELA",
+      "SEL"
+    ],
+    "createdAt": "2026-04-04T11:25:50.403Z",
+    "comfortLevel": "new",
+    "published": {
+      "ratingSum": 0,
+      "publishedAt": "2026-04-04T11:25:50.403Z",
+      "ratingCount": 0,
+      "authorSchool": null,
+      "adaptationCount": 0,
+      "hidden": false,
+      "authorName": "PBLTeach Team",
+      "featured": true
+    },
+    "userId": "pblteach-team",
+    "source": "builder",
+    "phases": {
+      "entryEvent": {
+        "ideas": [
+          {
+            "title": "Mystery Kindness Box",
+            "timeNeeded": "15-20 minutes",
+            "description": "Present a 'mystery box' filled with anonymous kind notes or small drawings. Students open them one by one, reading or having them read aloud, and discuss how receiving a kind message makes them feel. This sparks curiosity about the power of words.",
+            "type": "artifact",
+            "materials": [
+              "decorated box",
+              "pre-written kind notes/drawings (optional, for examples)"
+            ]
+          },
+          {
+            "materials": [
+              "age-appropriate kindness picture book"
+            ],
+            "type": "activity",
+            "description": "Read aloud a picture book about kindness, empathy, or making friends (e.g., 'Have You Filled a Bucket Today?' or 'The Invisible Boy'). Facilitate a discussion about what kindness looks like and sounds like in the story and in their own lives.",
+            "timeNeeded": "20-25 minutes",
+            "title": "Kindness Story Time"
+          }
+        ]
+      },
+      "share": {
+        "audienceSuggestions": [
+          "Classmates (secretly distributed or given during a special moment)",
+          "Another 1st-grade class (as a school-wide kindness initiative)",
+          "School staff members (e.g., librarian, custodian, principal) to spread kindness beyond the classroom"
+        ],
+        "presentationFormats": [
+          "Kindness Card Delivery: Students personally deliver their cards to their chosen classmate/recipient.",
+          "Kindness Gallery Walk: Display the completed cards anonymously around the classroom or hallway, allowing students to walk around and appreciate the messages (if not for specific recipients).",
+          "Show and Tell: A few students share their card (without revealing the recipient) and explain what kind message they wrote and why."
+        ],
+        "reflectionPrompts": [
+          "How did it feel to make a kindness card for someone?",
+          "How do you think your classmate will feel when they get your card?",
+          "What was easy or hard about writing a kind message?",
+          "What is one new kind thing you could say or do for someone tomorrow?",
+          "How did our kindness cards make our classroom feel?"
+        ]
+      },
+      "problemChallenge": {
+        "refinedDQ": "How can we, as Kindness Designers, create kindness cards for our classmates to make everyone feel special?",
+        "needToKnow": [
+          "What are some kind words I can use?",
+          "How do I write a complete sentence?",
+          "What makes someone feel special?",
+          "How can I make my card look nice?",
+          "Who will get my card?"
+        ],
+        "expertSuggestions": [
+          "Invite an older student (e.g., a 4th grader) to share examples of kind notes they've received or written.",
+          "Have the school counselor briefly discuss the importance of kind words and how they help build a positive school community."
+        ]
+      },
+      "create": {
+        "critiqueProtocol": "Use 'Two Stars and a Wish': Students share their draft card with a partner. The partner gives two 'stars' (things they like or think are kind) and one 'wish' (one suggestion for improvement, e.g., 'I wish you could add a picture').",
+        "materials": [
+          "cardstock or construction paper",
+          "crayons, markers, colored pencils",
+          "stickers, glitter, decorative supplies (optional)",
+          "scrap paper for drafts"
+        ],
+        "iterationPlan": "After receiving feedback, students will review their draft cards and make at least one revision to their message or design based on their partner's 'wish' or their own ideas for improvement.",
+        "prototypingIdeas": [
+          "Students sketch card designs and write draft messages on scrap paper, practicing their kind sentences.",
+          "Students choose a classmate (or draw names) to create a card for, thinking about what might make that specific person feel special.",
+          "Students create a 'mock-up' card using simple materials, focusing on the message and design before final production."
+        ]
+      },
+      "investigation": {
+        "activities": [
+          {
+            "title": "Brainstorming Kind Words",
+            "duration": "15 minutes",
+            "description": "Students work in small groups or as a class to brainstorm a list of kind words and phrases they could use to make someone feel special. Chart their ideas for future reference.",
+            "phase": 2,
+            "type": "skill-building"
+          },
+          {
+            "type": "research",
+            "phase": 2,
+            "title": "Feeling Faces",
+            "description": "Students draw or select emoji faces representing different emotions (happy, sad, proud, worried). Discuss what actions or words might lead to these feelings, focusing on positive feelings from kindness.",
+            "duration": "20 minutes"
+          },
+          {
+            "description": "Practice forming simple, complete sentences using kind words. Model sentence starters like 'You are...' or 'I like...' and guide students in writing one or two sentences about a friend.",
+            "duration": "25 minutes",
+            "title": "Writing a Kind Sentence",
+            "type": "skill-building",
+            "phase": 2
+          }
+        ],
+        "resources": [
+          {
+            "description": "A growing chart or display of kind adjectives and phrases brainstormed by the class.",
+            "type": "tool",
+            "title": "Kindness Word Wall"
+          },
+          {
+            "type": "book",
+            "title": "Picture Books on Empathy",
+            "description": "Books like 'The Color Monster' or 'When Sophie Thinks She Can't...' to discuss emotions and perspective-taking."
+          }
+        ],
+        "skills": [
+          "Identifying kind words and phrases",
+          "Expressing empathy for others' feelings",
+          "Writing simple, complete sentences",
+          "Using descriptive language",
+          "Collaborating with peers"
+        ],
+        "empathyExercises": [
+          "Role-play scenarios: 'What would you do if you saw someone sad?'",
+          "Picture prompts: 'Look at this picture. How do you think this person feels? What could make them feel better?'",
+          "Sharing personal experiences: 'Tell about a time someone was kind to you and how it made you feel.'"
+        ]
+      }
+    },
+    "gradeLevel": "1",
+    "drivingQuestion": {
+      "options": [
+        "How can we, as Kindness Designers, create kindness cards for our classmates to make everyone feel special?",
+        "How can we, as School Kindness Builders, design persuasive posters for our school community to encourage more friendly actions?",
+        "How can we, as Empathy Ambassadors, develop a simple kindness challenge for other students in our grade to inspire acts of care and understanding?"
+      ],
+      "formula": {
+        "audience": "our classmates",
+        "purpose": "make everyone feel special",
+        "role": "Kindness Designers",
+        "product": "kindness cards",
+        "action": "create"
+      },
+      "selected": "How can we, as Kindness Designers, create kindness cards for our classmates to make everyone feel special?"
+    },
+    "id": "exemplar-kindness-campaign",
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "topic": "Creating a kindness campaign for our school using persuasive writing and empathy",
+    "title": "Kindness Campaign",
+    "assessment": {
+      "rubricType": "both",
+      "summative": [
+        {
+          "description": "Students' completed kindness cards are assessed for clear, kind messages, appropriate persuasive language, and neatness.",
+          "title": "Final Kindness Card",
+          "method": "rubric",
+          "phase": 5,
+          "type": "summative"
+        },
+        {
+          "title": "Project Reflection",
+          "method": "journal",
+          "description": "Students complete a simple drawing or written reflection about their learning, empathy, and the impact of their kindness card.",
+          "phase": 5,
+          "type": "summative"
+        }
+      ],
+      "formative": [
+        {
+          "phase": 2,
+          "type": "formative",
+          "title": "Kind Words Checklist",
+          "method": "journal",
+          "description": "Teacher observes student participation during brainstorming and checks for understanding of kind words/phrases."
+        },
+        {
+          "description": "Teacher reviews students' draft cards for clear, kind messages and proper sentence structure.",
+          "title": "Draft Card Review",
+          "method": "conference",
+          "phase": 4,
+          "type": "formative"
+        },
+        {
+          "type": "formative",
+          "phase": 4,
+          "method": "peer-assessment",
+          "title": "Critique Participation",
+          "description": "Teacher observes student engagement and constructive feedback during the 'Two Stars and a Wish' activity."
+        }
+      ]
+    },
+    "duration": "micro",
+    "status": "published",
+    "updatedAt": "2026-04-04T11:25:50.403Z",
+    "crossCurricular": {
+      "connections": [
+        {
+          "topic": "Persuasive Writing",
+          "connectionDescription": "Students use kind words and phrases to persuade recipients that they are special, practicing early forms of persuasive communication.",
+          "subject": "ELA"
+        },
+        {
+          "subject": "SEL",
+          "connectionDescription": "Students consider others' feelings, practice perspective-taking, and understand the impact of their words on school community.",
+          "topic": "Empathy & Social Awareness"
+        },
+        {
+          "subject": "Art",
+          "topic": "Design & Expression",
+          "connectionDescription": "Students design and decorate their kindness cards, using visual elements to enhance their message and express creativity."
+        }
+      ],
+      "standardsAligned": [
+        {
+          "gradeLevel": "1",
+          "description": "Write opinion pieces in which they introduce the topic or text they are writing about, state an opinion, supply a reason for the opinion, and provide a sense of closure.",
+          "subject": "ELA",
+          "code": "CCSS.ELA-LITERACY.W.1.1"
+        },
+        {
+          "code": "CCSS.ELA-LITERACY.L.1.1.F",
+          "subject": "ELA",
+          "description": "Produce and expand complete simple and compound declarative, interrogative, imperative, and exclamatory sentences in response to prompts.",
+          "gradeLevel": "1"
+        },
+        {
+          "description": "Identify and accurately label one's own and others' feelings.",
+          "code": "CASEL.K-3.SA.1",
+          "subject": "SEL",
+          "gradeLevel": "1"
+        },
+        {
+          "code": "CASEL.K-3.RM.1",
+          "description": "Use appropriate communication and social skills to interact with others.",
+          "subject": "SEL",
+          "gradeLevel": "1"
+        }
+      ]
+    }
+  },
+  {
+    "published": {
+      "publishedAt": "2026-04-04T11:27:51.280Z",
+      "ratingSum": 0,
+      "featured": false,
+      "authorName": "PBLTeach Team",
+      "adaptationCount": 0,
+      "hidden": false,
+      "authorSchool": null,
+      "ratingCount": 0
+    },
+    "userId": "pblteach-team",
+    "source": "builder",
+    "subjects": [
+      "Social Studies",
+      "ELA"
+    ],
+    "createdAt": "2026-04-04T11:27:51.280Z",
+    "comfortLevel": "tried",
+    "id": "exemplar-museum-of-new-york",
+    "drivingQuestion": {
+      "options": [
+        "How can we, as junior historians, design and build an interactive exhibit for future 4th graders to explore the diverse regions and history of New York State?",
+        "How can we, as New York State storytellers, curate and present a compelling museum experience for future 4th graders to discover the impact of key historical events and geographical features on our state?",
+        "How can we, as cultural preservationists, innovate and share an immersive, multi-modal museum exhibit for future 4th graders and our school community to ignite curiosity and connect them personally to the diverse stories and regions of New York State?"
+      ],
+      "selected": "How can we, as junior historians, design and build an interactive exhibit for future 4th graders to explore the diverse regions and history of New York State?",
+      "formula": {
+        "purpose": "explore the diverse regions and history of New York State",
+        "audience": "future 4th graders",
+        "role": "junior historians",
+        "action": "design and build",
+        "product": "an interactive exhibit"
+      }
+    },
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "gradeLevel": "4",
+    "phases": {
+      "problemChallenge": {
+        "refinedDQ": "How can we, as junior historians, design and build an engaging and interactive exhibit for future 4th graders to explore the diverse regions and history of New York State?",
+        "expertSuggestions": [
+          "Invite a local librarian to teach advanced research strategies and primary source analysis.",
+          "Connect with a museum educator (virtually or in-person) to discuss exhibit design principles and audience engagement.",
+          "Have a graphic design student or professional share tips on layout, color, and font choices for readability."
+        ],
+        "needToKnow": [
+          "What makes an exhibit 'interactive' for a 4th grader?",
+          "What key historical facts and regional characteristics are essential for future 4th graders to learn?",
+          "How do we organize information clearly and visually appealingly?",
+          "What materials can we use to build durable and safe exhibits?",
+          "How can we incorporate different learning styles into our exhibit design?"
+        ]
+      },
+      "share": {
+        "reflectionPrompts": [
+          "What was the most challenging part of designing and building an exhibit for future 4th graders, and how did your team overcome it?",
+          "How did you ensure your exhibit was both historically accurate and engaging for your audience?",
+          "What new skills did you develop as a 'junior historian' throughout this project?",
+          "If you could add one more interactive element to your exhibit, what would it be and why?",
+          "How did working collaboratively impact your final exhibit, and what did you learn about teamwork?"
+        ],
+        "presentationFormats": [
+          "Interactive 'Museum Walk-Through' where students act as docents for their exhibits.",
+          "Short 'Meet the Historian' presentations at each exhibit, explaining their research and design choices.",
+          "Digital exhibit tours (using photos/videos) shared on the school website or a class blog.",
+          "A 'Living Museum' where students dress as historical figures and share their stories."
+        ],
+        "audienceSuggestions": [
+          "Other 4th-grade classes in the school",
+          "3rd-grade classes (as the 'future 4th graders')",
+          "Parents and community members during a 'NYS History Night'",
+          "School administrators and staff"
+        ]
+      },
+      "entryEvent": {
+        "ideas": [
+          {
+            "title": "Virtual Museum Tour",
+            "timeNeeded": "60 minutes",
+            "description": "Take students on a virtual field trip to the New York State Museum or another historical museum to observe how exhibits are designed and what makes them engaging. Discuss what makes a good museum experience.",
+            "type": "video",
+            "materials": [
+              "computer",
+              "projector",
+              "internet access"
+            ]
+          },
+          {
+            "timeNeeded": "45-60 minutes",
+            "description": "Invite a local historian, museum educator, or a community elder with deep knowledge of NYS history to speak about their work and the importance of preserving local stories. Students can prepare questions beforehand.",
+            "title": "Guest Curator Interview",
+            "materials": [
+              "guest speaker",
+              "prepared questions",
+              "notebooks"
+            ],
+            "type": "guest"
+          },
+          {
+            "timeNeeded": "60-75 minutes",
+            "description": "Present students with a collection of 'mystery artifacts' related to New York State history (e.g., old tools, maps, photographs, documents). Students work in teams to hypothesize their purpose and historical context.",
+            "title": "Mystery Artifact Exploration",
+            "materials": [
+              "historical artifacts (replicas or real)",
+              "magnifying glasses",
+              "research materials"
+            ],
+            "type": "artifact"
+          }
+        ]
+      },
+      "create": {
+        "prototypingIdeas": [
+          "Sketching exhibit layouts and flowcharts on large paper, labeling interactive elements.",
+          "Building small-scale cardboard models of exhibit components to test spatial arrangements.",
+          "Creating storyboards for digital interactives or narrated exhibit sections.",
+          "Drafting initial exhibit text and testing its readability with peers."
+        ],
+        "materials": [
+          "Cardboard boxes (various sizes)",
+          "Construction paper, poster board",
+          "Markers, colored pencils, paints",
+          "Glue, tape, scissors",
+          "Fabric scraps, craft sticks, pipe cleaners",
+          "Laptops/tablets for digital components (optional)",
+          "Printer for images and text",
+          "Measuring tools"
+        ],
+        "critiqueProtocol": "Use a 'Gallery Walk' where teams display their prototypes, and other teams provide feedback using a 'I Like, I Wonder, I Wish' protocol. Feedback forms should be specific to engagement and clarity for the target audience.",
+        "iterationPlan": "Teams will review feedback from peers and the teacher, identify key areas for improvement, and create a revision plan. They will make at least two rounds of revisions based on this feedback, focusing on improving interactivity, content accuracy, and audience appeal."
+      },
+      "investigation": {
+        "skills": [
+          "Research and information gathering",
+          "Critical thinking and source evaluation",
+          "Note-taking and summarizing",
+          "Collaboration and teamwork",
+          "Empathy and audience awareness",
+          "Visual communication and design principles"
+        ],
+        "empathyExercises": [
+          "Interview 3rd graders about what they like/dislike about museums or learning history.",
+          "Create 'future 4th grader personas' with specific interests and learning styles.",
+          "Role-play visiting a 'boring' vs. an 'exciting' exhibit to understand engagement."
+        ],
+        "resources": [
+          {
+            "title": "New York State Museum Website",
+            "type": "article",
+            "description": "Official website offering virtual exhibits, collections, and educational resources on NYS history and culture."
+          },
+          {
+            "description": "Curriculum modules and primary source documents aligned with NYS Social Studies standards for Grade 4.",
+            "title": "NYSED EngageNY Social Studies Resources",
+            "type": "article"
+          },
+          {
+            "title": "Local Historical Society Websites",
+            "type": "article",
+            "description": "Websites for historical societies specific to different NYS regions, offering localized information."
+          },
+          {
+            "description": "Age-appropriate non-fiction books covering various aspects of New York State history and geography.",
+            "title": "Kid-Friendly NYS History Books",
+            "type": "book"
+          }
+        ],
+        "activities": [
+          {
+            "type": "research",
+            "phase": 2,
+            "title": "NYS Region Deep Dive",
+            "duration": "3-4 days",
+            "description": "Students choose or are assigned a specific New York State region (e.g., Adirondacks, NYC, Finger Lakes, Western NY) to research its geography, history, culture, and famous figures. They will gather facts, images, and stories relevant to their region."
+          },
+          {
+            "duration": "2 days",
+            "description": "Teach essential research skills such as identifying reliable sources, note-taking, summarizing information, and organizing findings. Practice these skills using provided NYS history resources.",
+            "title": "Historian's Toolkit Workshop",
+            "phase": 2,
+            "type": "skill-building"
+          },
+          {
+            "phase": 2,
+            "type": "collaboration",
+            "title": "Exhibit Design Brainstorm",
+            "duration": "1 day",
+            "description": "In small groups, students brainstorm interactive elements and exhibit ideas that would appeal to future 4th graders. They consider different ways to present information beyond just text."
+          },
+          {
+            "phase": 2,
+            "type": "reflection",
+            "description": "Students create empathy maps for 'future 4th graders,' considering what they might think, feel, say, and do when visiting a history exhibit. This helps them design for their specific audience's needs and interests.",
+            "duration": "1 day",
+            "title": "Empathy Mapping for Our Audience"
+          }
+        ]
+      }
+    },
+    "title": "Museum of New York",
+    "assessment": {
+      "formative": [
+        {
+          "method": "rubric",
+          "title": "Research Notes & Source Log",
+          "description": "Students submit organized research notes and a log of sources used for their assigned region or historical topic. Assesses information gathering skills.",
+          "type": "formative",
+          "phase": 2
+        },
+        {
+          "description": "Peer and teacher feedback on initial exhibit sketches or models, focusing on clarity, interactivity, and audience appeal. Guides revision.",
+          "title": "Exhibit Prototype Feedback",
+          "method": "peer-assessment",
+          "phase": 4,
+          "type": "formative"
+        },
+        {
+          "phase": 2,
+          "type": "formative",
+          "title": "Team Collaboration Check-ins",
+          "method": "conference",
+          "description": "Teacher observations and informal conferences with teams to monitor progress, address challenges, and assess individual contributions."
+        }
+      ],
+      "rubricType": "both",
+      "summative": [
+        {
+          "phase": 5,
+          "type": "summative",
+          "description": "Evaluation of the final interactive exhibit based on content accuracy, historical depth, creativity, interactivity, and appeal to a 4th-grade audience.",
+          "title": "NYS History Exhibit",
+          "method": "rubric"
+        },
+        {
+          "method": "journal",
+          "title": "Individual Reflection Essay",
+          "description": "Students write an essay reflecting on their learning journey, challenges faced, contributions to the team, and insights gained about NYS history and exhibit design.",
+          "type": "summative",
+          "phase": 5
+        },
+        {
+          "phase": 5,
+          "type": "summative",
+          "title": "Docent Presentation",
+          "method": "presentation",
+          "description": "Assessment of students' ability to clearly and engagingly present their exhibit's content and interactive features to the public audience."
+        }
+      ]
+    },
+    "duration": "full",
+    "status": "published",
+    "updatedAt": "2026-04-04T11:27:51.280Z",
+    "topic": "Creating museum exhibits about New York State history and regions for future 4th graders",
+    "crossCurricular": {
+      "standardsAligned": [
+        {
+          "gradeLevel": "4",
+          "subject": "Social Studies",
+          "description": "Students will describe the major regions of New York State and their unique physical and human characteristics.",
+          "code": "4.1a"
+        },
+        {
+          "gradeLevel": "4",
+          "description": "Students will investigate significant historical events and developments in New York State history.",
+          "subject": "Social Studies",
+          "code": "4.4b"
+        },
+        {
+          "gradeLevel": "4",
+          "code": "RI.4.2",
+          "subject": "ELA",
+          "description": "Determine the main idea of a text and explain how it is supported by key details; summarize the text."
+        },
+        {
+          "description": "Write informative/explanatory texts to examine a topic and convey ideas and information clearly.",
+          "code": "W.4.2",
+          "subject": "ELA",
+          "gradeLevel": "4"
+        },
+        {
+          "subject": "ELA",
+          "description": "Report on a topic or text, tell a story, or recount an experience in an organized manner, using appropriate facts and relevant descriptive details to support main ideas or themes; speak clearly at an understandable pace.",
+          "code": "SL.4.4",
+          "gradeLevel": "4"
+        }
+      ],
+      "connections": [
+        {
+          "subject": "ELA",
+          "topic": "Informational Text & Presentation Skills",
+          "connectionDescription": "Students read, analyze, and synthesize informational texts about NYS history. They write clear, concise exhibit labels and practice oral presentation skills as exhibit docents."
+        },
+        {
+          "connectionDescription": "Students use measurement to plan exhibit dimensions, create models to scale, and calculate space needed for interactive elements.",
+          "topic": "Measurement & Scale",
+          "subject": "Math"
+        },
+        {
+          "connectionDescription": "Students apply principles of design, color theory, and visual hierarchy to create aesthetically pleasing and informative exhibit components and graphics.",
+          "topic": "Exhibit Design & Visual Communication",
+          "subject": "Art"
+        },
+        {
+          "subject": "Technology",
+          "connectionDescription": "Students use digital tools for research, create multimedia elements (e.g., short videos, audio clips) for interactive exhibits, and potentially design digital exhibit components.",
+          "topic": "Digital Research & Multimedia Creation"
+        }
+      ]
+    }
+  },
+  {
+    "crossCurricular": {
+      "standardsAligned": [
+        {
+          "subject": "English Language Arts",
+          "description": "Conduct short as well as more sustained research projects to answer a question or solve a problem; narrow or broaden the inquiry when appropriate; synthesize multiple sources on the subject, demonstrating understanding of the subject under investigation.",
+          "code": "CCSS.ELA-LITERACY.W.9-10.7",
+          "gradeLevel": "10"
+        },
+        {
+          "subject": "Government",
+          "code": "NCSS.D2.Civ.10.9-12",
+          "description": "Analyze the impact of constitutions, laws, treaties, and international agreements on the maintenance of national and international order.",
+          "gradeLevel": "10"
+        },
+        {
+          "subject": "Government",
+          "description": "Analyze the role of citizens in the U.S. political system, with attention to strategies used to influence public policy, promote the common good, and address global challenges.",
+          "code": "NCSS.D2.Civ.14.9-12",
+          "gradeLevel": "10"
+        },
+        {
+          "gradeLevel": "10",
+          "description": "Present information, findings, and supporting evidence clearly, concisely, and logically such that listeners can follow the line of reasoning and the organization, development, substance, and style are appropriate to purpose, audience, and task.",
+          "code": "CCSS.ELA-LITERACY.SL.9-10.4",
+          "subject": "English Language Arts"
+        }
+      ],
+      "connections": [
+        {
+          "topic": "Argumentative Writing & Research",
+          "connectionDescription": "Students develop strong research skills, synthesize information from various sources, and construct a persuasive, evidence-based proposal. They practice formal writing and public speaking.",
+          "subject": "English Language Arts"
+        },
+        {
+          "subject": "Art/Design",
+          "topic": "Visual Communication & Infographics",
+          "connectionDescription": "Students apply design principles to create compelling visuals, infographics, or conceptual sketches for their proposals, effectively communicating complex ideas to a public audience."
+        },
+        {
+          "subject": "Economics",
+          "topic": "Resource Allocation & Budgeting",
+          "connectionDescription": "Students consider the economic feasibility of their proposals, researching potential funding sources and developing basic budget outlines for their community action plans."
+        }
+      ]
+    },
+    "assessment": {
+      "rubricType": "both",
+      "summative": [
+        {
+          "description": "Assessment of the comprehensive written proposal, including problem definition, evidence, proposed solutions, feasibility, and clarity.",
+          "method": "rubric",
+          "title": "Final Community Action Plan Proposal",
+          "type": "summative",
+          "phase": 5
+        },
+        {
+          "phase": 5,
+          "type": "summative",
+          "description": "Evaluation of students' ability to clearly articulate their problem, propose solutions, defend their plan with evidence, and engage with their audience.",
+          "title": "Public Presentation of Proposal",
+          "method": "rubric"
+        }
+      ],
+      "formative": [
+        {
+          "type": "formative",
+          "phase": 1,
+          "method": "conference",
+          "title": "Research Plan & Notes Check",
+          "description": "Teacher reviews student groups' research plans and initial notes from policy dives and community outreach to ensure they are on track and gathering relevant information."
+        },
+        {
+          "title": "Draft Proposal Peer Critique",
+          "method": "peer-assessment",
+          "description": "Students receive and provide constructive feedback on their draft community action plans using a structured 'Two Stars and a Wish' protocol.",
+          "phase": 4,
+          "type": "formative"
+        }
+      ]
+    },
+    "title": "Policy Proposal",
+    "updatedAt": "2026-04-04T11:31:16.077Z",
+    "status": "published",
+    "duration": "mini",
+    "topic": "Researching a local policy issue and presenting a formal proposal to community leaders",
+    "drivingQuestion": {
+      "options": [
+        "How can we, as concerned citizens, investigate and propose a community action plan for our local neighborhood association to improve a specific public space?",
+        "How can we, as junior policy advisors, research and develop a formal policy proposal for our City Council to address a pressing local issue impacting community residents?",
+        "How can we, as community development consultants, analyze and advocate for a comprehensive policy brief for our County Commissioners and local advocacy groups to address a complex regional challenge impacting multiple community sectors?"
+      ],
+      "formula": {
+        "audience": "our local neighborhood association",
+        "purpose": "to improve a specific public space",
+        "role": "concerned citizens",
+        "action": "investigate and propose",
+        "product": "community action plan"
+      },
+      "selected": "How can we, as concerned citizens, investigate and propose a community action plan for our local neighborhood association to improve a specific public space?"
+    },
+    "id": "exemplar-policy-proposal",
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "phases": {
+      "problemChallenge": {
+        "expertSuggestions": [
+          "City Parks and Recreation Department staff",
+          "Local urban planners or landscape architects",
+          "Community organizers or non-profit leaders focused on public spaces",
+          "Local business owners adjacent to the public space"
+        ],
+        "needToKnow": [
+          "What are the specific issues or opportunities in our chosen public space?",
+          "Who are the key stakeholders involved (users, neighbors, local government, businesses)?",
+          "What resources (financial, human, policy) are available or could be leveraged?",
+          "What are successful examples of public space improvements in similar communities?",
+          "What are the potential political, social, and environmental impacts of our proposed solutions?"
+        ],
+        "refinedDQ": "How can we, as concerned citizens, investigate current conditions and propose a sustainable community action plan for our local neighborhood association to improve a specific public space for its users?"
+      },
+      "share": {
+        "reflectionPrompts": [
+          "What did you learn about the complexities of local government and community decision-making?",
+          "How did your perspective on the role of citizens in improving their community evolve during this project?",
+          "What was the most challenging part of developing your action plan, and how did you overcome it?",
+          "If you had more time, what would be your next steps to implement your proposed plan?"
+        ],
+        "audienceSuggestions": [
+          "Local Neighborhood Association Board members",
+          "City Council members or their representatives",
+          "School administration and parent groups",
+          "Fellow students and community members at a public exhibition"
+        ],
+        "presentationFormats": [
+          "Formal presentation with Q&A session to the Neighborhood Association.",
+          "Public display of proposals (e.g., 'Community Solutions Fair') in a school common area.",
+          "Digital proposal shared via school or community platforms."
+        ]
+      },
+      "entryEvent": {
+        "ideas": [
+          {
+            "type": "guest",
+            "materials": [
+              "projector",
+              "speaker contact information",
+              "student pre-written questions"
+            ],
+            "title": "Guest Speaker: Neighborhood Association Leader",
+            "timeNeeded": "45-60 minutes",
+            "description": "Invite a representative from the local neighborhood association to share current challenges and opportunities related to public spaces in the community. Students can prepare questions in advance."
+          },
+          {
+            "type": "artifact",
+            "materials": [
+              "curated photos/videos of local public spaces",
+              "discussion prompts",
+              "whiteboard/chart paper"
+            ],
+            "title": "Public Space Photo Analysis",
+            "timeNeeded": "30-40 minutes",
+            "description": "Provide students with a collection of photos (or short videos) of various local public spaces, both well-maintained and neglected. Students analyze and discuss what makes a space inviting or problematic."
+          }
+        ]
+      },
+      "create": {
+        "iterationPlan": "Students will review peer and teacher feedback, identify key areas for improvement in their proposal, and revise content, visuals, and arguments to strengthen their community action plan before final submission.",
+        "critiqueProtocol": "Students will engage in a 'Gallery Walk' critique. Each group's draft proposal will be displayed, and peers will use 'Two Stars and a Wish' protocol to provide specific, constructive feedback on clarity, evidence, and feasibility.",
+        "materials": [
+          "Computers with internet access",
+          "Presentation software (e.g., Google Slides, Canva)",
+          "Poster board and art supplies (optional for visual aids)",
+          "Printer",
+          "Access to research databases and credible online sources"
+        ],
+        "prototypingIdeas": [
+          "A formal written proposal document outlining the problem, proposed solution, budget, and implementation plan.",
+          "A visual presentation (e.g., Google Slides, PowerPoint) incorporating data, images, and conceptual designs.",
+          "An infographic or poster summarizing key findings and the proposed action plan for easy public consumption.",
+          "A simple conceptual sketch or diagram of the improved public space."
+        ]
+      },
+      "investigation": {
+        "empathyExercises": [
+          "Conducting empathy interviews with diverse community members about their use and experience of public spaces.",
+          "Observing a public space for a set period, noting who uses it, how they use it, and what challenges they might face.",
+          "Creating 'user personas' for different types of community members who might use the public space."
+        ],
+        "skills": [
+          "Policy analysis and interpretation",
+          "Qualitative and quantitative data collection",
+          "Interview and survey design",
+          "Critical thinking and problem identification",
+          "Stakeholder mapping",
+          "Evidence-based argumentation"
+        ],
+        "resources": [
+          {
+            "title": "City/County Government Websites",
+            "type": "tool",
+            "description": "Official sources for local ordinances, budget documents, and public meeting minutes related to parks, recreation, and community development."
+          },
+          {
+            "description": "Information on local initiatives, past projects, and community priorities for specific neighborhoods.",
+            "title": "Neighborhood Association Websites/Documents",
+            "type": "tool"
+          },
+          {
+            "description": "A structured guide for conducting respectful and effective interviews with community members or experts.",
+            "type": "template",
+            "title": "Interview Protocol Template"
+          },
+          {
+            "type": "article",
+            "title": "Public Space Design Principles Articles",
+            "description": "Examples and best practices for creating inclusive, safe, and engaging public spaces from urban planning and design perspectives."
+          }
+        ],
+        "activities": [
+          {
+            "duration": "1-2 hours",
+            "description": "Students research existing city ordinances, neighborhood association bylaws, and budget allocations related to public spaces. They identify key decision-makers and relevant policies.",
+            "title": "Local Policy Deep Dive",
+            "type": "research",
+            "phase": 2
+          },
+          {
+            "title": "Community Needs & Asset Mapping",
+            "duration": "2-3 hours",
+            "description": "Students design and conduct short interviews or surveys with community members (online or in-person, as feasible) to understand their perceptions, needs, and desires for local public spaces. They also identify existing community assets.",
+            "type": "collaboration",
+            "phase": 2
+          },
+          {
+            "type": "skill-building",
+            "phase": 2,
+            "duration": "1 hour",
+            "description": "Based on their research, students identify and define a specific, actionable problem within a local public space. They will articulate the scope and potential impact of this problem.",
+            "title": "Problem Framing Workshop"
+          }
+        ]
+      }
+    },
+    "gradeLevel": "10",
+    "userId": "pblteach-team",
+    "published": {
+      "adaptationCount": 0,
+      "hidden": false,
+      "featured": false,
+      "authorName": "PBLTeach Team",
+      "ratingCount": 0,
+      "authorSchool": null,
+      "publishedAt": "2026-04-04T11:31:16.077Z",
+      "ratingSum": 0
+    },
+    "source": "builder",
+    "createdAt": "2026-04-04T11:31:16.077Z",
+    "subjects": [
+      "Government"
+    ],
+    "comfortLevel": "experienced"
+  },
+  {
+    "crossCurricular": {
+      "connections": [
+        {
+          "topic": "Persuasive Writing & Public Speaking",
+          "connectionDescription": "Students develop persuasive arguments for their PSA scripts and practice public speaking skills when presenting their work.",
+          "subject": "English Language Arts"
+        },
+        {
+          "subject": "Digital Arts / Media Literacy",
+          "connectionDescription": "Students learn principles of visual communication, video editing, and responsible media creation while producing their digital PSAs.",
+          "topic": "Video Production & Graphic Design"
+        },
+        {
+          "topic": "Community Health & Advocacy",
+          "connectionDescription": "Students explore how public health campaigns address societal issues and understand their role as advocates for community well-being.",
+          "subject": "Social Studies"
+        }
+      ],
+      "standardsAligned": [
+        {
+          "gradeLevel": "8",
+          "subject": "English Language Arts",
+          "code": "CCSS.ELA-LITERACY.W.8.2",
+          "description": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content."
+        },
+        {
+          "code": "NMP.8.2",
+          "subject": "Health",
+          "description": "Analyze the influence of family, peers, culture, media, technology, and other factors on health behaviors.",
+          "gradeLevel": "8"
+        },
+        {
+          "code": "ISTE.3.c",
+          "subject": "Digital Literacy",
+          "description": "Students demonstrate an understanding of and respect for the rights and obligations of using and sharing intellectual property.",
+          "gradeLevel": "8"
+        }
+      ]
+    },
+    "topic": "Researching a teen health issue and creating a public service announcement campaign",
+    "status": "published",
+    "duration": "mini",
+    "updatedAt": "2026-04-04T11:30:21.860Z",
+    "title": "PSA Campaign",
+    "assessment": {
+      "formative": [
+        {
+          "phase": 2,
+          "type": "formative",
+          "description": "Students submit organized notes and a brief summary of their chosen health issue and target audience insights.",
+          "title": "Research Notes & Summary",
+          "method": "journal"
+        },
+        {
+          "method": "peer-assessment",
+          "title": "PSA Storyboard & Script Draft",
+          "description": "Students present their detailed storyboard and script for peer and teacher feedback.",
+          "type": "formative",
+          "phase": 4
+        },
+        {
+          "phase": 4,
+          "type": "formative",
+          "description": "Students document the feedback they received and how they incorporated it into their PSA revisions.",
+          "title": "Critique & Revision Log",
+          "method": "self-assessment"
+        }
+      ],
+      "summative": [
+        {
+          "phase": 5,
+          "type": "summative",
+          "title": "Final Digital PSA Campaign",
+          "method": "rubric",
+          "description": "The completed digital public service announcement, evaluated for content accuracy, persuasive elements, creativity, and technical quality."
+        },
+        {
+          "method": "journal",
+          "title": "Project Reflection Essay",
+          "description": "A written reflection on the learning process, challenges encountered, and the impact of their PSA on the intended audience.",
+          "type": "summative",
+          "phase": 5
+        }
+      ],
+      "rubricType": "both"
+    },
+    "gradeLevel": "8",
+    "phases": {
+      "create": {
+        "materials": [
+          "Computers/tablets with internet access",
+          "Video editing software (e.g., iMovie, Clipchamp, Canva Video Editor)",
+          "Microphones (optional, for better audio quality)",
+          "Cameras (phone cameras are acceptable)",
+          "Storyboarding templates",
+          "Scriptwriting guides"
+        ],
+        "iterationPlan": "After receiving feedback, students will revise their storyboards, scripts, and initial video cuts, focusing on strengthening their message and improving production quality. They will then present their revised drafts for a final round of peer review or teacher check-in.",
+        "critiqueProtocol": "Students will use a 'Two Stars and a Wish' protocol, providing specific, actionable feedback on their peers' PSA prototypes regarding clarity, persuasiveness, and visual appeal.",
+        "prototypingIdeas": [
+          "Develop storyboards outlining the visual and audio elements of the PSA.",
+          "Draft scripts for voiceovers, dialogue, or on-screen text.",
+          "Create initial mock-ups or rough cuts of the digital PSA using basic editing tools."
+        ]
+      },
+      "investigation": {
+        "empathyExercises": [
+          "Interviewing middle school peers about their health concerns and media consumption habits.",
+          "Creating 'persona' profiles for different types of middle schoolers to better target their message."
+        ],
+        "skills": [
+          "Research and information literacy",
+          "Critical analysis of media",
+          "Empathy and audience understanding",
+          "Persuasive communication",
+          "Digital tool proficiency"
+        ],
+        "activities": [
+          {
+            "type": "research",
+            "phase": 2,
+            "description": "Students, in small groups, research a specific teen health issue (e.g., sleep deprivation, digital wellness, healthy eating, stress management) using credible sources.",
+            "duration": "90 minutes",
+            "title": "Teen Health Issue Deep Dive"
+          },
+          {
+            "title": "Anatomy of an Effective PSA",
+            "duration": "60 minutes",
+            "description": "Students analyze various PSAs to identify common persuasive techniques, visual storytelling, and audience engagement strategies.",
+            "type": "skill-building",
+            "phase": 2
+          },
+          {
+            "type": "empathy",
+            "phase": 2,
+            "title": "Understanding Our Audience",
+            "description": "Students conduct brief anonymous surveys or interviews with a sample of their middle school peers to understand their perspectives and preferred communication styles regarding health topics.",
+            "duration": "60 minutes"
+          }
+        ],
+        "resources": [
+          {
+            "description": "Data and statistics on key health behaviors among high school students in the U.S.",
+            "type": "article",
+            "title": "CDC Youth Risk Behavior Surveillance System (YRBSS)"
+          },
+          {
+            "description": "Resources on digital well-being, cyberbullying, and media literacy for teens.",
+            "type": "video",
+            "title": "Common Sense Media - Digital Citizenship"
+          },
+          {
+            "description": "A tool to help organize project ideas and steps during investigation.",
+            "type": "template",
+            "title": "PBLWorks Project Planning Guide"
+          }
+        ]
+      },
+      "entryEvent": {
+        "ideas": [
+          {
+            "timeNeeded": "45 minutes",
+            "description": "Students watch a curated montage of effective and less effective public service announcements targeting teens, followed by a discussion on what makes a message resonate.",
+            "title": "Impactful PSAs Showcase",
+            "materials": [
+              "projector",
+              "computer",
+              "internet access",
+              "discussion guide"
+            ],
+            "type": "video"
+          },
+          {
+            "type": "guest",
+            "materials": [
+              "guest speaker",
+              "prepared questions",
+              "notetaking supplies"
+            ],
+            "title": "Local Health Hero Q&A",
+            "timeNeeded": "45-60 minutes",
+            "description": "A school nurse or local health professional shares common health challenges observed among middle schoolers and discusses the power of peer education."
+          }
+        ]
+      },
+      "share": {
+        "presentationFormats": [
+          "Digital display on school monitors during lunch or passing periods",
+          "Dedicated 'Health Awareness' section on the school's learning management system",
+          "Short presentation during a school assembly or advisory period, followed by Q&A"
+        ],
+        "audienceSuggestions": [
+          "Other middle school classes (e.g., during health or advisory periods)",
+          "School staff and administrators",
+          "School website or social media channels (with school permission)",
+          "Parent-teacher organization meetings"
+        ],
+        "reflectionPrompts": [
+          "What was the most challenging part of creating your digital PSA, and how did you overcome it?",
+          "How effective do you think your PSA will be in influencing your peers, and why?",
+          "What did you learn about the health issue you researched, and what did you learn about effective communication?",
+          "If you could revise your PSA one more time, what would you change and why?"
+        ]
+      },
+      "problemChallenge": {
+        "needToKnow": [
+          "What are the most pressing health issues for our middle school peers?",
+          "What makes a digital PSA engaging and memorable for a middle school audience?",
+          "What digital tools and techniques are best for creating a high-quality PSA?",
+          "How can we effectively convey our message to encourage positive behavior change?"
+        ],
+        "expertSuggestions": [
+          "Invite the school nurse to review research findings and provide feedback on accuracy and relevance.",
+          "Consult with a media specialist or art teacher for guidance on digital design and video editing best practices."
+        ],
+        "refinedDQ": "How might we, as school health ambassadors, design and produce an impactful digital PSA campaign that inspires our middle school peers to address a specific teen health challenge and adopt healthier habits?"
+      }
+    },
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "drivingQuestion": {
+      "options": [
+        "How can we, as school health ambassadors, create a digital PSA for our middle school peers to raise awareness about a common teen health challenge and encourage healthy habits?",
+        "How can we, as teen wellness communicators, design and launch a multi-platform awareness campaign for teens in our community to effectively inform them about a critical health issue and promote positive coping strategies?",
+        "How can we, as public health advocates, develop and present an influential policy brief and accompanying PSA campaign for local school board members and community leaders to advocate for improved resources or support systems addressing a pressing teen mental health concern?"
+      ],
+      "formula": {
+        "action": "create",
+        "product": "a digital PSA",
+        "role": "school health ambassadors",
+        "audience": "our middle school peers",
+        "purpose": "to raise awareness about a common teen health challenge and encourage healthy habits"
+      },
+      "selected": "How can we, as school health ambassadors, create a digital PSA for our middle school peers to raise awareness about a common teen health challenge and encourage healthy habits?"
+    },
+    "id": "exemplar-psa-campaign",
+    "comfortLevel": "tried",
+    "subjects": [
+      "Health"
+    ],
+    "createdAt": "2026-04-04T11:30:21.860Z",
+    "source": "builder",
+    "published": {
+      "ratingSum": 0,
+      "publishedAt": "2026-04-04T11:30:21.860Z",
+      "ratingCount": 0,
+      "authorSchool": null,
+      "hidden": false,
+      "adaptationCount": 0,
+      "authorName": "PBLTeach Team",
+      "featured": false
+    },
+    "userId": "pblteach-team"
+  },
+  {
+    "status": "published",
+    "duration": "mini",
+    "updatedAt": "2026-04-04T11:25:20.574Z",
+    "title": "School Community / Active Citizens",
+    "assessment": {
+      "formative": [
+        {
+          "title": "Investigation Notes Check",
+          "method": "journal",
+          "description": "Teacher observes and reviews student checklists from the school tour and interview notes to see if key information was gathered.",
+          "phase": 2,
+          "type": "formative"
+        },
+        {
+          "type": "formative",
+          "phase": 4,
+          "description": "Teacher observes student participation in the 'Two Stars and a Wish' critique session and their efforts to revise their guide.",
+          "method": "peer-assessment",
+          "title": "Critique and Revision Participation"
+        }
+      ],
+      "rubricType": "both",
+      "summative": [
+        {
+          "type": "summative",
+          "phase": 5,
+          "method": "rubric",
+          "title": "Welcome Guide Rubric",
+          "description": "Assess the final welcome guide based on clarity of drawings, inclusion of important information, and overall helpfulness for a new student."
+        },
+        {
+          "type": "summative",
+          "phase": 5,
+          "method": "presentation",
+          "title": "Presentation and Reflection",
+          "description": "Assess students' ability to clearly explain their guide and reflect on their learning and the project's purpose."
+        }
+      ]
+    },
+    "topic": "How our school community works and how we can be active citizens who make it better",
+    "crossCurricular": {
+      "connections": [
+        {
+          "subject": "English Language Arts",
+          "topic": "Informational Writing & Communication",
+          "connectionDescription": "Students practice simple informational writing, labeling, speaking, and listening skills while gathering and presenting information for their guide."
+        },
+        {
+          "subject": "Art",
+          "connectionDescription": "Students use drawing to convey information clearly and design their welcome guides for visual appeal and ease of understanding.",
+          "topic": "Illustration & Design"
+        },
+        {
+          "connectionDescription": "Students develop empathy by considering the feelings and needs of new students and learn about their role in building a welcoming school community.",
+          "topic": "Empathy & Community",
+          "subject": "Social Emotional Learning (SEL)"
+        }
+      ],
+      "standardsAligned": [
+        {
+          "gradeLevel": "1",
+          "description": "Use maps, globes, and other geographic representations to show the absolute and relative locations of places.",
+          "code": "C3.D2.Geo.2.K-2",
+          "subject": "Social Studies"
+        },
+        {
+          "subject": "Social Studies",
+          "description": "Explain how all people, not just official leaders, can work to influence others' actions and make a difference in the school, community, and nation.",
+          "code": "C3.D2.Civ.2.K-2",
+          "gradeLevel": "1"
+        },
+        {
+          "description": "Write informative/explanatory texts in which they name a topic, supply some facts about the topic, and provide some sense of closure.",
+          "subject": "English Language Arts",
+          "code": "CCSS.ELA-LITERACY.W.1.2",
+          "gradeLevel": "1"
+        }
+      ]
+    },
+    "source": "builder",
+    "published": {
+      "publishedAt": "2026-04-04T11:25:20.574Z",
+      "ratingSum": 0,
+      "hidden": false,
+      "adaptationCount": 0,
+      "authorName": "PBLTeach Team",
+      "featured": true,
+      "ratingCount": 0,
+      "authorSchool": null
+    },
+    "userId": "pblteach-team",
+    "comfortLevel": "new",
+    "subjects": [
+      "Social Studies"
+    ],
+    "createdAt": "2026-04-04T11:25:20.574Z",
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "drivingQuestion": {
+      "options": [
+        "How can we, as school helpers, create a welcome guide for new students to help them feel at home?",
+        "How can we, as school problem-solvers, design a plan for our principal to make our playground safer and more fun?",
+        "How can we, as school community advocates, create an awareness campaign for all students and staff to encourage kindness and respect in our hallways?"
+      ],
+      "selected": "How can we, as school helpers, create a welcome guide for new students to help them feel at home?",
+      "formula": {
+        "product": "a welcome guide",
+        "action": "create",
+        "role": "school helpers",
+        "purpose": "to help them feel at home",
+        "audience": "new students"
+      }
+    },
+    "id": "exemplar-school-community-active-citizens",
+    "gradeLevel": "1",
+    "phases": {
+      "entryEvent": {
+        "ideas": [
+          {
+            "materials": [
+              "Letter printed on paper",
+              "envelope"
+            ],
+            "type": "artifact",
+            "timeNeeded": "15 minutes",
+            "description": "Read a letter (written by the teacher) from a 'new student' expressing worries about starting school and not knowing anyone or anything. Ask students how they would feel and what they would want to know.",
+            "title": "A Letter from a New Student"
+          },
+          {
+            "type": "guest",
+            "materials": [
+              "Guest speaker",
+              "question chart"
+            ],
+            "title": "Guest Speaker: The Principal or School Counselor",
+            "timeNeeded": "20 minutes",
+            "description": "Invite the principal or school counselor to talk about how they help new students feel welcome and what information they often share. They can emphasize the importance of kindness and community."
+          }
+        ]
+      },
+      "share": {
+        "audienceSuggestions": [
+          "New students who join the school throughout the year",
+          "The principal and school staff",
+          "Parents/guardians during a 'Show and Tell' event",
+          "Other first-grade classes"
+        ],
+        "presentationFormats": [
+          "Students individually present their welcome guide to a small group of peers or a staff member, explaining their favorite parts.",
+          "Display all welcome guides in the main school hallway or library for the whole school community to see.",
+          "Deliver the guides to the principal's office to be given to new students upon enrollment."
+        ],
+        "reflectionPrompts": [
+          "What was the most important thing you learned about our school community?",
+          "How did it feel to think about what a new student might need?",
+          "What part of your welcome guide are you most proud of and why?",
+          "If you could add one more thing to your guide, what would it be?",
+          "How did you help your classmates, or how did they help you?"
+        ]
+      },
+      "problemChallenge": {
+        "refinedDQ": "How can we, as first-grade school helpers, create a picture-filled welcome guide for new students to help them feel happy and know their way around our school?",
+        "expertSuggestions": [
+          "Ask the principal what new students often ask about.",
+          "Consult with older students about what they wished they knew when they were new.",
+          "Talk to the school counselor about common worries new students have."
+        ],
+        "needToKnow": [
+          "What important places do new students need to know?",
+          "Who are the important people at school?",
+          "What rules or routines are important for new students?",
+          "What makes our school a special and friendly place?",
+          "How can we draw clear pictures and write simple words for our guide?"
+        ]
+      },
+      "create": {
+        "iterationPlan": "Students will review feedback from their partners and make at least one change or addition to their guide based on the 'wish' or their own new ideas. This could be adding a label, drawing a clearer picture, or including a new piece of information.",
+        "critiqueProtocol": "Use a 'Two Stars and a Wish' protocol: Students share their guide with a partner, who gives two things they like (stars) and one suggestion for improvement (a wish).",
+        "materials": [
+          "Paper (various sizes and types)",
+          "Crayons, colored pencils, markers",
+          "Scissors",
+          "Glue sticks",
+          "Staplers",
+          "Pre-printed simple templates for guide pages (optional)"
+        ],
+        "prototypingIdeas": [
+          "Students sketch ideas for pages in their guide, focusing on a specific place or person.",
+          "Create simple accordion-fold books or stapled booklets with drawing space.",
+          "Practice drawing clear symbols or pictures for key locations (e.g., a toilet for restrooms, a book for the library)."
+        ]
+      },
+      "investigation": {
+        "empathyExercises": [
+          "Imagine you are a new student: What would you be worried about?",
+          "Role-play meeting a new student and showing them around.",
+          "Discuss what makes someone feel safe and happy in a new place."
+        ],
+        "skills": [
+          "Asking questions",
+          "Active listening",
+          "Mapping and spatial awareness",
+          "Identifying important information",
+          "Collaborating in small groups",
+          "Expressing ideas through drawing and simple writing"
+        ],
+        "resources": [
+          {
+            "title": "Our School Map Template",
+            "type": "template",
+            "description": "A simple, blank map of the school with key areas outlined for students to label or draw details."
+          },
+          {
+            "description": "Read-alouds like 'First Day Jitters' or 'The Kissing Hand' to connect with feelings of being new.",
+            "type": "book",
+            "title": "Picture Books about Starting School"
+          }
+        ],
+        "activities": [
+          {
+            "type": "research",
+            "phase": 2,
+            "title": "School Tour Scavenger Hunt",
+            "duration": "30 minutes",
+            "description": "Take students on a tour of key school locations (office, nurse, library, cafeteria, playground). Students use a simple checklist with pictures to mark off places they visit and important people they meet."
+          },
+          {
+            "type": "research",
+            "phase": 2,
+            "duration": "25 minutes",
+            "description": "In small groups, students interview an older student, school staff member (e.g., custodian, librarian), or the principal about their role and what makes our school special and welcoming.",
+            "title": "Interview a 'School Helper'"
+          },
+          {
+            "type": "creation",
+            "phase": 2,
+            "title": "Draw Your Favorite School Place",
+            "description": "Students draw and label their favorite place in the school and explain why it's a good spot for a new friend to know about. This helps them identify important features and build empathy.",
+            "duration": "20 minutes"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "crossCurricular": {
+      "standardsAligned": [
+        {
+          "gradeLevel": "11-12",
+          "subject": "ELA",
+          "description": "Present information, findings, and supporting evidence, conveying a clear and distinct perspective and a suitable style and organization.",
+          "code": "CCSS.ELA-LITERACY.SL.11-12.4"
+        },
+        {
+          "gradeLevel": "9-12",
+          "code": "NBEA.CM.12.1",
+          "subject": "Business",
+          "description": "Analyze the role of marketing in a business to satisfy customers and achieve organizational objectives."
+        },
+        {
+          "code": "NCTM.HS.F-BF.1",
+          "description": "Write a function that describes a relationship between two quantities.",
+          "subject": "Math",
+          "gradeLevel": "9-12"
+        },
+        {
+          "gradeLevel": "11-12",
+          "code": "CCSS.ELA-LITERACY.W.11-12.7",
+          "description": "Conduct short as well as more sustained research projects to answer a question (including a self-generated question) or solve a problem.",
+          "subject": "ELA"
+        }
+      ],
+      "connections": [
+        {
+          "connectionDescription": "Students apply principles of business model canvas, market analysis, branding, and persuasive communication to develop and present a viable startup concept.",
+          "topic": "Entrepreneurship & Marketing",
+          "subject": "Business"
+        },
+        {
+          "connectionDescription": "Students utilize mathematical concepts for financial projections (revenue, expenses, profit), break-even analysis, and interpreting market research data to make informed decisions.",
+          "topic": "Financial Literacy & Data Analysis",
+          "subject": "Math"
+        },
+        {
+          "topic": "Research, Writing & Public Speaking",
+          "connectionDescription": "Students conduct primary and secondary research, synthesize information into a coherent business plan, craft persuasive pitch narratives, and deliver compelling oral presentations.",
+          "subject": "ELA"
+        }
+      ]
+    },
+    "updatedAt": "2026-04-04T11:31:45.902Z",
+    "status": "published",
+    "duration": "full",
+    "assessment": {
+      "formative": [
+        {
+          "type": "formative",
+          "phase": 2,
+          "description": "Students submit initial findings from their market research, including survey data, interview summaries, and competitor analysis. Assessed for thoroughness and data interpretation.",
+          "method": "rubric",
+          "title": "Market Research Report Draft"
+        },
+        {
+          "title": "Lean Canvas Feedback Session",
+          "method": "peer-assessment",
+          "description": "Teams present their initial Lean Canvas to peers and the teacher for feedback on their business model's logic and completeness.",
+          "phase": 3,
+          "type": "formative"
+        },
+        {
+          "phase": 4,
+          "type": "formative",
+          "title": "Pitch Deck Section Review",
+          "method": "conference",
+          "description": "Students submit specific sections of their pitch deck (e.g., problem/solution, market opportunity) for teacher review and feedback on clarity and persuasiveness."
+        }
+      ],
+      "summative": [
+        {
+          "method": "presentation",
+          "title": "Final Business Pitch",
+          "description": "Teams deliver their comprehensive business pitch to an authentic audience, showcasing their startup concept, market research, and financial projections.",
+          "type": "summative",
+          "phase": 5
+        },
+        {
+          "type": "summative",
+          "phase": 5,
+          "description": "Students submit a finalized business plan document and pitch deck, reflecting all iterations and feedback throughout the project.",
+          "method": "portfolio",
+          "title": "Complete Business Plan & Pitch Deck"
+        },
+        {
+          "type": "summative",
+          "phase": 5,
+          "method": "journal",
+          "title": "Individual Reflection Essay",
+          "description": "Students write an essay reflecting on their learning journey, challenges, contributions, and growth as an entrepreneur and collaborator."
+        }
+      ],
+      "rubricType": "both"
+    },
+    "title": "Startup Pitch",
+    "topic": "Developing a startup business idea with market research, financial projections, and a pitch deck",
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "drivingQuestion": {
+      "options": [
+        "How can we, as aspiring entrepreneurs, design a startup business concept for local community members to solve a specific problem they face?",
+        "How can we, as innovative business strategists, develop and pitch a market-ready startup solution for potential investors to secure initial funding and create positive impact?",
+        "How can we, as impact-driven founders, design and prototype a scalable social enterprise for early adopter customers and impact investors to address a pressing global or community challenge sustainably?"
+      ],
+      "selected": "How can we, as aspiring entrepreneurs, design a startup business concept for local community members to solve a specific problem they face?",
+      "formula": {
+        "action": "design",
+        "product": "a startup business concept",
+        "audience": "local community members",
+        "purpose": "to solve a specific problem they face",
+        "role": "aspiring entrepreneurs"
+      }
+    },
+    "id": "exemplar-startup-pitch",
+    "phases": {
+      "entryEvent": {
+        "ideas": [
+          {
+            "title": "Local Entrepreneur Panel",
+            "timeNeeded": "90 minutes",
+            "description": "Invite 2-3 local entrepreneurs from diverse fields to share their startup journeys, challenges, and successes. Students can ask questions about identifying problems, market entry, and funding.",
+            "type": "guest",
+            "materials": [
+              "projector",
+              "microphone",
+              "chairs",
+              "Q&A guide"
+            ]
+          },
+          {
+            "type": "video",
+            "materials": [
+              "TV/projector",
+              "internet access",
+              "viewing guide worksheet"
+            ],
+            "title": "Shark Tank Episode Analysis",
+            "description": "Watch a curated 'Shark Tank' episode, focusing on how entrepreneurs identify problems, pitch solutions, and address investor questions. Students identify key elements of a compelling business idea.",
+            "timeNeeded": "60 minutes"
+          },
+          {
+            "materials": [
+              "large sticky notes",
+              "markers",
+              "whiteboard/chart paper"
+            ],
+            "type": "activity",
+            "timeNeeded": "75 minutes",
+            "description": "Facilitate a structured brainstorming session using design thinking 'How Might We' questions to uncover local community problems. Students identify areas where a startup could make an impact.",
+            "title": "Community Problem Brainstorm"
+          }
+        ]
+      },
+      "share": {
+        "presentationFormats": [
+          "A formal 'Shark Tank'-style business pitch (10-12 minutes) including Q&A.",
+          "A business expo booth where teams present their concept and supporting materials to rotating visitors.",
+          "A digital portfolio showcasing their complete business plan, market research, and pitch deck."
+        ],
+        "audienceSuggestions": [
+          "A panel of local entrepreneurs or business owners (community experts)",
+          "School administrators and faculty",
+          "Parents and community members (e.g., at a school showcase or 'pitch night')",
+          "Representatives from local economic development organizations"
+        ],
+        "reflectionPrompts": [
+          "What was the most challenging part of developing your startup idea, and how did you overcome it?",
+          "How did your understanding of the community problem evolve throughout the project, and how did that impact your solution?",
+          "If you had more time, what would be your next steps to further develop or launch this business?",
+          "What new skills did you develop during this project, and how might you apply them in the future?"
+        ]
+      },
+      "problemChallenge": {
+        "refinedDQ": "How can we, as aspiring entrepreneurs, design an innovative startup business concept for local community members to solve a specific problem they face, demonstrating its viability through market research and financial projections?",
+        "needToKnow": [
+          "What specific problem are we trying to solve for our chosen community members?",
+          "Who exactly is our target audience, and what are their specific needs and pain points?",
+          "What existing solutions (competitors) are there, and how will our solution be different/better?",
+          "What is our business model (how will we make money)?",
+          "What are the startup costs and ongoing expenses?",
+          "What are our projected revenues and profit margins?",
+          "How will we market and deliver our product/service?",
+          "What are the key components of a compelling pitch deck and business plan?"
+        ],
+        "expertSuggestions": [
+          "Encourage students to narrow their focus to a specific, manageable problem rather than trying to solve everything.",
+          "Provide clear checkpoints for teacher feedback on market research and financial models before students proceed too far.",
+          "Emphasize that failure or pivoting is a natural part of the entrepreneurial process; promote a growth mindset."
+        ]
+      },
+      "create": {
+        "prototypingIdeas": [
+          "Develop a detailed Lean Canvas outlining the business model, value proposition, customer segments, and key activities.",
+          "Create a low-fidelity mock-up or wireframe of a product (e.g., app interface, website layout) or a service blueprint.",
+          "Design a basic marketing flyer or social media campaign concept to test audience interest.",
+          "Draft a concise executive summary and problem/solution slides for their pitch deck."
+        ],
+        "materials": [
+          "Laptops/computers with presentation software (Google Slides, PowerPoint, Canva)",
+          "Spreadsheet software (Google Sheets, Excel) for financial models",
+          "Whiteboards and markers for brainstorming",
+          "Access to online market research tools and data"
+        ],
+        "iterationPlan": "Students will revise their business concept, pitch deck, and financial projections based on peer and teacher feedback. They will conduct additional research or user testing as needed to refine their solution and address identified weaknesses.",
+        "critiqueProtocol": "Use a 'Two Stars and a Wish' protocol for peer feedback on draft pitch deck slides and business model ideas. Students provide two specific strengths ('stars') and one actionable suggestion for improvement ('wish')."
+      },
+      "investigation": {
+        "resources": [
+          {
+            "type": "template",
+            "title": "Lean Canvas Template",
+            "description": "A one-page business plan template for quickly outlining a business model."
+          },
+          {
+            "description": "Resources and articles from the U.S. Small Business Administration on starting and growing a business.",
+            "title": "SBA Small Business Guide",
+            "type": "article"
+          },
+          {
+            "type": "tool",
+            "title": "Canva for Pitch Decks",
+            "description": "An online graphic design tool with templates for creating professional-looking pitch decks."
+          },
+          {
+            "type": "article",
+            "title": "Investopedia: Basic Financial Terms",
+            "description": "A comprehensive resource for understanding key financial vocabulary and concepts."
+          }
+        ],
+        "activities": [
+          {
+            "phase": 2,
+            "type": "research",
+            "description": "Students learn quantitative and qualitative market research techniques, including surveys, interviews, and competitive analysis, to gather data on identified community problems and potential solutions.",
+            "duration": "3-4 hours",
+            "title": "Market Research Workshop"
+          },
+          {
+            "title": "Financial Projections Primer",
+            "description": "Introduce key financial concepts like revenue models, startup costs, profit margins, and break-even analysis. Students use templates to create initial financial projections for their proposed business.",
+            "duration": "2-3 hours",
+            "type": "skill-building",
+            "phase": 2
+          },
+          {
+            "title": "Pitch Deck Design Principles",
+            "duration": "2 hours",
+            "description": "Explore effective storytelling and visual communication for business pitches. Students analyze successful pitch decks and learn to structure their narrative, create engaging slides, and deliver with confidence.",
+            "phase": 2,
+            "type": "skill-building"
+          },
+          {
+            "title": "Team Roles & Collaboration Charter",
+            "duration": "1 hour",
+            "description": "Students form teams and define individual roles, responsibilities, and communication norms. They create a team charter to guide their collaborative work throughout the project.",
+            "phase": 2,
+            "type": "collaboration"
+          }
+        ],
+        "empathyExercises": [
+          "Conduct user interviews with target community members to understand their specific problems and needs.",
+          "Create detailed user personas based on research to represent different segments of the target audience.",
+          "Participate in a 'day in the life' observation (if feasible) of a community member experiencing the problem."
+        ],
+        "skills": [
+          "Market research and data analysis",
+          "Financial modeling and projection",
+          "Persuasive communication and presentation",
+          "Problem-solving and critical thinking",
+          "Collaboration and teamwork",
+          "Empathy and user-centered design"
+        ]
+      }
+    },
+    "gradeLevel": "11",
+    "source": "builder",
+    "userId": "pblteach-team",
+    "published": {
+      "ratingCount": 0,
+      "authorSchool": null,
+      "hidden": false,
+      "adaptationCount": 0,
+      "authorName": "PBLTeach Team",
+      "featured": false,
+      "ratingSum": 0,
+      "publishedAt": "2026-04-04T11:31:45.902Z"
+    },
+    "comfortLevel": "experienced",
+    "createdAt": "2026-04-04T11:31:45.902Z",
+    "subjects": [
+      "Business",
+      "Math",
+      "ELA"
+    ]
+  },
+  {
+    "topic": "Investigating a UN Sustainable Development Goal and proposing local action plans",
+    "status": "published",
+    "duration": "full",
+    "updatedAt": "2026-04-04T11:30:46.980Z",
+    "title": "UN Sustainable Development Goals",
+    "assessment": {
+      "formative": [
+        {
+          "phase": 1,
+          "type": "formative",
+          "title": "Research Portfolio Check-in",
+          "method": "conference",
+          "description": "Teachers review student research notes, interview summaries, and data analysis to ensure depth of understanding and progress in investigation."
+        },
+        {
+          "method": "peer-assessment",
+          "title": "Campaign Concept Pitch",
+          "description": "Students present their initial campaign ideas, target audience, and desired actions to peers and the teacher for early feedback.",
+          "type": "formative",
+          "phase": 3
+        },
+        {
+          "phase": 4,
+          "type": "formative",
+          "description": "Students submit their revised campaign prototypes along with a log detailing how they incorporated feedback from critique sessions.",
+          "title": "Critique & Revision Log",
+          "method": "portfolio"
+        }
+      ],
+      "rubricType": "both",
+      "summative": [
+        {
+          "phase": 5,
+          "type": "summative",
+          "description": "Students present their completed awareness campaign to an authentic audience, demonstrating their understanding of SDG 4 inequities and their proposed solutions.",
+          "title": "Final Awareness Campaign Presentation & Product",
+          "method": "presentation"
+        },
+        {
+          "description": "Students write an essay reflecting on their learning journey, challenges, successes, and the personal growth experienced as a youth advocate.",
+          "method": "journal",
+          "title": "Individual Reflection Essay",
+          "type": "summative",
+          "phase": 5
+        }
+      ]
+    },
+    "crossCurricular": {
+      "standardsAligned": [
+        {
+          "subject": "Social Studies/ELA",
+          "code": "CCSS.ELA-LITERACY.RH.9-10.1",
+          "description": "Cite specific textual evidence to support analysis of primary and secondary sources, attending to such features as the date and origin of the information.",
+          "gradeLevel": "10"
+        },
+        {
+          "description": "Present information, findings, and supporting evidence clearly, concisely, and logically such that listeners can follow the line of reasoning and the organization, development, substance, and style are appropriate to purpose, audience, and task.",
+          "subject": "ELA",
+          "code": "CCSS.ELA-LITERACY.SL.9-10.4",
+          "gradeLevel": "10"
+        },
+        {
+          "gradeLevel": "10",
+          "subject": "Social Studies",
+          "code": "NCSS.D2.Civ.8.9-12",
+          "description": "Analyze the impact of personal interest and various forms of citizen action on public policy and decision-making."
+        }
+      ],
+      "connections": [
+        {
+          "topic": "Persuasive Writing & Public Speaking",
+          "connectionDescription": "Students develop persuasive arguments for their campaigns, craft compelling messages, and practice public speaking skills during presentations and interviews.",
+          "subject": "English Language Arts"
+        },
+        {
+          "subject": "Art/Digital Media",
+          "topic": "Graphic Design & Visual Communication",
+          "connectionDescription": "Students apply principles of design, visual literacy, and digital tools to create impactful posters, videos, and other media for their awareness campaigns."
+        },
+        {
+          "subject": "Mathematics",
+          "connectionDescription": "Students analyze local education data, interpret statistics, and use numerical evidence to support their claims about inequities in their campaigns.",
+          "topic": "Data Analysis & Statistics"
+        }
+      ]
+    },
+    "comfortLevel": "experienced",
+    "subjects": [
+      "Social Studies"
+    ],
+    "createdAt": "2026-04-04T11:30:46.980Z",
+    "source": "builder",
+    "published": {
+      "adaptationCount": 0,
+      "hidden": false,
+      "featured": false,
+      "authorName": "PBLTeach Team",
+      "ratingCount": 0,
+      "authorSchool": null,
+      "publishedAt": "2026-04-04T11:30:46.980Z",
+      "ratingSum": 0
+    },
+    "userId": "pblteach-team",
+    "phases": {
+      "create": {
+        "materials": [
+          "Computers with internet access",
+          "Graphic design software (e.g., Canva, Adobe Express)",
+          "Video editing software (e.g., iMovie, DaVinci Resolve)",
+          "Poster boards, markers, art supplies",
+          "Presentation software (e.g., Google Slides, PowerPoint)",
+          "Feedback forms/rubrics"
+        ],
+        "iterationPlan": "Following critique sessions, students will reflect on the feedback received and revise their campaign prototypes. They will document changes and rationale in a 'Revision Log' before presenting a refined version for a second round of peer or expert feedback, if time permits.",
+        "critiqueProtocol": "Students will engage in a 'Critical Friends' protocol, where small groups present their campaign prototypes and receive structured feedback focusing on clarity of message, potential impact, and feasibility. Feedback will be framed around 'I notice...' and 'I wonder...' statements.",
+        "prototypingIdeas": [
+          "Develop multiple versions of campaign posters or digital graphics targeting different aspects of SDG 4 inequities.",
+          "Draft scripts and storyboards for short public service announcement (PSA) videos or social media reels.",
+          "Outline a plan for a community event or workshop designed to raise awareness and inspire action.",
+          "Create wireframes or mock-ups for an interactive website or social media presence."
+        ]
+      },
+      "investigation": {
+        "resources": [
+          {
+            "description": "Official UN website outlining SDG 4 targets, indicators, and progress reports.",
+            "type": "article",
+            "title": "UN Sustainable Development Goal 4: Quality Education"
+          },
+          {
+            "description": "Access to local school district websites, annual reports, and publicly available data on student performance, demographics, and resource distribution.",
+            "title": "Local School District Reports & Data",
+            "type": "article"
+          },
+          {
+            "title": "IDEAS Framework for Social Impact Campaigns",
+            "type": "tool",
+            "description": "A structured approach to designing effective social impact campaigns, focusing on audience, message, and action."
+          },
+          {
+            "type": "book",
+            "title": "Advocacy 101: A Guide for Youth",
+            "description": "Resources or excerpts on effective youth advocacy strategies and communication."
+          }
+        ],
+        "activities": [
+          {
+            "duration": "2-3 days",
+            "description": "Students research the specific targets and indicators of SDG 4, then map these against local community data and existing programs related to education. They identify specific inequities within their local context.",
+            "title": "SDG 4 Deep Dive & Local Context Mapping",
+            "phase": 2,
+            "type": "research"
+          },
+          {
+            "type": "skill-building",
+            "phase": 2,
+            "title": "Interviewing for Empathy",
+            "description": "Students develop interview questions and conduct interviews with community members (e.g., parents, students, educators, community leaders) to understand diverse perspectives and experiences related to local education inequities.",
+            "duration": "2 days"
+          },
+          {
+            "phase": 2,
+            "type": "collaboration",
+            "duration": "1-2 days",
+            "description": "Students research successful awareness campaigns and advocacy strategies used by other organizations addressing social issues. They analyze what made these campaigns effective and identify potential tactics for their own project.",
+            "title": "Advocacy Strategy Brainstorm & Analysis"
+          }
+        ],
+        "empathyExercises": [
+          "Conducting empathy interviews with individuals impacted by educational inequities.",
+          "Analyzing case studies or narratives of students facing barriers to quality education.",
+          "Simulating resource allocation challenges in a school district budget meeting."
+        ],
+        "skills": [
+          "Research and information literacy",
+          "Data analysis and interpretation",
+          "Interviewing and active listening",
+          "Critical thinking about social issues",
+          "Collaboration and teamwork",
+          "Understanding of ethical considerations in advocacy"
+        ]
+      },
+      "problemChallenge": {
+        "refinedDQ": "How can we, as youth advocates, design an awareness campaign for our local community to inspire action on SDG 4: Quality Education inequities?",
+        "needToKnow": [
+          "What are the specific education inequities prevalent in our local community?",
+          "Who is our primary target audience for the awareness campaign?",
+          "What are the most impactful and feasible actions we want our audience to take?",
+          "What existing resources or organizations address these inequities locally?",
+          "What types of media and communication strategies are most effective for our target audience?",
+          "What are the ethical considerations when campaigning about sensitive community issues?"
+        ],
+        "expertSuggestions": [
+          "Connect students with local community organizers or non-profit leaders working in education.",
+          "Arrange a virtual Q&A with a local school board member or district administrator.",
+          "Invite a marketing or communications professional to speak about effective campaign design."
+        ]
+      },
+      "share": {
+        "audienceSuggestions": [
+          "Local school board members and district administrators",
+          "Parent-Teacher Associations (PTAs) and community councils",
+          "Local government officials (city council, mayor's office)",
+          "Community organizations and non-profits focused on education",
+          "Fellow students, teachers, and school staff",
+          "General public via a community exhibition or online platform"
+        ],
+        "presentationFormats": [
+          "Community Awareness Fair: Students set up booths to present their campaigns and engage with the public.",
+          "Digital Campaign Launch: A coordinated release of online content (website, social media posts, videos).",
+          "Town Hall Meeting: Students present their findings and campaigns to community stakeholders in a formal setting.",
+          "School Assembly/Presentation: Sharing key campaign elements and calls to action with the broader school community."
+        ],
+        "reflectionPrompts": [
+          "What was the most challenging aspect of designing your awareness campaign, and how did you overcome it?",
+          "How did your understanding of SDG 4 and local education inequities evolve throughout this project?",
+          "What impact do you hope your campaign will have on the community, and why is this impact important to you?",
+          "If you were to repeat this project, what would you do differently in your investigation or creation phases?",
+          "How did your role as a 'youth advocate' influence your approach to this project?"
+        ]
+      },
+      "entryEvent": {
+        "ideas": [
+          {
+            "title": "Local Education Stories & Data Dive",
+            "description": "Students analyze compelling local news articles, data visualizations on educational attainment/access, and testimonials from community members affected by education inequities. This activity sparks curiosity about the root causes and local impact of SDG 4 challenges.",
+            "timeNeeded": "90 minutes",
+            "type": "activity",
+            "materials": [
+              "local news articles",
+              "infographics on education statistics",
+              "short video testimonials (pre-recorded or curated)"
+            ]
+          },
+          {
+            "type": "guest",
+            "materials": [
+              "projector",
+              "speaker contact information"
+            ],
+            "title": "Guest Speaker: Youth Advocate",
+            "description": "Invite a young person (college student, recent graduate, or local youth leader) who has successfully advocated for educational change or social justice in the community. They will share their journey, challenges, and the impact of their work.",
+            "timeNeeded": "60 minutes"
+          }
+        ]
+      }
+    },
+    "gradeLevel": "10",
+    "goldStandard": {
+      "score": 7,
+      "elementsIncluded": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    "drivingQuestion": {
+      "options": [
+        "How can we, as youth advocates, design an awareness campaign for our local community to inspire action on SDG 4: Quality Education inequities?",
+        "How can we, as community planners, propose a local action plan for our City Council to improve food security in our neighborhood (SDG 2: Zero Hunger)?",
+        "How can we, as social innovators, develop a prototype for a community initiative for local stakeholders and potential funders to address water scarcity and promote sustainable consumption (SDG 6 & 12) in our region?"
+      ],
+      "formula": {
+        "audience": "our local community",
+        "purpose": "to inspire action on SDG 4: Quality Education inequities",
+        "role": "youth advocates",
+        "product": "awareness campaign",
+        "action": "design"
+      },
+      "selected": "How can we, as youth advocates, design an awareness campaign for our local community to inspire action on SDG 4: Quality Education inequities?"
+    },
+    "id": "exemplar-un-sustainable-development-goals"
+  }
+]

@@ -5,30 +5,47 @@ import { getCommunityProjects } from "@/lib/firebase/firestore";
 import { FeaturedCarousel } from "@/components/community/featured-carousel";
 import { CollectionRow } from "@/components/community/collection-row";
 import { ProjectGrid } from "@/components/community/project-grid";
-import { Loader2 } from "lucide-react";
 import type { CommunityProject } from "@/lib/types";
+import exemplarData from "@/lib/data/exemplar-projects.json";
+
+// Pre-loaded exemplar projects (no Firestore query needed for these)
+const exemplarProjects = (exemplarData as unknown as CommunityProject[]).map((p) => ({
+  ...p,
+  createdAt: new Date(p.createdAt as unknown as string),
+  updatedAt: new Date(p.updatedAt as unknown as string),
+  published: {
+    ...p.published,
+    publishedAt: new Date(p.published.publishedAt as unknown as string),
+  },
+}));
 
 export default function CommunityPage() {
-  const [projects, setProjects] = useState<CommunityProject[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  // Start with exemplars immediately — no loading state needed
+  const [userProjects, setUserProjects] = useState<CommunityProject[]>([]);
 
   useEffect(() => {
     let cancelled = false;
+    // Fetch any user-published projects from Firestore and merge
     getCommunityProjects()
       .then((data) => {
-        if (!cancelled) setProjects(data);
+        if (!cancelled) {
+          // Filter out exemplars (already loaded statically)
+          const nonExemplar = data.filter((p) => p.userId !== "pblteach-team");
+          setUserProjects(nonExemplar);
+        }
       })
-      .catch((err) => {
-        if (!cancelled) setError(err instanceof Error ? err.message : "Failed to load projects");
-      })
-      .finally(() => {
-        if (!cancelled) setLoading(false);
+      .catch(() => {
+        // Silently fail — exemplars still show
       });
     return () => {
       cancelled = true;
     };
   }, []);
+
+  const projects = useMemo(
+    () => [...exemplarProjects, ...userProjects],
+    [userProjects]
+  );
 
   const featuredProjects = useMemo(
     () => projects.filter((p) => p.published?.featured === true),
@@ -74,40 +91,28 @@ export default function CommunityPage() {
         Discover, rate, and adapt PBL units from fellow educators.
       </p>
 
-      {loading ? (
-        <div className="flex justify-center py-20">
-          <Loader2 className="h-8 w-8 animate-spin text-neutral-400" />
-        </div>
-      ) : error ? (
-        <div className="rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-center">
-          <p className="text-sm text-red-700">{error}</p>
-        </div>
-      ) : (
-        <>
-          <FeaturedCarousel projects={featuredProjects} />
+      <FeaturedCarousel projects={featuredProjects} />
 
-          <CollectionRow
-            title="New to PBL? Start here"
-            projects={starterProjects}
-          />
+      <CollectionRow
+        title="New to PBL? Start here"
+        projects={starterProjects}
+      />
 
-          <CollectionRow title="Just added" projects={justAdded} />
+      <CollectionRow title="Just added" projects={justAdded} />
 
-          {subjectRows.map((row) => (
-            <CollectionRow
-              key={row.title}
-              title={row.title}
-              projects={row.projects}
-            />
-          ))}
+      {subjectRows.map((row) => (
+        <CollectionRow
+          key={row.title}
+          title={row.title}
+          projects={row.projects}
+        />
+      ))}
 
-          <h2 className="font-display text-2xl font-bold mt-12 mb-6">
-            All Projects
-          </h2>
+      <h2 className="font-display text-2xl font-bold mt-12 mb-6">
+        All Projects
+      </h2>
 
-          <ProjectGrid projects={projects} />
-        </>
-      )}
+      <ProjectGrid projects={projects} />
     </div>
   );
 }
