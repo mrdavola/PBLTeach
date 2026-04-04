@@ -11,8 +11,11 @@ import {
   orderBy,
   serverTimestamp,
   Timestamp,
+  where,
+  limit,
+  increment,
 } from "firebase/firestore";
-import type { User, Project } from "@/lib/types";
+import type { User, Project, CommunityProject } from "@/lib/types";
 
 function normalizeFirestoreDates<
   T extends Record<string, unknown> & {
@@ -150,4 +153,146 @@ export async function deleteScopeSequence(
 ): Promise<void> {
   if (!db) throw new Error("Firebase not configured");
   await deleteDoc(doc(db, "users", userId, "scopeSequences", docId));
+}
+
+// Community operations
+export async function publishProject(
+  userId: string,
+  projectId: string,
+  authorName: string,
+  authorSchool?: string
+): Promise<void> {
+  if (!db) throw new Error("Firebase not configured");
+  const projectSnap = await getDoc(doc(db, "users", userId, "projects", projectId));
+  if (!projectSnap.exists()) throw new Error("Project not found");
+  const projectData = projectSnap.data();
+  const communityRef = doc(db, "community", projectId);
+  await setDoc(communityRef, {
+    ...projectData,
+    id: projectId,
+    userId,
+    status: "published",
+    published: {
+      publishedAt: serverTimestamp(),
+      authorName,
+      authorSchool: authorSchool || null,
+      featured: false,
+      hidden: false,
+      ratingSum: 0,
+      ratingCount: 0,
+      adaptationCount: 0,
+    },
+  });
+  await updateDoc(doc(db, "users", userId, "projects", projectId), {
+    status: "published",
+  });
+}
+
+export async function getCommunityProjects(
+  filters?: {
+    subject?: string;
+    gradeLevel?: string;
+    duration?: string;
+    featured?: boolean;
+  },
+  maxResults = 50
+): Promise<CommunityProject[]> {
+  if (!db) return [];
+  const constraints: any[] = [where("published.hidden", "==", false)];
+  if (filters?.featured) constraints.push(where("published.featured", "==", true));
+  if (filters?.subject) constraints.push(where("subjects", "array-contains", filters.subject));
+  if (filters?.gradeLevel) constraints.push(where("gradeLevel", "==", filters.gradeLevel));
+  if (filters?.duration) constraints.push(where("duration", "==", filters.duration));
+  constraints.push(orderBy("published.publishedAt", "desc"));
+  constraints.push(limit(maxResults));
+  const q = query(collection(db, "community"), ...constraints);
+  const snap = await getDocs(q);
+  return snap.docs.map(
+    (d) => normalizeFirestoreDates({ id: d.id, ...d.data() }) as CommunityProject
+  );
+}
+
+export async function getCommunityProject(
+  projectId: string
+): Promise<CommunityProject | null> {
+  if (!db) return null;
+  const snap = await getDoc(doc(db, "community", projectId));
+  return snap.exists()
+    ? (normalizeFirestoreDates({ id: snap.id, ...snap.data() }) as CommunityProject)
+    : null;
+}
+
+export async function rateCommunityProject(
+  projectId: string,
+  userId: string,
+  score: number
+): Promise<void> {
+  if (!db) throw new Error("Firebase not configured");
+  const ratingRef = doc(db, "community", projectId, "ratings", userId);
+  const existingSnap = await getDoc(ratingRef);
+  const communityRef = doc(db, "community", projectId);
+  if (existingSnap.exists()) {
+    const oldScore = existingSnap.data().score as number;
+    await setDoc(ratingRef, { score, createdAt: serverTimestamp() });
+    await updateDoc(communityRef, {
+      "published.ratingSum": increment(score - oldScore),
+    });
+  } else {
+    await setDoc(ratingRef, { score, createdAt: serverTimestamp() });
+    await updateDoc(communityRef, {
+      "published.ratingSum": increment(score),
+      "published.ratingCount": increment(1),
+    });
+  }
+}
+
+export async function getUserRating(
+  projectId: string,
+  userId: string
+): Promise<number | null> {
+  if (!db) return null;
+  const snap = await getDoc(doc(db, "community", projectId, "ratings", userId));
+  return snap.exists() ? (snap.data().score as number) : null;
+}
+
+export async function adaptCommunityProject(
+  projectId: string,
+  userId: string
+): Promise<string> {
+  if (!db) throw new Error("Firebase not configured");
+  const communitySnap = await getDoc(doc(db, "community", projectId));
+  if (!communitySnap.exists()) throw new Error("Project not found");
+  const data = communitySnap.data();
+  const projectsRef = collection(db, "users", userId, "projects");
+  const newId = doc(projectsRef).id;
+  const newRef = doc(projectsRef, newId);
+  const { published, ...projectData } = data;
+  await setDoc(newRef, {
+    ...projectData,
+    id: newId,
+    userId,
+    status: "draft",
+    title: `${data.title} (adapted)`,
+    createdAt: serverTimestamp(),
+    updatedAt: serverTimestamp(),
+  });
+  await updateDoc(doc(db, "community", projectId), {
+    "published.adaptationCount": increment(1),
+  });
+  return newId;
+}
+
+export async function getMyPublishedProjects(
+  userId: string
+): Promise<CommunityProject[]> {
+  if (!db) return [];
+  const q = query(
+    collection(db, "community"),
+    where("userId", "==", userId),
+    orderBy("published.publishedAt", "desc")
+  );
+  const snap = await getDocs(q);
+  return snap.docs.map(
+    (d) => normalizeFirestoreDates({ id: d.id, ...d.data() }) as CommunityProject
+  );
 }

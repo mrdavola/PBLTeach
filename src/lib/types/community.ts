@@ -1,30 +1,20 @@
-export interface CommunityProject {
-  id: string;
-  authorId: string;
-  authorName: string;
-  authorSchool?: string;
-  title: string;
-  drivingQuestion: string;
-  gradeLevel: string;
-  subjects: string[];
-  duration: "single-day" | "micro" | "mini" | "full";
-  description: string;
-  tags: string[];
-  views: number;
-  adaptations: number;
-  averageRating: number;
-  reviewCount: number;
-  featured: boolean;
-  publishedAt: Date;
-  updatedAt: Date;
+import type { Project } from "./project";
+
+export interface CommunityProject extends Omit<Project, "status"> {
+  status: "published";
+  published: {
+    publishedAt: Date;
+    authorName: string;
+    authorSchool?: string;
+    featured: boolean;
+    hidden: boolean;
+    ratingSum: number;
+    ratingCount: number;
+    adaptationCount: number;
+  };
 }
 
-export interface Review {
-  id: string;
-  projectId: string;
-  authorId: string;
-  authorName: string;
-  rating: number; // 1-5
-  comment: string;
+export interface Rating {
+  score: number; // 1-5
   createdAt: Date;
 }
