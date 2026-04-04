@@ -21,10 +21,19 @@ function normalizeFirestoreDates<
   T extends Record<string, unknown> & {
     createdAt?: unknown;
     updatedAt?: unknown;
+    published?: unknown;
   },
 >(data: T) {
+  // Normalize published.publishedAt for community projects
+  const published = data.published as Record<string, unknown> | undefined;
+  const normalizedPublished =
+    published && published.publishedAt instanceof Timestamp
+      ? { published: { ...published, publishedAt: published.publishedAt.toDate() } }
+      : {};
+
   return {
     ...data,
+    ...normalizedPublished,
     ...(data.createdAt instanceof Timestamp
       ? { createdAt: data.createdAt.toDate() }
       : {}),

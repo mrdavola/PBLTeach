@@ -50,28 +50,27 @@ export function CreationCards() {
         </Card>
 
         {/* Card 2: Upload your curriculum */}
-        <Card className="p-8">
-          <CardContent className="flex flex-col gap-4">
-            <FileUp size={32} className="text-brand-indigo" />
-            <h3 className="font-display font-bold text-xl">
-              Upload your curriculum
-            </h3>
-            <div className="flex flex-col items-center justify-center rounded-lg border-2 border-dashed border-neutral-300 p-6 text-center">
-              <p className="text-sm text-neutral-600">
-                Drop your scope and sequence here (PDF, DOCX)
+        <Link href="/analyze" className="block">
+          <Card className="p-8 cursor-pointer hover:border-brand-indigo transition-colors">
+            <CardContent className="flex flex-col gap-4">
+              <FileUp size={32} className="text-brand-indigo" />
+              <h3 className="font-display font-bold text-xl">
+                Upload your curriculum
+              </h3>
+              <div className="flex flex-col items-center justify-center rounded-lg border-2 border-dashed border-neutral-300 p-6 text-center">
+                <p className="text-sm text-neutral-600">
+                  Drop your scope and sequence here (PDF, DOCX)
+                </p>
+              </div>
+              <p className="text-sm text-neutral-500">
+                We&apos;ll find cross-curricular PBL opportunities
               </p>
-            </div>
-            <p className="text-sm text-neutral-500">
-              We&apos;ll find cross-curricular PBL opportunities
-            </p>
-            <Link
-              href="/analyze"
-              className={cn(buttonVariants({ variant: "outline" }))}
-            >
-              Upload & Analyze
-            </Link>
-          </CardContent>
-        </Card>
+              <span className={cn(buttonVariants({ variant: "outline" }))}>
+                Upload & Analyze
+              </span>
+            </CardContent>
+          </Card>
+        </Link>
 
         {/* Card 3: Just exploring */}
         <Card className="p-8">
