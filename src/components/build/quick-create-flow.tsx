@@ -3,10 +3,13 @@
 import { useState, useCallback, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useQuickCreate } from "@/hooks/use-generate";
+import { useAuth } from "@/hooks/use-auth";
+import { useProject } from "@/hooks/use-project";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { QuickCreate } from "@/components/build/quick-create";
 import { AssembleGroup, AssembleItem } from "@/components/ui/motion";
+import { Check } from "lucide-react";
 
 interface QuickCreateFlowProps {
   initialDescription?: string;
@@ -18,6 +21,10 @@ export function QuickCreateFlow({ initialDescription = "" }: QuickCreateFlowProp
   const [isEditing, setIsEditing] = useState(!initialDescription);
   const [autoSubmitted, setAutoSubmitted] = useState(false);
   const { generate, data, streamText, isStreaming, error } = useQuickCreate();
+  const { user } = useAuth();
+  const { save } = useProject();
+  const [savedProjectId, setSavedProjectId] = useState<string | null>(null);
+  const [saveIndicator, setSaveIndicator] = useState<string | null>(null);
 
   // Auto-submit when arriving with an initial description (e.g., from quick-start prompts)
   useEffect(() => {
@@ -27,6 +34,37 @@ export function QuickCreateFlow({ initialDescription = "" }: QuickCreateFlowProp
     }
   }, [initialDescription, autoSubmitted, generate]);
 
+  // Auto-save generated result as draft project
+  useEffect(() => {
+    if (!data || isStreaming || !user || savedProjectId) return;
+
+    const draftProject = {
+      status: "draft" as const,
+      source: "quick-create" as const,
+      title: description.trim() || "Quick Plan",
+      gradeLevel: "",
+      subjects: [],
+      topic: description.trim(),
+      duration: data.suggestedDuration,
+      comfortLevel: "new" as const,
+      drivingQuestion: {
+        selected: data.drivingQuestion,
+        options: [data.drivingQuestion],
+        formula: data.formula,
+      },
+    };
+
+    save(draftProject)
+      .then((id) => {
+        setSavedProjectId(id);
+        setSaveIndicator("Saved to dashboard");
+        setTimeout(() => setSaveIndicator(null), 3000);
+      })
+      .catch(() => {
+        // Silent fail
+      });
+  }, [data, isStreaming, user, savedProjectId, description, save]);
+
   const handleSubmit = useCallback(() => {
     if (!description.trim()) return;
     setIsEditing(false);
@@ -34,13 +72,17 @@ export function QuickCreateFlow({ initialDescription = "" }: QuickCreateFlowProp
   }, [description, generate]);
 
   const handleBuildFullPlan = useCallback(() => {
-    const params = new URLSearchParams();
-    if (data) {
-      params.set("topic", description.trim());
-      params.set("duration", data.suggestedDuration);
+    if (savedProjectId) {
+      router.push(`/build/${savedProjectId}`);
+    } else {
+      const params = new URLSearchParams();
+      if (data) {
+        params.set("topic", description.trim());
+        params.set("duration", data.suggestedDuration);
+      }
+      router.push(`/build/new?${params.toString()}`);
     }
-    router.push(`/build/new?${params.toString()}`);
-  }, [router, data, description]);
+  }, [router, data, description, savedProjectId]);
 
   const handleAdjust = useCallback(() => {
     setIsEditing(true);
@@ -97,15 +139,14 @@ export function QuickCreateFlow({ initialDescription = "" }: QuickCreateFlowProp
               Let me adjust...
             </Button>
           </AssembleItem>
-          <AssembleItem>
-            <Button
-              variant="ghost"
-              onClick={() => router.push("/build/new")}
-            >
-              Save for later
-            </Button>
-          </AssembleItem>
         </AssembleGroup>
+      )}
+
+      {saveIndicator && (
+        <p className="text-sm text-brand-teal flex items-center gap-1">
+          <Check className="size-4" />
+          {saveIndicator}
+        </p>
       )}
     </div>
   );
