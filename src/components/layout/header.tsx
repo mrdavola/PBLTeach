@@ -89,6 +89,13 @@ export function Header() {
                 </Button>
                 {dropdownOpen && (
                   <div className="absolute right-0 mt-1 w-48 rounded-lg border border-neutral-200 bg-white py-1 shadow-lg">
+                    <Link
+                      href="/dashboard"
+                      onClick={() => setDropdownOpen(false)}
+                      className="flex w-full items-center gap-2 px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50"
+                    >
+                      My Projects
+                    </Link>
                     <button
                       onClick={handleSignOut}
                       className="flex w-full items-center gap-2 px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50"
@@ -159,6 +166,13 @@ export function Header() {
 
               {isAuthenticated ? (
                 <div className="flex flex-col items-center gap-2">
+                  <Link
+                    href="/dashboard"
+                    onClick={() => setMobileOpen(false)}
+                    className="font-body font-medium text-lg text-neutral-700 hover:text-brand-teal transition-colors"
+                  >
+                    My Projects
+                  </Link>
                   <span className="text-sm text-neutral-500">{userLabel}</span>
                   <Button
                     variant="ghost"

@@ -2,6 +2,7 @@ export interface Project {
   id: string;
   userId: string;
   status: "draft" | "complete" | "published";
+  source?: "builder" | "quick-create" | "analyze";
   createdAt: Date;
   updatedAt: Date;
 
