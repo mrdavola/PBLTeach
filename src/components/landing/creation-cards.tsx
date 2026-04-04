@@ -1,15 +1,29 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { MessageSquarePlus, FileUp, Compass } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { buttonVariants } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { ScrollReveal } from "@/components/ui/motion";
 import { cn } from "@/lib/utils";
 
 export function CreationCards() {
+  const router = useRouter();
+  const [description, setDescription] = useState("");
+
+  function handleGetStarted() {
+    if (description.trim()) {
+      router.push(
+        `/build?description=${encodeURIComponent(description.trim())}`
+      );
+    } else {
+      router.push("/build");
+    }
+  }
+
   return (
     <ScrollReveal>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -22,13 +36,16 @@ export function CreationCards() {
             </h3>
             <Textarea
               placeholder="I teach 5th grade science and we're starting an ecosystems unit next week..."
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" && !e.shiftKey) {
+                  e.preventDefault();
+                  handleGetStarted();
+                }
+              }}
             />
-            <Link
-              href="/build/new"
-              className={cn(buttonVariants({ variant: "default" }))}
-            >
-              Get started
-            </Link>
+            <Button onClick={handleGetStarted}>Get started</Button>
           </CardContent>
         </Card>
 
@@ -47,9 +64,12 @@ export function CreationCards() {
             <p className="text-sm text-neutral-500">
               We&apos;ll find cross-curricular PBL opportunities
             </p>
-            <Badge variant="secondary" className="w-fit">
-              Coming in Phase 3
-            </Badge>
+            <Link
+              href="/analyze"
+              className={cn(buttonVariants({ variant: "outline" }))}
+            >
+              Upload & Analyze
+            </Link>
           </CardContent>
         </Card>
 

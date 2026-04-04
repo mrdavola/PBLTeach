@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { Badge } from "@/components/ui/badge";
 import { ScrollReveal } from "@/components/ui/motion";
 
@@ -11,6 +12,8 @@ const prompts = [
 ];
 
 export function QuickStartPrompts() {
+  const router = useRouter();
+
   return (
     <ScrollReveal delay={0.1}>
       <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -19,6 +22,11 @@ export function QuickStartPrompts() {
             key={prompt}
             variant="outline"
             className="cursor-pointer hover:bg-brand-teal-light transition-colors px-3 py-1.5 text-sm"
+            onClick={() =>
+              router.push(
+                `/build?description=${encodeURIComponent(prompt)}`
+              )
+            }
           >
             {prompt}
           </Badge>
