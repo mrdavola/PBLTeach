@@ -20,8 +20,8 @@ import type { CommunityProject } from "@/lib/types";
 
 const DURATION_LABELS: Record<string, string> = {
   "single-day": "1 Day",
-  micro: "1-2 Weeks",
-  mini: "2-4 Weeks",
+  micro: "2-3 Days",
+  mini: "1-2 Weeks",
   full: "6+ Weeks",
 };
 
@@ -52,7 +52,7 @@ export default function CommunityProjectPage({
 
       setProject(fetched);
 
-      if (fetched) {
+      if (fetched && fetched.subjects.length > 0) {
         // Fetch similar projects
         const similar = await getCommunityProjects({
           subject: fetched.subjects[0],
@@ -64,7 +64,7 @@ export default function CommunityProjectPage({
         }
       }
 
-      setLoading(false);
+      if (!cancelled) setLoading(false);
     }
 
     load();
@@ -89,11 +89,15 @@ export default function CommunityProjectPage({
 
   async function handleRate(score: number) {
     if (!user) return;
+    const prevRating = userRating;
     setUserRating(score);
-    await rateCommunityProject(projectId, user.uid, score);
-    // Refresh project to get updated average
-    const updated = await getCommunityProject(projectId);
-    if (updated) setProject(updated);
+    try {
+      await rateCommunityProject(projectId, user.uid, score);
+      const updated = await getCommunityProject(projectId);
+      if (updated) setProject(updated);
+    } catch {
+      setUserRating(prevRating);
+    }
   }
 
   async function handleAdapt() {
@@ -154,13 +158,15 @@ export default function CommunityProjectPage({
               {project.title}
             </h1>
 
-            <p className="text-lg text-neutral-600 mt-2">
-              {project.drivingQuestion.selected}
-            </p>
+            {project.drivingQuestion?.selected && (
+              <p className="text-lg text-neutral-600 mt-2">
+                {project.drivingQuestion.selected}
+              </p>
+            )}
 
             <p className="text-sm text-neutral-500 mt-3">
-              {project.published.authorName}
-              {project.published.authorSchool &&
+              {project.published?.authorName}
+              {project.published?.authorSchool &&
                 `, ${project.published.authorSchool}`}
             </p>
 
@@ -221,29 +227,25 @@ export default function CommunityProjectPage({
             </div>
           </section>
 
-          {/* Adapt button */}
-          <section className="mt-6">
-            {isAuthenticated ? (
-              <Button onClick={handleAdapt} disabled={adapting}>
-                {adapting ? (
-                  <Loader2 className="mr-2 size-4 animate-spin" />
-                ) : (
-                  <Copy className="mr-2 size-4" />
-                )}
-                Adapt this project
-              </Button>
-            ) : (
-              <p className="text-sm text-neutral-500">
-                <Link
-                  href="/auth/sign-in"
-                  className="text-brand-teal hover:underline"
-                >
-                  Sign in
-                </Link>{" "}
-                to adapt this project
-              </p>
-            )}
-          </section>
+          {/* Adapt button (hidden for own projects) */}
+          {user?.uid !== project.userId && (
+            <section className="mt-6">
+              {isAuthenticated ? (
+                <Button onClick={handleAdapt} disabled={adapting}>
+                  {adapting ? (
+                    <Loader2 className="mr-2 size-4 animate-spin" />
+                  ) : (
+                    <Copy className="mr-2 size-4" />
+                  )}
+                  Adapt this project
+                </Button>
+              ) : (
+                <p className="text-sm text-neutral-500">
+                  Sign in to adapt this project
+                </p>
+              )}
+            </section>
+          )}
 
           {/* Phase Timeline */}
           <section className="mt-10">

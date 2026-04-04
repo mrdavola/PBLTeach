@@ -131,7 +131,7 @@ export default function ProjectPage({
         onOpenChange={setPublishOpen}
         onPublished={() => {
           setPublishOpen(false);
-          load(projectId);
+          load(projectId).catch(() => {});
         }}
       />
     </div>

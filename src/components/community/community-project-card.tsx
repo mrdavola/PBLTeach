@@ -7,8 +7,8 @@ import type { CommunityProject } from "@/lib/types";
 
 const DURATION_LABELS: Record<string, string> = {
   "single-day": "1 Day",
-  micro: "1-2 Weeks",
-  mini: "2-4 Weeks",
+  micro: "2-3 Days",
+  mini: "1-2 Weeks",
   full: "6+ Weeks",
 };
 
@@ -23,7 +23,7 @@ export function CommunityProjectCard({
 }: CommunityProjectCardProps) {
   const isFeatured = size === "featured";
   const avgRating =
-    project.published.ratingCount > 0
+    project.published?.ratingCount > 0
       ? project.published.ratingSum / project.published.ratingCount
       : 0;
   const goldStandardScore = project.goldStandard?.elementsIncluded?.length ?? 0;
@@ -47,12 +47,14 @@ export function CommunityProjectCard({
       </h3>
 
       {/* Driving Question */}
-      <p className="mt-1 text-sm text-neutral-600 line-clamp-2">
-        {project.drivingQuestion.selected}
-      </p>
+      {project.drivingQuestion?.selected && (
+        <p className="mt-1 text-sm text-neutral-600 line-clamp-2">
+          {project.drivingQuestion.selected}
+        </p>
+      )}
 
       {/* Author (featured only) */}
-      {isFeatured && (
+      {isFeatured && project.published && (
         <p className="mt-2 text-xs text-neutral-500">
           {project.published.authorName}
           {project.published.authorSchool &&
@@ -92,13 +94,13 @@ export function CommunityProjectCard({
 
       {/* Bottom row: rating + adaptations */}
       <div className="mt-3 flex items-center gap-4 text-xs text-neutral-500">
-        <span className="inline-flex items-center gap-1">
-          <Star className="h-3.5 w-3.5 text-amber-400 fill-amber-400" />
+        <span className="inline-flex items-center gap-1" aria-label={`Rating: ${avgRating.toFixed(1)} out of 5`}>
+          <Star className="h-3.5 w-3.5 text-amber-400 fill-amber-400" aria-hidden="true" />
           {avgRating.toFixed(1)}
         </span>
-        <span className="inline-flex items-center gap-1">
-          <Copy className="h-3.5 w-3.5" />
-          {project.published.adaptationCount}
+        <span className="inline-flex items-center gap-1" aria-label={`${project.published?.adaptationCount ?? 0} adaptations`}>
+          <Copy className="h-3.5 w-3.5" aria-hidden="true" />
+          {project.published?.adaptationCount ?? 0}
         </span>
       </div>
     </Link>

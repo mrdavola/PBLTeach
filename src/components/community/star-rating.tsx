@@ -25,7 +25,7 @@ export function StarRating({
   const displayRating = hoverIndex !== null ? hoverIndex : Math.round(rating);
 
   return (
-    <div className="flex items-center gap-1">
+    <div className="flex items-center gap-1" role="group" aria-label="Star rating">
       <div
         className="flex items-center"
         onMouseLeave={() => {
@@ -39,6 +39,7 @@ export function StarRating({
               key={star}
               type="button"
               disabled={!interactive}
+              aria-label={`Rate ${star} star${star !== 1 ? "s" : ""}`}
               className={cn(
                 "p-0 border-0 bg-transparent",
                 interactive && "cursor-pointer hover:scale-110 transition-transform",

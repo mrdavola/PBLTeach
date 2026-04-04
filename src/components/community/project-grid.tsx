@@ -44,7 +44,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
       const q = searchQuery.toLowerCase();
       result = result.filter((p) => {
         const titleMatch = p.title.toLowerCase().includes(q);
-        const dqMatch = p.drivingQuestion.selected.toLowerCase().includes(q);
+        const dqMatch = (p.drivingQuestion?.selected ?? "").toLowerCase().includes(q);
         const subjectsMatch = p.subjects.join(" ").toLowerCase().includes(q);
         return titleMatch || dqMatch || subjectsMatch;
       });
@@ -86,6 +86,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
         <Search className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-neutral-400" />
         <input
           type="text"
+          aria-label="Search projects"
           placeholder="Search projects..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
@@ -100,6 +101,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
           <button
             key={subject}
             type="button"
+            aria-pressed={activeSubject === subject}
             className={cn(
               chipBase,
               activeSubject === subject ? chipActive : chipInactive
@@ -117,6 +119,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
           <button
             key={grade}
             type="button"
+            aria-pressed={activeGrade === grade}
             className={cn(
               chipBase,
               activeGrade === grade ? chipActive : chipInactive
@@ -134,6 +137,7 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
           <button
             key={d.value}
             type="button"
+            aria-pressed={activeDuration === d.value}
             className={cn(
               chipBase,
               activeDuration === d.value ? chipActive : chipInactive

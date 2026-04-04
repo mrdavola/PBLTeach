@@ -11,12 +11,16 @@ import type { CommunityProject } from "@/lib/types";
 export default function CommunityPage() {
   const [projects, setProjects] = useState<CommunityProject[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     let cancelled = false;
     getCommunityProjects()
       .then((data) => {
         if (!cancelled) setProjects(data);
+      })
+      .catch((err) => {
+        if (!cancelled) setError(err instanceof Error ? err.message : "Failed to load projects");
       })
       .finally(() => {
         if (!cancelled) setLoading(false);
@@ -27,7 +31,7 @@ export default function CommunityPage() {
   }, []);
 
   const featuredProjects = useMemo(
-    () => projects.filter((p) => p.published.featured === true),
+    () => projects.filter((p) => p.published?.featured === true),
     [projects]
   );
 
@@ -73,6 +77,10 @@ export default function CommunityPage() {
       {loading ? (
         <div className="flex justify-center py-20">
           <Loader2 className="h-8 w-8 animate-spin text-neutral-400" />
+        </div>
+      ) : error ? (
+        <div className="rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-center">
+          <p className="text-sm text-red-700">{error}</p>
         </div>
       ) : (
         <>

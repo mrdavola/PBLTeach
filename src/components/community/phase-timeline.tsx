@@ -324,6 +324,7 @@ export function PhaseTimeline({ phases }: PhaseTimelineProps) {
           className="rounded-lg border border-neutral-200 overflow-hidden"
         >
           <button
+            type="button"
             onClick={() => toggle(index)}
             className="flex w-full items-center gap-3 px-4 py-3 text-left hover:bg-neutral-50 transition-colors"
           >

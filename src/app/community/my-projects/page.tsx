@@ -48,7 +48,7 @@ export default function MyProjectsPage() {
         Back to Community
       </Link>
 
-      <h1 className="font-display text-3xl font-bold mb-8">
+      <h1 className="font-display text-3xl font-bold text-neutral-900 mb-8">
         My Published Projects
       </h1>
 

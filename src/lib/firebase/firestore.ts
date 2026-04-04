@@ -163,6 +163,13 @@ export async function publishProject(
   authorSchool?: string
 ): Promise<void> {
   if (!db) throw new Error("Firebase not configured");
+
+  // Guard against re-publishing (would reset ratings)
+  const existingCommunity = await getDoc(doc(db, "community", projectId));
+  if (existingCommunity.exists()) {
+    throw new Error("This project has already been published");
+  }
+
   const projectSnap = await getDoc(doc(db, "users", userId, "projects", projectId));
   if (!projectSnap.exists()) throw new Error("Project not found");
   const projectData = projectSnap.data();
@@ -217,9 +224,10 @@ export async function getCommunityProject(
 ): Promise<CommunityProject | null> {
   if (!db) return null;
   const snap = await getDoc(doc(db, "community", projectId));
-  return snap.exists()
-    ? (normalizeFirestoreDates({ id: snap.id, ...snap.data() }) as CommunityProject)
-    : null;
+  if (!snap.exists()) return null;
+  const data = snap.data();
+  if (data.published?.hidden) return null;
+  return normalizeFirestoreDates({ id: snap.id, ...data }) as CommunityProject;
 }
 
 export async function rateCommunityProject(
@@ -228,6 +236,9 @@ export async function rateCommunityProject(
   score: number
 ): Promise<void> {
   if (!db) throw new Error("Firebase not configured");
+  if (score < 1 || score > 5 || !Number.isInteger(score)) {
+    throw new Error("Rating must be an integer between 1 and 5");
+  }
   const ratingRef = doc(db, "community", projectId, "ratings", userId);
   const existingSnap = await getDoc(ratingRef);
   const communityRef = doc(db, "community", projectId);

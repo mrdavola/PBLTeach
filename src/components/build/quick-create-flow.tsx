@@ -100,10 +100,7 @@ export function QuickCreateFlow({ initialDescription = "" }: QuickCreateFlowProp
           <AssembleItem>
             <Button
               variant="ghost"
-              onClick={() => {
-                // Placeholder: will wire up auth later
-                alert("Sign in to save your quick plan.");
-              }}
+              onClick={() => router.push("/build/new")}
             >
               Save for later
             </Button>
