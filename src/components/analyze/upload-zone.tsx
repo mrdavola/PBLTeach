@@ -103,8 +103,14 @@ export function UploadZone({ onDocumentParsed }: UploadZoneProps) {
       });
 
       if (!response.ok) {
-        const err = await response.json();
-        throw new Error(err.error || "Parsing failed");
+        let message = "Parsing failed";
+        try {
+          const err = await response.json();
+          message = err.error || message;
+        } catch {
+          // Response wasn't JSON (e.g., HTML error page)
+        }
+        throw new Error(message);
       }
 
       const reader = response.body?.getReader();
