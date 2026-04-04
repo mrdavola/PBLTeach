@@ -1,13 +1,14 @@
 "use client";
 
-import { use, useEffect } from "react";
+import { use, useEffect, useState } from "react";
 import Link from "next/link";
-import { Loader2 } from "lucide-react";
+import { Loader2, Globe } from "lucide-react";
 import { useAuth } from "@/hooks/use-auth";
 import { useProject } from "@/hooks/use-project";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { LearningNarrativeView } from "@/components/build/learning-narrative-view";
+import { PublishModal } from "@/components/community/publish-modal";
 import { buildPhaseContentsFromProject } from "@/lib/project/builder-draft";
 
 export default function ProjectPage({
@@ -18,6 +19,7 @@ export default function ProjectPage({
   const { projectId } = use(params);
   const { isAuthenticated, loading: authLoading } = useAuth();
   const { currentProject, loading, error, load } = useProject();
+  const [publishOpen, setPublishOpen] = useState(false);
 
   useEffect(() => {
     if (!isAuthenticated) return;
@@ -99,6 +101,38 @@ export default function ProjectPage({
         streamText=""
         phaseContents={buildPhaseContentsFromProject(currentProject)}
         projectId={projectId}
+      />
+
+      {/* Publish to Community */}
+      <div className="mt-8 flex items-center gap-3">
+        {currentProject.status === "published" ? (
+          <Link
+            href={`/community/${projectId}`}
+            className="inline-flex items-center gap-2 text-sm font-medium text-brand-teal hover:underline"
+          >
+            <Globe className="size-4" />
+            View in Community
+          </Link>
+        ) : (
+          <Button
+            variant="outline"
+            onClick={() => setPublishOpen(true)}
+            className="gap-2"
+          >
+            <Globe className="size-4" />
+            Publish to Community
+          </Button>
+        )}
+      </div>
+
+      <PublishModal
+        project={currentProject}
+        open={publishOpen}
+        onOpenChange={setPublishOpen}
+        onPublished={() => {
+          setPublishOpen(false);
+          load(projectId);
+        }}
       />
     </div>
   );
