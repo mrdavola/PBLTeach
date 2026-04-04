@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback, useMemo, useEffect, useSyncExternalStore } from "react";
-import { useRouter } from "next/navigation";
+import { Check } from "lucide-react";
 import { motion } from "framer-motion";
 import { useGenerateDQ, useGenerateLearningNarrative } from "@/hooks/use-generate";
 import { useAuth } from "@/hooks/use-auth";
@@ -14,14 +14,9 @@ import type { BuilderInput, Project, DQGenerationResponse } from "@/lib/types/pr
 import {
   buildPhaseContentsFromNarrative,
   buildProjectDraft,
-  clearLocalBuilderDraft,
   readLocalBuilderDraft,
   writeLocalBuilderDraft,
 } from "@/lib/project/builder-draft";
-import {
-  canFallbackToLocalDraftSave,
-  getFirestoreErrorMessage,
-} from "@/lib/firebase/firestore-errors";
 
 interface BuilderWizardProps {
   defaultValues?: Partial<BuilderInput>;
@@ -225,9 +220,8 @@ function DQGeneratorPlaceholder({
 }
 
 export function BuilderWizard({ defaultValues, defaultDQ }: BuilderWizardProps) {
-  const router = useRouter();
   const { user } = useAuth();
-  const { save, loading: projectSaving } = useProject();
+  const { save } = useProject();
   const hasDefaultValues = Boolean(
     defaultValues && Object.keys(defaultValues).length > 0
   );
@@ -246,6 +240,8 @@ export function BuilderWizard({ defaultValues, defaultDQ }: BuilderWizardProps) 
   const [selectedDQ, setSelectedDQ] = useState<string>(defaultDQ || "");
   const [saveMessage, setSaveMessage] = useState<string | null>(null);
   const [saveError, setSaveError] = useState<string | null>(null);
+  const [savedProjectId, setSavedProjectId] = useState<string | null>(null);
+  const [saveIndicator, setSaveIndicator] = useState<string | null>(null);
 
   const {
     generate: generateNarrative,
@@ -280,18 +276,45 @@ export function BuilderWizard({ defaultValues, defaultDQ }: BuilderWizardProps) 
     effectiveSelectedDQ,
   ]);
 
+  const autoSave = useCallback(async (
+    fd: BuilderInput | null,
+    dq: string,
+    nd: Record<string, unknown> | null,
+  ) => {
+    if (!user || !fd) return;
+
+    const draftProject = buildProjectDraft({
+      formData: fd,
+      selectedDQ: dq,
+      narrativeData: nd,
+      projectId: savedProjectId || undefined,
+    });
+    draftProject.source = "builder";
+
+    try {
+      const id = await save(draftProject);
+      setSavedProjectId(id);
+      setSaveIndicator("Saved");
+      setTimeout(() => setSaveIndicator(null), 2000);
+    } catch {
+      // Silent fail — localStorage backup still happens
+    }
+  }, [user, save, savedProjectId]);
+
   const handleFormSubmit = useCallback((data: BuilderInput) => {
     setFormData(data);
     setCurrentStep(2);
     setSaveMessage(null);
     setSaveError(null);
-  }, []);
+    autoSave(data, effectiveSelectedDQ, effectiveNarrativeData);
+  }, [autoSave, effectiveSelectedDQ, effectiveNarrativeData]);
 
   const handleDQSelect = useCallback((dq: string) => {
     setSelectedDQ(dq);
     setSaveMessage(null);
     setSaveError(null);
-  }, []);
+    autoSave(effectiveFormData, dq, effectiveNarrativeData);
+  }, [autoSave, effectiveFormData, effectiveNarrativeData]);
 
   const handleGoToStep3 = useCallback(() => {
     if (!effectiveFormData || !effectiveSelectedDQ) return;
@@ -302,67 +325,18 @@ export function BuilderWizard({ defaultValues, defaultDQ }: BuilderWizardProps) 
     });
   }, [effectiveFormData, effectiveSelectedDQ, generateNarrative]);
 
+  useEffect(() => {
+    if (narrativeData && !narrativeStreaming && effectiveFormData) {
+      autoSave(effectiveFormData, effectiveSelectedDQ, narrativeData as Record<string, unknown>);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [narrativeData, narrativeStreaming]);
+
   const handleStepClick = useCallback((step: number) => {
     if (step < effectiveCurrentStep) {
       setCurrentStep(step);
     }
   }, [effectiveCurrentStep]);
-
-  const handleSaveDraft = useCallback(async () => {
-    const draftProject = buildProjectDraft({
-      formData: effectiveFormData,
-      selectedDQ: effectiveSelectedDQ,
-      narrativeData: effectiveNarrativeData,
-    });
-
-    if (!effectiveFormData) {
-      setSaveError("Add project details before saving a draft.");
-      return;
-    }
-
-    setSaveError(null);
-    setSaveMessage(null);
-
-    writeLocalBuilderDraft(
-      typeof window === "undefined" ? null : window.localStorage,
-      {
-        currentStep: effectiveCurrentStep,
-        formData: effectiveFormData,
-        selectedDQ: effectiveSelectedDQ,
-        narrativeData: effectiveNarrativeData,
-      }
-    );
-
-    if (!user || !effectiveNarrativeData) {
-      setSaveMessage("Draft saved on this device. Sign in any time to save drafts to your dashboard.");
-      return;
-    }
-
-    try {
-      const projectId = await save(draftProject);
-      clearLocalBuilderDraft(
-        typeof window === "undefined" ? null : window.localStorage
-      );
-      setSaveMessage("Draft saved to your dashboard.");
-      router.push(`/build/${projectId}`);
-    } catch (error) {
-      if (canFallbackToLocalDraftSave(error)) {
-        setSaveMessage(getFirestoreErrorMessage(error));
-        setSaveError(null);
-        return;
-      }
-
-      setSaveError(getFirestoreErrorMessage(error));
-    }
-  }, [
-    effectiveCurrentStep,
-    effectiveFormData,
-    effectiveNarrativeData,
-    effectiveSelectedDQ,
-    router,
-    save,
-    user,
-  ]);
 
   // Build a partial Project from whatever data we have
   const partialProject = useMemo((): Partial<Project> => {
@@ -399,23 +373,17 @@ export function BuilderWizard({ defaultValues, defaultDQ }: BuilderWizardProps) 
             formData={effectiveFormData}
             onSelect={handleDQSelect}
           />
-          {(saveMessage || saveError) && (
-            <p className={cn("text-sm", saveError ? "text-red-600" : "text-brand-teal")}>
-              {saveError || saveMessage}
-            </p>
-          )}
           <div className="flex justify-between">
-            <div className="flex gap-3">
+            <div className="flex items-center gap-3">
               <Button variant="ghost" onClick={() => setCurrentStep(1)}>
                 Back
               </Button>
-              <Button
-                variant="outline"
-                onClick={handleSaveDraft}
-                disabled={!effectiveFormData || projectSaving}
-              >
-                {projectSaving ? "Saving..." : "Save Draft"}
-              </Button>
+              {saveIndicator && (
+                <span className="text-sm text-brand-teal flex items-center gap-1">
+                  <Check className="size-4" />
+                  {saveIndicator}
+                </span>
+              )}
             </div>
             <Button
               onClick={handleGoToStep3}
@@ -437,19 +405,13 @@ export function BuilderWizard({ defaultValues, defaultDQ }: BuilderWizardProps) 
             >
               Back
             </Button>
-            <Button
-              variant="outline"
-              onClick={handleSaveDraft}
-              disabled={!effectiveFormData || projectSaving}
-            >
-              {projectSaving ? "Saving..." : "Save Draft"}
-            </Button>
+            {saveIndicator && (
+              <span className="text-sm text-brand-teal flex items-center gap-1">
+                <Check className="size-4" />
+                {saveIndicator}
+              </span>
+            )}
           </div>
-          {(saveMessage || saveError) && (
-            <p className={cn("text-sm", saveError ? "text-red-600" : "text-brand-teal")}>
-              {saveError || saveMessage}
-            </p>
-          )}
           <LearningNarrativeView
             project={partialProject}
             isStreaming={narrativeStreaming}
