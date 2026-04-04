@@ -38,6 +38,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
       ? "bg-success/10 text-success"
       : "bg-brand-amber-light text-brand-amber";
 
+  const sourceLabel =
+    project.source === "quick-create"
+      ? "Quick Plan"
+      : project.source === "analyze"
+        ? "From Analysis"
+        : null;
+
   return (
     <Link href={`/build/${project.id}`} className="block">
       <Card className="cursor-pointer hover:shadow-card-hover">
@@ -72,6 +79,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
             >
               {project.status === "complete" ? "Complete" : "Draft"}
             </span>
+            {sourceLabel && (
+              <span className="inline-flex items-center rounded-full bg-indigo-50 px-2 py-0.5 text-xs font-medium text-indigo-600">
+                {sourceLabel}
+              </span>
+            )}
             <span className="text-xs text-neutral-500">
               {formatRelativeDate(project.updatedAt)}
             </span>
