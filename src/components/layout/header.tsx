@@ -10,12 +10,11 @@ import { SignInModal } from "@/components/auth/sign-in-modal";
 import { useAuth } from "@/hooks/use-auth";
 import { cn } from "@/lib/utils";
 
-const navLinks = [
+const coreNavLinks = [
   { href: "/explore", label: "Explore" },
   { href: "/build", label: "Build" },
   { href: "/analyze", label: "Analyze" },
   { href: "/community", label: "Community" },
-  { href: "/about", label: "About" },
 ];
 
 export function Header() {
@@ -61,13 +60,13 @@ export function Header() {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6">
-            {navLinks.map((link) => (
+            {coreNavLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
                   "font-body font-medium transition-colors",
-                  pathname === link.href
+                  pathname === link.href || pathname.startsWith(link.href + "/")
                     ? "text-brand-teal font-bold"
                     : "text-neutral-700 hover:text-brand-teal"
                 )}
@@ -77,43 +76,62 @@ export function Header() {
             ))}
 
             {isAuthenticated ? (
-              <div className="relative" ref={dropdownRef}>
+              <>
+                <Link
+                  href="/dashboard"
+                  className={cn(
+                    "font-body font-medium transition-colors",
+                    pathname === "/dashboard"
+                      ? "text-brand-teal font-bold"
+                      : "text-neutral-700 hover:text-brand-teal"
+                  )}
+                >
+                  My Projects
+                </Link>
+                <div className="relative" ref={dropdownRef}>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    onClick={() => setDropdownOpen((prev) => !prev)}
+                    className="gap-1"
+                  >
+                    <span className="max-w-[120px] truncate">{userLabel}</span>
+                    <ChevronDown className="size-3.5" />
+                  </Button>
+                  {dropdownOpen && (
+                    <div className="absolute right-0 mt-1 w-48 rounded-lg border border-neutral-200 bg-white py-1 shadow-lg">
+                      <button
+                        onClick={handleSignOut}
+                        className="flex w-full items-center gap-2 px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50"
+                      >
+                        <LogOut className="size-4" />
+                        Sign out
+                      </button>
+                    </div>
+                  )}
+                </div>
+              </>
+            ) : (
+              <>
+                <Link
+                  href="/about"
+                  className={cn(
+                    "font-body font-medium transition-colors",
+                    pathname === "/about"
+                      ? "text-brand-teal font-bold"
+                      : "text-neutral-700 hover:text-brand-teal"
+                  )}
+                >
+                  About
+                </Link>
                 <Button
                   variant="ghost"
                   size="sm"
-                  onClick={() => setDropdownOpen((prev) => !prev)}
-                  className="gap-1"
+                  onClick={() => setSignInOpen(true)}
                 >
-                  <span className="max-w-[120px] truncate">{userLabel}</span>
-                  <ChevronDown className="size-3.5" />
+                  Sign In
                 </Button>
-                {dropdownOpen && (
-                  <div className="absolute right-0 mt-1 w-48 rounded-lg border border-neutral-200 bg-white py-1 shadow-lg">
-                    <Link
-                      href="/dashboard"
-                      onClick={() => setDropdownOpen(false)}
-                      className="flex w-full items-center gap-2 px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50"
-                    >
-                      My Projects
-                    </Link>
-                    <button
-                      onClick={handleSignOut}
-                      className="flex w-full items-center gap-2 px-3 py-2 text-sm text-neutral-700 hover:bg-neutral-50"
-                    >
-                      <LogOut className="size-4" />
-                      Sign out
-                    </button>
-                  </div>
-                )}
-              </div>
-            ) : (
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setSignInOpen(true)}
-              >
-                Sign In
-              </Button>
+              </>
             )}
           </nav>
 
@@ -148,14 +166,14 @@ export function Header() {
             </div>
 
             <nav className="flex flex-col items-center gap-6 pt-12">
-              {navLinks.map((link) => (
+              {coreNavLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
                   className={cn(
                     "font-body font-medium text-lg transition-colors",
-                    pathname === link.href
+                    pathname === link.href || pathname.startsWith(link.href + "/")
                       ? "text-brand-teal font-bold"
                       : "text-neutral-700 hover:text-brand-teal"
                   )}
@@ -165,36 +183,57 @@ export function Header() {
               ))}
 
               {isAuthenticated ? (
-                <div className="flex flex-col items-center gap-2">
+                <div className="flex flex-col items-center gap-4">
                   <Link
                     href="/dashboard"
                     onClick={() => setMobileOpen(false)}
-                    className="font-body font-medium text-lg text-neutral-700 hover:text-brand-teal transition-colors"
+                    className={cn(
+                      "font-body font-medium text-lg transition-colors",
+                      pathname === "/dashboard"
+                        ? "text-brand-teal font-bold"
+                        : "text-neutral-700 hover:text-brand-teal"
+                    )}
                   >
                     My Projects
                   </Link>
-                  <span className="text-sm text-neutral-500">{userLabel}</span>
+                  <div className="flex flex-col items-center gap-2 pt-4 border-t border-neutral-200">
+                    <span className="text-sm text-neutral-500">{userLabel}</span>
+                    <Button
+                      variant="ghost"
+                      onClick={() => {
+                        setMobileOpen(false);
+                        handleSignOut();
+                      }}
+                    >
+                      <LogOut className="size-4 mr-1" />
+                      Sign out
+                    </Button>
+                  </div>
+                </div>
+              ) : (
+                <>
+                  <Link
+                    href="/about"
+                    onClick={() => setMobileOpen(false)}
+                    className={cn(
+                      "font-body font-medium text-lg transition-colors",
+                      pathname === "/about"
+                        ? "text-brand-teal font-bold"
+                        : "text-neutral-700 hover:text-brand-teal"
+                    )}
+                  >
+                    About
+                  </Link>
                   <Button
                     variant="ghost"
                     onClick={() => {
                       setMobileOpen(false);
-                      handleSignOut();
+                      setSignInOpen(true);
                     }}
                   >
-                    <LogOut className="size-4 mr-1" />
-                    Sign out
+                    Sign In
                   </Button>
-                </div>
-              ) : (
-                <Button
-                  variant="ghost"
-                  onClick={() => {
-                    setMobileOpen(false);
-                    setSignInOpen(true);
-                  }}
-                >
-                  Sign In
-                </Button>
+                </>
               )}
             </nav>
           </div>
