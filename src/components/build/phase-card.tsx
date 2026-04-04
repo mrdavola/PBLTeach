@@ -119,7 +119,7 @@ export function PhaseCard({
                           className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full"
                           style={{ backgroundColor: phase.color }}
                         />
-                        {item}
+                        {typeof item === "string" ? item : JSON.stringify(item)}
                       </li>
                     ))}
                   </ul>
@@ -141,7 +141,7 @@ export function PhaseCard({
                           className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full"
                           style={{ backgroundColor: phase.color }}
                         />
-                        {item}
+                        {typeof item === "string" ? item : JSON.stringify(item)}
                       </li>
                     ))}
                   </ul>
@@ -163,7 +163,7 @@ export function PhaseCard({
                           className="mt-1.5 block h-1.5 w-1.5 shrink-0 rounded-full"
                           style={{ backgroundColor: phase.color }}
                         />
-                        {item}
+                        {typeof item === "string" ? item : JSON.stringify(item)}
                       </li>
                     ))}
                   </ul>

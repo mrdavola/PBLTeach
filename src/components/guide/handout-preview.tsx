@@ -173,9 +173,9 @@ function ReflectionJournalPreview({ data }: { data: any }) {
             </div>
             <ul className="space-y-2">
               {(phase.prompts ?? phase.questions ?? []).map(
-                (prompt: string, j: number) => (
+                (prompt: any, j: number) => (
                   <li key={j} className="text-sm text-neutral-700">
-                    {j + 1}. {prompt}
+                    {j + 1}. {typeof prompt === "string" ? prompt : (prompt?.text ?? prompt?.question ?? JSON.stringify(prompt))}
                   </li>
                 )
               )}
@@ -216,7 +216,7 @@ function CritiqueProtocolPreview({ data }: { data: any }) {
             </span>
             <div className="flex-1">
               <p className="font-medium text-sm text-neutral-900">
-                {step.title ?? step.step ?? step}
+                {step.title ?? step.step ?? step.instruction ?? (typeof step === "string" ? step : `Step ${i + 1}`)}
               </p>
               {step.description && (
                 <p className="text-sm text-neutral-700 mt-0.5">
