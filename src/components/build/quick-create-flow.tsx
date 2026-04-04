@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useQuickCreate } from "@/hooks/use-generate";
 import { Button } from "@/components/ui/button";
@@ -16,7 +16,16 @@ export function QuickCreateFlow({ initialDescription = "" }: QuickCreateFlowProp
   const router = useRouter();
   const [description, setDescription] = useState(initialDescription);
   const [isEditing, setIsEditing] = useState(!initialDescription);
+  const [autoSubmitted, setAutoSubmitted] = useState(false);
   const { generate, data, streamText, isStreaming, error } = useQuickCreate();
+
+  // Auto-submit when arriving with an initial description (e.g., from quick-start prompts)
+  useEffect(() => {
+    if (initialDescription && !autoSubmitted) {
+      setAutoSubmitted(true);
+      generate("/api/generate/quick-create", { description: initialDescription.trim() });
+    }
+  }, [initialDescription, autoSubmitted, generate]);
 
   const handleSubmit = useCallback(() => {
     if (!description.trim()) return;
