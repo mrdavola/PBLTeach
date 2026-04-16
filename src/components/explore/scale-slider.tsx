@@ -45,26 +45,37 @@ const scaleData = [
   },
 ];
 
-const colorMap: Record<string, { dot: string; bg: string; text: string }> = {
+const colorMap: Record<
+  string,
+  { dot: string; bg: string; text: string; activeBg: string; activeBorder: string }
+> = {
   "brand-teal": {
     dot: "bg-brand-teal",
     bg: "bg-brand-teal-light",
     text: "text-brand-teal",
+    activeBg: "bg-brand-teal-light",
+    activeBorder: "border-brand-teal",
   },
   "brand-indigo": {
     dot: "bg-brand-indigo",
     bg: "bg-brand-indigo-light",
     text: "text-brand-indigo",
+    activeBg: "bg-brand-indigo-light",
+    activeBorder: "border-brand-indigo",
   },
   "brand-amber": {
     dot: "bg-brand-amber",
     bg: "bg-brand-amber-light",
     text: "text-brand-amber",
+    activeBg: "bg-brand-amber-light",
+    activeBorder: "border-brand-amber",
   },
   "brand-purple": {
     dot: "bg-brand-purple",
     bg: "bg-brand-purple-light",
     text: "text-brand-purple",
+    activeBg: "bg-brand-purple-light",
+    activeBorder: "border-brand-purple",
   },
 };
 
@@ -88,74 +99,69 @@ export function ScaleSlider() {
   const colors = colorMap[current.color];
 
   return (
-    <div className="space-y-8">
-      {/* Track */}
+    <div className="space-y-6">
+      {/* Scale selector tabs */}
       <div
-        role="slider"
+        role="tablist"
         aria-label="PBL scale selector"
-        aria-valuemin={0}
-        aria-valuemax={3}
-        aria-valuenow={active}
-        aria-valuetext={`${current.name}: ${current.duration}`}
-        tabIndex={0}
         onKeyDown={handleKeyDown}
-        className="relative mx-auto max-w-[560px] outline-none focus-visible:ring-2 focus-visible:ring-brand-teal/30 rounded-lg px-2 py-4"
+        className="grid grid-cols-2 gap-2 sm:grid-cols-4"
       >
-        {/* Track line with gradient */}
-        <div className="relative h-1.5 rounded-full bg-gradient-to-r from-brand-teal/20 via-brand-indigo/30 via-brand-amber/40 to-brand-purple/50">
-          {/* Animated thumb */}
-          <motion.div
-            className="absolute top-1/2 z-10 size-5 -translate-y-1/2 rounded-full shadow-md border-2 border-white cursor-pointer"
-            style={{ left: `${(active / 3) * 100}%`, x: "-50%" }}
-            animate={{
-              left: `${(active / 3) * 100}%`,
-            }}
-            transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          >
-            <div className={cn("size-full rounded-full", colors.dot)} />
-          </motion.div>
-        </div>
+        {scaleData.map((item, i) => {
+          const itemColors = colorMap[item.color];
+          const isActive = i === active;
 
-        {/* Position dots and labels */}
-        <div className="relative mt-3 flex justify-between">
-          {scaleData.map((item, i) => {
-            const itemColors = colorMap[item.color];
-            const isActive = i === active;
-
-            return (
-              <button
-                key={item.name}
-                type="button"
-                onClick={() => setActive(i)}
-                className="flex flex-col items-center gap-2 bg-transparent border-none cursor-pointer group"
+          return (
+            <button
+              key={item.name}
+              type="button"
+              role="tab"
+              aria-selected={isActive}
+              tabIndex={isActive ? 0 : -1}
+              onClick={() => setActive(i)}
+              className={cn(
+                "relative flex flex-col items-center gap-1 rounded-xl border-2 px-3 py-3 transition-all duration-200",
+                isActive
+                  ? cn(itemColors.activeBorder, itemColors.activeBg)
+                  : "border-neutral-200 bg-white hover:border-neutral-300 hover:bg-neutral-50"
+              )}
+            >
+              {/* Colored dot */}
+              <span
+                className={cn(
+                  "size-2.5 rounded-full transition-colors",
+                  isActive ? itemColors.dot : "bg-neutral-300"
+                )}
+              />
+              <span
+                className={cn(
+                  "text-sm font-semibold transition-colors",
+                  isActive ? itemColors.text : "text-neutral-700"
+                )}
               >
-                <motion.div
-                  className={cn(
-                    "rounded-full transition-colors",
-                    isActive ? itemColors.dot : "bg-neutral-300"
-                  )}
-                  animate={{
-                    width: isActive ? 12 : 8,
-                    height: isActive ? 12 : 8,
-                  }}
-                  transition={{ type: "spring", stiffness: 300, damping: 25 }}
-                />
-                <span
-                  className={cn(
-                    "text-xs font-medium transition-colors",
-                    isActive ? itemColors.text : "text-neutral-500 group-hover:text-neutral-700"
-                  )}
-                >
-                  {item.name}
-                </span>
-              </button>
-            );
-          })}
-        </div>
+                {item.name}
+              </span>
+              <span
+                className={cn(
+                  "text-xs transition-colors",
+                  isActive ? itemColors.text : "text-neutral-400"
+                )}
+              >
+                {item.duration}
+              </span>
+            </button>
+          );
+        })}
       </div>
 
       {/* Content area */}
-      <div className={cn("rounded-xl border border-neutral-200 p-6 transition-colors duration-300", colors.bg)}>
+      <div
+        role="tabpanel"
+        className={cn(
+          "rounded-xl border border-neutral-200 p-6 transition-colors duration-300",
+          colors.bg
+        )}
+      >
         <AnimatePresence mode="wait">
           <motion.div
             key={active}

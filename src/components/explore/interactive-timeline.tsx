@@ -150,21 +150,15 @@ export function InteractiveTimeline() {
                   width: isActive ? 48 : 40,
                   height: isActive ? 48 : 40,
                 }}
-                className={cn(
-                  "flex shrink-0 items-center justify-center rounded-full text-sm font-bold text-white transition-shadow",
-                  isActive && "shadow-lg"
-                )}
-                style={{ backgroundColor: p.color }}
+                className="flex shrink-0 items-center justify-center rounded-full text-sm font-bold text-white transition-shadow"
+                style={{
+                  backgroundColor: p.color,
+                  boxShadow: isActive
+                    ? `0 0 0 4px ${p.colorLight}, 0 4px 12px ${p.color}40`
+                    : "none",
+                }}
               >
-                {isActive && (
-                  <motion.div
-                    className="absolute inset-0 rounded-full"
-                    style={{ border: `2px solid ${p.color}` }}
-                    animate={{ scale: [1, 1.3, 1], opacity: [0.6, 0, 0.6] }}
-                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                  />
-                )}
-                <span className="relative z-10">{p.number}</span>
+                {p.number}
               </motion.div>
               <span
                 className={cn(
