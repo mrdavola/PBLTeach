@@ -75,6 +75,7 @@ const growthSteps = [
 export default function StartSmallPage() {
   return (
     <ModuleLayout
+      slug="start-small"
       title="Start Small"
       duration="3-5 min"
       learningGoal="Feel permission to try PBL at any scale"

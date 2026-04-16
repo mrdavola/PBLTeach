@@ -13,6 +13,7 @@ import { ScenarioHook } from "@/components/explore/scenario-hook";
 export default function WhatIsPblPage() {
   return (
     <ModuleLayout
+      slug="what-is-pbl"
       title="What IS PBL?"
       duration="5-7 min"
       learningGoal='Distinguish PBL from "doing a project"'
@@ -38,9 +39,9 @@ export default function WhatIsPblPage() {
         <ScrollReveal className="mt-10">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {/* Doing a Project - muted */}
-            <div className="flex flex-col items-center gap-3 rounded-xl border border-neutral-300 bg-neutral-100 p-6">
-              <div className="flex size-16 items-center justify-center rounded-full bg-white">
-                <Cake className="size-8 text-neutral-500" />
+            <div className="flex flex-col items-center gap-2.5 rounded-xl border border-neutral-300 bg-neutral-100 p-5">
+              <div className="flex size-12 items-center justify-center rounded-full bg-white">
+                <Cake className="size-6 text-neutral-500" />
               </div>
               <span className="text-xs font-medium uppercase tracking-wide text-neutral-500">
                 Doing a Project
@@ -52,9 +53,9 @@ export default function WhatIsPblPage() {
             </div>
 
             {/* PBL - vibrant */}
-            <div className="flex flex-col items-center gap-3 rounded-xl border border-brand-teal bg-brand-teal-light p-6">
-              <div className="flex size-16 items-center justify-center rounded-full bg-white">
-                <UtensilsCrossed className="size-8 text-brand-teal" />
+            <div className="flex flex-col items-center gap-2.5 rounded-xl border border-brand-teal bg-brand-teal-light p-5">
+              <div className="flex size-12 items-center justify-center rounded-full bg-white">
+                <UtensilsCrossed className="size-6 text-brand-teal" />
               </div>
               <span className="text-xs font-medium uppercase tracking-wide text-brand-teal">
                 PBL
@@ -68,18 +69,19 @@ export default function WhatIsPblPage() {
         </ScrollReveal>
 
         {/* Flip cards grid */}
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {dessertVsMainCourse.map((pair, i) => (
-            <ScrollReveal key={i} delay={i * 0.08}>
+        <ScrollReveal className="mt-8">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {dessertVsMainCourse.map((pair, i) => (
               <FlipCard
+                key={i}
                 front={pair.doingAProject}
                 back={pair.pbl}
                 frontLabel="Doing a Project"
                 backLabel="PBL"
               />
-            </ScrollReveal>
-          ))}
-        </div>
+            ))}
+          </div>
+        </ScrollReveal>
       </section>
 
       {/* Section 3: Real Example (Case Study) */}

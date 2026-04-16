@@ -36,7 +36,7 @@ export function FlipCard({ front, back, frontLabel, backLabel }: FlipCardProps) 
           ? `Showing: ${back}. Click to flip back.`
           : `Showing: ${front}. Click to flip.`
       }
-      className="min-h-[160px] w-full cursor-pointer [perspective:1000px]"
+      className="min-h-[120px] w-full cursor-pointer [perspective:1000px]"
     >
       <div
         className={cn(

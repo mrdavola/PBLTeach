@@ -53,6 +53,7 @@ const humanStrengths = [
 export default function PblAndAiPage() {
   return (
     <ModuleLayout
+      slug="pbl-and-ai"
       title="PBL + AI"
       duration="5-7 min"
       learningGoal="Understand how AI supports but doesn't replace PBL design"

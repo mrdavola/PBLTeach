@@ -31,6 +31,7 @@ const dqExamples = [
 export default function GoldStandardPage() {
   return (
     <ModuleLayout
+      slug="gold-standard"
       title="The Gold Standard"
       duration="7-10 min"
       learningGoal="Know the 7 elements and understand you can start with just 2"

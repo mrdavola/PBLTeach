@@ -11,6 +11,7 @@ import { MindsetCards } from "@/components/explore/mindset-cards";
 export default function DesignThinkingPage() {
   return (
     <ModuleLayout
+      slug="design-thinking"
       title="Design Thinking 101"
       duration="7-10 min"
       learningGoal="Understand the DT process and how it powers the Create phase"

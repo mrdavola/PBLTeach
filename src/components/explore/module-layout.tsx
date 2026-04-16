@@ -1,14 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowLeft, Clock } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ProgressBar } from "@/components/explore/progress-bar";
+import { exploreModules } from "@/lib/data/explore-content";
 
 interface ModuleLayoutProps {
   children: React.ReactNode;
+  slug: string;
   title: string;
   duration: string;
   learningGoal: string;
@@ -18,6 +20,7 @@ interface ModuleLayoutProps {
 
 export function ModuleLayout({
   children,
+  slug,
   title,
   duration,
   learningGoal,
@@ -25,6 +28,14 @@ export function ModuleLayout({
   ctaLink,
 }: ModuleLayoutProps) {
   const buildLink = ctaLink ?? "/build/new";
+
+  const availableModules = exploreModules.filter((m) => m.phaseForMVP === 1);
+  const currentIndex = availableModules.findIndex((m) => m.slug === slug);
+  const prev = currentIndex > 0 ? availableModules[currentIndex - 1] : null;
+  const next =
+    currentIndex < availableModules.length - 1
+      ? availableModules[currentIndex + 1]
+      : null;
 
   return (
     <>
@@ -76,6 +87,52 @@ export function ModuleLayout({
             </CardContent>
           </Card>
         </section>
+
+        {/* Previous / Next navigation */}
+        {(prev || next) && (
+          <nav
+            aria-label="Explore modules"
+            className="mt-12 flex items-stretch gap-4"
+          >
+            {prev ? (
+              <Link
+                href={`/explore/${prev.slug}`}
+                className="group flex flex-1 items-center gap-3 rounded-xl border border-neutral-200 bg-white px-5 py-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-teal/40 hover:shadow-md"
+              >
+                <ArrowLeft className="size-4 shrink-0 text-neutral-400 transition-colors group-hover:text-brand-teal" />
+                <div className="min-w-0">
+                  <span className="block text-xs font-medium text-neutral-400">
+                    Previous
+                  </span>
+                  <span className="block truncate text-sm font-semibold text-neutral-700 group-hover:text-brand-teal-dark">
+                    {prev.title}
+                  </span>
+                </div>
+              </Link>
+            ) : (
+              <div className="flex-1" />
+            )}
+
+            {next ? (
+              <Link
+                href={`/explore/${next.slug}`}
+                className="group flex flex-1 items-center justify-end gap-3 rounded-xl border border-neutral-200 bg-white px-5 py-4 text-right transition-all duration-200 hover:-translate-y-0.5 hover:border-brand-teal/40 hover:shadow-md"
+              >
+                <div className="min-w-0">
+                  <span className="block text-xs font-medium text-neutral-400">
+                    Next
+                  </span>
+                  <span className="block truncate text-sm font-semibold text-neutral-700 group-hover:text-brand-teal-dark">
+                    {next.title}
+                  </span>
+                </div>
+                <ArrowRight className="size-4 shrink-0 text-neutral-400 transition-colors group-hover:text-brand-teal" />
+              </Link>
+            ) : (
+              <div className="flex-1" />
+            )}
+          </nav>
+        )}
       </article>
     </>
   );

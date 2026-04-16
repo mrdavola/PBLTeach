@@ -17,6 +17,7 @@ const goldStandardMap = [
 export default function LearningNarrativePage() {
   return (
     <ModuleLayout
+      slug="learning-narrative"
       title="The Learning Narrative"
       duration="7-10 min"
       learningGoal="Understand the 5-phase structure and map an existing unit to it"

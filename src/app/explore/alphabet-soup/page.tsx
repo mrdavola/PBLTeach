@@ -9,6 +9,7 @@ import { alphabetSoup } from "@/lib/data/alphabet-soup";
 export default function AlphabetSoupPage() {
   return (
     <ModuleLayout
+      slug="alphabet-soup"
       title="The Alphabet Soup Explained"
       duration="5-8 min"
       learningGoal="Name the key approaches and understand how they relate"
