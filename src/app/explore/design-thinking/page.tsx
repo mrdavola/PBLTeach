@@ -156,7 +156,7 @@ export default function DesignThinkingPage() {
                 x="100"
                 y="108"
                 textAnchor="middle"
-                className="fill-[#0D7377] text-sm font-bold"
+                fill="#0D7377"
                 fontSize="14"
                 fontWeight="bold"
               >
@@ -166,7 +166,7 @@ export default function DesignThinkingPage() {
                 x="100"
                 y="126"
                 textAnchor="middle"
-                className="fill-neutral-500 text-xs"
+                fill="#6B7280"
                 fontSize="10"
               >
                 Why &amp; What
@@ -175,7 +175,7 @@ export default function DesignThinkingPage() {
                 x="300"
                 y="108"
                 textAnchor="middle"
-                className="fill-[#D97706] text-sm font-bold"
+                fill="#D97706"
                 fontSize="14"
                 fontWeight="bold"
               >
@@ -185,7 +185,7 @@ export default function DesignThinkingPage() {
                 x="300"
                 y="126"
                 textAnchor="middle"
-                className="fill-[#D97706] text-sm font-bold"
+                fill="#D97706"
                 fontSize="14"
                 fontWeight="bold"
               >
@@ -195,7 +195,7 @@ export default function DesignThinkingPage() {
                 x="300"
                 y="144"
                 textAnchor="middle"
-                className="fill-neutral-500 text-xs"
+                fill="#6B7280"
                 fontSize="10"
               >
                 How
@@ -205,7 +205,7 @@ export default function DesignThinkingPage() {
                 x="200"
                 y="105"
                 textAnchor="middle"
-                className="fill-neutral-900 text-sm font-bold"
+                fill="#1A1A2E"
                 fontSize="12"
                 fontWeight="bold"
               >
@@ -215,7 +215,7 @@ export default function DesignThinkingPage() {
                 x="200"
                 y="121"
                 textAnchor="middle"
-                className="fill-neutral-900 text-sm font-bold"
+                fill="#1A1A2E"
                 fontSize="12"
                 fontWeight="bold"
               >

@@ -155,7 +155,7 @@ export function ScaleSlider() {
       </div>
 
       {/* Content area */}
-      <div className={cn("rounded-xl border p-6 transition-colors duration-300", colors.bg)}>
+      <div className={cn("rounded-xl border border-neutral-200 p-6 transition-colors duration-300", colors.bg)}>
         <AnimatePresence mode="wait">
           <motion.div
             key={active}

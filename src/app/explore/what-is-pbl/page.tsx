@@ -36,7 +36,7 @@ export default function WhatIsPblPage() {
 
         {/* Visual comparison */}
         <ScrollReveal className="mt-10">
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             {/* Doing a Project - muted */}
             <div className="flex flex-col items-center gap-3 rounded-xl border border-neutral-300 bg-neutral-100 p-6">
               <div className="flex size-16 items-center justify-center rounded-full bg-white">
@@ -45,7 +45,7 @@ export default function WhatIsPblPage() {
               <span className="text-xs font-medium uppercase tracking-wide text-neutral-500">
                 Doing a Project
               </span>
-              <p className="text-center text-xs text-neutral-500">
+              <p className="text-center text-xs sm:text-sm text-neutral-500">
                 Dessert after the meal &mdash; a fun add-on after the
                 &ldquo;real&rdquo; teaching is done
               </p>
@@ -59,7 +59,7 @@ export default function WhatIsPblPage() {
               <span className="text-xs font-medium uppercase tracking-wide text-brand-teal">
                 PBL
               </span>
-              <p className="text-center text-xs text-brand-teal-dark">
+              <p className="text-center text-xs sm:text-sm text-brand-teal-dark">
                 The main course &mdash; the project IS how students learn the
                 content
               </p>

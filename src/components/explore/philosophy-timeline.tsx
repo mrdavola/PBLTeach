@@ -41,7 +41,7 @@ export function PhilosophyTimeline() {
   return (
     <div className="space-y-8">
       {/* Steps */}
-      <div className="flex flex-col items-stretch gap-4 md:flex-row md:items-start md:gap-0">
+      <div className="flex flex-col items-stretch gap-4 md:flex-row md:items-stretch md:gap-0">
         {steps.map((step, i) => {
           const Icon = step.icon;
           return (

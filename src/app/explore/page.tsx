@@ -35,7 +35,7 @@ export default function ExplorePage() {
             const cardContent = (
               <Card
                 className={cn(
-                  "h-full transition-shadow duration-200",
+                  "h-full transition-all duration-200",
                   isAvailable
                     ? "hover:-translate-y-1 hover:shadow-md"
                     : "cursor-not-allowed opacity-60"
@@ -81,7 +81,7 @@ export default function ExplorePage() {
                     {cardContent}
                   </Link>
                 ) : (
-                  <div className="h-full">{cardContent}</div>
+                  <div className="h-full" aria-disabled="true">{cardContent}</div>
                 )}
               </AssembleItem>
             );

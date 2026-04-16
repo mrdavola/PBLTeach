@@ -152,7 +152,6 @@ export function UmbrellaDiagram() {
                   fill={b.fill}
                   stroke={b.stroke}
                   strokeWidth={selectedId === b.id ? 3 : 2}
-                  strokeDasharray={b.id === "pbl" ? "none" : "none"}
                 />
                 <text
                   x={b.cx}

@@ -33,7 +33,9 @@ export function ComparisonTool() {
     <div className="space-y-6">
       {/* Selects row */}
       <div className="flex items-center gap-3">
+        <label className="sr-only" htmlFor="compare-left">First approach</label>
         <select
+          id="compare-left"
           value={leftIndex}
           onChange={(e) => setLeftIndex(Number(e.target.value))}
           className="h-11 flex-1 rounded-lg border border-neutral-300 bg-white px-3 font-body text-sm text-neutral-700 outline-none focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20"
@@ -46,6 +48,7 @@ export function ComparisonTool() {
         </select>
 
         <button
+          type="button"
           onClick={swap}
           className="flex size-10 shrink-0 items-center justify-center rounded-lg border border-neutral-300 bg-white text-neutral-500 transition-colors hover:bg-neutral-50 hover:text-brand-teal"
           aria-label="Swap approaches"
@@ -53,7 +56,9 @@ export function ComparisonTool() {
           <ArrowLeftRight className="size-4" />
         </button>
 
+        <label className="sr-only" htmlFor="compare-right">Second approach</label>
         <select
+          id="compare-right"
           value={rightIndex}
           onChange={(e) => setRightIndex(Number(e.target.value))}
           className="h-11 flex-1 rounded-lg border border-neutral-300 bg-white px-3 font-body text-sm text-neutral-700 outline-none focus:border-brand-teal focus:ring-2 focus:ring-brand-teal/20"

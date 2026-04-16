@@ -14,7 +14,6 @@ interface ModuleLayoutProps {
   learningGoal: string;
   progressColor: string; // Tailwind bg class, e.g. "bg-brand-coral"
   ctaLink?: string;
-  ctaPreset?: string;
 }
 
 export function ModuleLayout({

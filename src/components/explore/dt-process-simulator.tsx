@@ -127,6 +127,7 @@ export function DtProcessSimulator() {
           >
             {/* Node */}
             <button
+              type="button"
               onClick={() =>
                 setActiveIndex(activeIndex === i ? null : i)
               }
